@@ -48,7 +48,7 @@ permalink: /film/
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff; /* White text */
+    color: #ffffff !important; /* White text */
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -65,18 +65,25 @@ permalink: /film/
   .film-banner-text h2 {
     font-size: 2em; /* Larger font size for title */
     margin: 0;
-    color: #ffffff !important;
+    color: #ffffff !important; /* Ensure white text */
     font-family: 'Poppins', sans-serif; /* Apply Poppins font */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Optional: Adds depth */
+    letter-spacing: 0.05em; /* Add letter spacing */
+    word-spacing: 0.1em; /* Add word spacing */
+    font-weight: 700; /* Bold font for title */
+    white-space: normal; /* Ensure normal spacing */
   }
 
   /* Style for film role */
   .film-banner-text p {
     font-size: 1em; /* Smaller font size for role */
     margin: 0;
-    color: #ffffff !important;
+    color: #ffffff !important; /* Ensure white text */
     font-family: 'Poppins', sans-serif; /* Apply Poppins font */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Optional: Adds depth */
+    letter-spacing: 0.02em; /* Add slight letter spacing */
+    word-spacing: 0.05em; /* Add slight word spacing */
+    font-weight: 400; /* Normal font weight for role */
   }
 
   /* Responsive: show only the center image on smaller screens */
@@ -121,7 +128,7 @@ permalink: /film/
       <img src="/assets/images/tower.jpg" alt="I am Vertical banner image 3">
     </div>
     <div class="film-banner-text">
-      <h2>I AM VERTICAL</h2>
+      <h2>I    AM    VERTICAL</h2>
       <p>DP, DIRECTOR, EDITOR</p>
     </div>
   </a>
