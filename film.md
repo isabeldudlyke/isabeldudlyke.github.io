@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Films"
-permalink: /films/
-css_class: "films-page"
+title: "Film"
+permalink: /film/
+css_class: "film-page"
 ---
 
 <style>
@@ -107,11 +107,11 @@ css_class: "films-page"
 <h1>Film Projects</h1>
 
 <div class="film-projects-container">
-  {% for film in site.films %}
-    <a href="{{ film.url }}" class="film-banner-wrapper" aria-label="View details for {{ film.title }}">
+  {% for fi in site.film %}
+    <a href="{{ fi.url }}" class="film-banner-wrapper" aria-label="View details for {{ fi.title }}">
       <div class="film-images">
         {% for image in film.images %}
-          <img src="{{ image | relative_url }}" alt="{{ film.title }} banner image {{ forloop.index }}" loading="lazy">
+          <img src="{{ image | relative_url }}" alt="{{ fi.title }} banner image {{ forloop.index }}" loading="lazy">
         {% endfor %}
       </div>
       <div class="film-banner-text">
