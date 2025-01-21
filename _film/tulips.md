@@ -24,4 +24,4 @@ roles: "DP, DIRECTOR, EDITOR"
 - **Editor:** John Smith
 - **Release Year:** 2024
 
-[← Back to Films](/films/)
+[← Back to Films](/film/)
