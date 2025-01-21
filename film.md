@@ -108,8 +108,8 @@ permalink: /film/
       <img src="/assets/images/tower.jpg" alt="Tulips banner image 3">
     </div>
     <div class="film-banner-text">
-      <h2>Tulips</h2>
-      <p>DP, Director, Editor</p>
+      <h2>TULIPS</h2>
+      <p>DP, DIRECTOR, EDITOR</p>
     </div>
   </a>
 
@@ -121,8 +121,8 @@ permalink: /film/
       <img src="/assets/images/tower.jpg" alt="I am Vertical banner image 3">
     </div>
     <div class="film-banner-text">
-      <h2>I am Vertical</h2>
-      <p>DP, Director, Editor</p>
+      <h2>I AM VERTICAL</h2>
+      <p>DP, DIRECTOR, EDITOR</p>
     </div>
   </a>
 
