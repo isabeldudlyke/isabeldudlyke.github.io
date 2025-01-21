@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "About"
-css_class: about
+permalink: /about/
+css_class: "about-page"
 ---
 
 # Hi, I'm Isabel.
