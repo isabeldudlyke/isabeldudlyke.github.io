@@ -66,6 +66,14 @@ css_class: "about-page"
       <img src="assets/images/solidworks.png" alt="SolidWorks" />
       <span>SolidWorks</span>
     </div>
+    <div class="skill-item">
+      <img src="assets/images/adobe.png" alt="Adobe Premiere" />
+      <span>Adobe Premiere</span>
+    </div>
+    <div class="skill-item">
+      <img src="assets/images/autocad.png" alt="AutoCAD" />
+      <span>AutoCAD</span>
+    </div>
   </div>
 
   <!-- Extracurricular Section -->
@@ -148,29 +156,36 @@ css_class: "about-page"
 }
 
 .item-details li {
+  list-style-type: circle; /* Apply only circles */
+  margin-left: 1rem; /* Align the circles */
   font-size: 0.9rem;
   color: #ccc;
-  list-style: circle;
   margin-bottom: 0.5rem;
 }
 
 /* Skills Section */
-  .skills {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Five icons per row */
+  gap: 1.5rem;
+  justify-items: center; /* Center-aligns items in the grid */
+  margin-top: 1.5rem;
+}
 
-  .skill-item {
-    text-align: center;
-    width: 100px;
-  }
+.skill-item {
+  text-align: center;
+}
 
-  .skill-item img {
-    width: 50px;
-    height: 50px;
-  }
+.skill-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.skill-item span {
+  font-size: 0.9rem;
+  color: #ccc;
+}
 
 /* Extracurricular Section */
 .extracurricular {
