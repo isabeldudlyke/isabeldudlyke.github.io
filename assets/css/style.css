@@ -4,12 +4,12 @@
 :root {
     --header-font: "Poppins", sans-serif;
     --body-font: "Poppins", sans-serif;
-    --header-bg: #fff;
-    --header-text-color: #333;
-    --small-header-text-color: #333;
-    --body-text-color: #333;
-    --link-color: #666;
-    --link-hover-color: #000;
+    --header-bg: #111;
+    --header-text-color: #fff;
+    --small-header-text-color: #fff;
+    --body-text-color: #fff;
+    --link-color: #fff;
+    --link-hover-color: #ddd;
 }
 
 /* ========== GLOBAL RESET & BODY ========== */
@@ -22,7 +22,7 @@
 body {
     font-family: var(--body-font);
     color: var(--body-text-color);
-    background-color: #fff;
+    background-color: #111;
     line-height: 1.6;
 }
 
@@ -160,7 +160,7 @@ footer {
 h1 {
     font-family: var(--header-font);
     font-size: 4rem;
-    color: #111;
+    color: #eee;
     margin-bottom: 1rem;
     line-height: 1.2;
     font-weight: 700;
@@ -226,18 +226,19 @@ a:hover {
     font-family: var(--body-font);
     border: 1px solid #ddd;
     border-radius: 4px;
-    background: #fff;
+    background: #111;
     transition:
         background 0.2s ease,
         color 0.2s ease;
 }
 .project-filters button:hover {
-    background: #f5f5f5;
+    background: #333; /* Dark gray for hover effect */
+    color: #ffce00; /* Yellow text for hover */
 }
 .project-filters button.active {
-    background-color: #050505;
-    color: #fff;
-    border-color: #0f0f0f;
+    background-color: #444; /* Medium gray for active button background */
+    color: #ffce00; /* Yellow text for active button */
+    border-color: #ffce00; /* Yellow border for active button */
 }
 .projects-page h2 {
     margin-top: 2rem;
@@ -255,8 +256,8 @@ a:hover {
 }
 .project-item {
     display: block;
-    background-color: #f7f7f7;
-    border: 1px solid #eee;
+    background-color: #222; /* Dark background for the card */
+    border: 1px solid #444; /* Dark gray border for subtle contrast */
     border-radius: 8px;
     padding: 1rem;
     color: inherit;
@@ -281,8 +282,8 @@ a:hover {
 }
 .project-item p {
     margin-bottom: 0;
-    color: #666;
-    font-weight: 100;
+    color: #ccc; /* Light gray text for better readability on a dark background */
+    font-weight: 100; /* Slightly increased weight for improved visibility */
     font-size: 15px;
 }
 .featured-gallery,
@@ -349,8 +350,8 @@ hr {
 }
 /* Inline <code> style */
 code {
-    background-color: #f5f5f5;
-    color: #d73a49;
+    background-color: #2a2a2a; /* Dark gray background for better contrast */
+    color: #e06c75; /* Light red/pink for code text */
     padding: 2px 4px;
     border-radius: 3px;
     font-size: 90%;
@@ -367,24 +368,24 @@ pre code {
 .highlight {
     display: block;
     width: 80%;
-    background-color: #f2f2f2;
+    background-color: #2e2e2e; /* Dark gray background for the block */
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
 }
 .highlight .k {
-    color: #d73a49;
+    color: #d19a66; /* Soft orange for keywords */
 }
 .highlight .s {
-    color: #032f62;
+    color: #61afef; /* Blue for strings */
 }
 .highlight .c {
-    color: #6a737d;
+    color: #98c379; /* Green for comments */
     font-style: italic;
 }
 .project-meta {
     font-size: 0.9rem;
-    color: #666;
+    color: #b2b2b2; /* Light gray for meta text */
     margin-bottom: 1.5rem;
     font-family: var(--body-font);
 }
@@ -417,8 +418,8 @@ pre code {
 }
 .tech-badge {
     display: inline-block;
-    background-color: #eee;
-    color: #333;
+    background-color: #444; /* Dark gray for the badge background */
+    color: #ddd; /* Light gray for text to contrast the background */
     padding: 0.25rem 0.5rem;
     margin: 0 0.5rem 0.5rem 0;
     border-radius: 4px;
@@ -598,8 +599,8 @@ header {
 .project-item {
     position: relative; /* So absolutely positioned elements anchor here */
     display: block;
-    background-color: #f7f7f7;
-    border: 1px solid #eee;
+    background-color: #333; /* Dark background for the project item */
+    border: 1px solid #444; /* Subtle border to separate the item */
     border-radius: 8px; /* Rounded corners */
     overflow: hidden; /* Anything that goes outside is clipped */
     padding: 1rem;
@@ -611,7 +612,7 @@ header {
 
 /* Hover effect (optional) */
 .project-item:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow effect */
 }
 
 /* The project image inside the card */
@@ -626,8 +627,8 @@ header {
 .project-item {
     position: relative;
     display: block;
-    background-color: #f7f7f7;
-    border: 1px solid #eee;
+    background-color: #2b2b2b; /* Dark background for the project item */
+    border: 1px solid #444; /* Subtle border to define the item */
     border-radius: 8px;
     overflow: hidden;
     padding: 1rem;
@@ -638,7 +639,7 @@ header {
 }
 
 .project-item:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 .project-item img {
