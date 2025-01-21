@@ -24,7 +24,7 @@ css_class: Home
 
   /* The box that holds the centered text */
   .center-box {
-    background-image: url('tower.jpg'); /* Path to the background image */
+    background-image: url('assets/images/tower.JPG'); /* Path to the background image */
     background-size: cover; /* Ensure the image covers the box */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent tiling */
