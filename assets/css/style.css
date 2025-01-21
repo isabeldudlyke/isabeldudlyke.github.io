@@ -168,8 +168,8 @@ h1 {
 h2,
 h3 {
     font-family: var(--body-font);
-    letter-spacing: -0.02em;
-    word-spacing: -0.2em;
+    letter-spacing: 0em;
+    word-spacing: 0em;
     font-size: 1.3rem;
     color: var(--small-header-text-color);
     margin-top: 1.5rem;
