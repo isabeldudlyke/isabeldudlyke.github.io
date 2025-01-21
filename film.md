@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "Films"
-permalink: /film/
+permalink: /films/
+css_class: "films-page"
 ---
 
 <style>
@@ -106,31 +107,17 @@ permalink: /film/
 <h1>Film Projects</h1>
 
 <div class="film-projects-container">
-
-  <!-- First Project: Tulips -->
-  <a href="/tulips.html" class="film-banner-wrapper">
-    <div class="film-images">
-      <img src="/assets/images/tower.jpg" alt="Tulips banner image 1">
-      <img src="/assets/images/tower.jpg" alt="Tulips banner image 2">
-      <img src="/assets/images/tower.jpg" alt="Tulips banner image 3">
-    </div>
-    <div class="film-banner-text">
-      <h2>TULIPS</h2>
-      <p>DP, DIRECTOR, EDITOR</p>
-    </div>
-  </a>
-
-  <!-- Second Project: I am Vertical -->
-  <a href="/i-am-vertical.html" class="film-banner-wrapper">
-    <div class="film-images">
-      <img src="/assets/images/tower.jpg" alt="I am Vertical banner image 1">
-      <img src="/assets/images/tower.jpg" alt="I am Vertical banner image 2">
-      <img src="/assets/images/tower.jpg" alt="I am Vertical banner image 3">
-    </div>
-    <div class="film-banner-text">
-      <h2>I    AM    VERTICAL</h2>
-      <p>DP, DIRECTOR, EDITOR</p>
-    </div>
-  </a>
-
+  {% for film in site.films %}
+    <a href="{{ film.url }}" class="film-banner-wrapper" aria-label="View details for {{ film.title }}">
+      <div class="film-images">
+        {% for image in film.images %}
+          <img src="{{ image | relative_url }}" alt="{{ film.title }} banner image {{ forloop.index }}" loading="lazy">
+        {% endfor %}
+      </div>
+      <div class="film-banner-text">
+        <h2>{{ film.title }}</h2>
+        <p>{{ film.roles }}</p>
+      </div>
+    </a>
+  {% endfor %}
 </div>
