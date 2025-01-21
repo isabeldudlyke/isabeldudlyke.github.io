@@ -31,7 +31,6 @@ css_class: Home
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repeating the image */
     width: 100%; /* Full width */
-    max-width: 1200px; /* Optional: limit the maximum width */
     height: 100%; /* Make the box fill the entire wrapper */
     display: flex;
     flex-direction: column; /* Stack content vertically */
