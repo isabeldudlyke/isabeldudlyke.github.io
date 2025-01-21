@@ -6,94 +6,109 @@ css_class: "about-page"
 ---
 
 <div class="about-wrapper">
+  <!-- About Section -->
   <div class="about-content">
     <h1>Hi, I'm Isabel.</h1>
     <p>
       I am currently a student at Duke University majoring in Mechanical Engineering and Cinematic Arts. 
-      I am a proud member of esteemed engineering societies, including Tau Beta Pi and Pi Tau Sigma, which 
+      I am a proud member of esteemed engineering societies, including Tau Beta Pi, Pi Tau Sigma, which 
       have further fueled my passion for innovation and design. Additionally, I am an active member of 
       Freewater Productions, Duke’s student-run independent film production company, and two theater 
       groups, Duke Players and Hoof ‘n’ Horn, where I frequently take on technical roles in productions. 
-      My short film <i>Inner Demons</i> was selected for Duke’s Fall Film Festival following faculty nomination, and I was honored to receive the Robert E. Pristo Filmmaking Award for my current capstone project.
+      My short film <i>Inner Demons</i> was selected for Duke’s Fall Film Festival following faculty nomination, 
+      and I was honored to receive the Robert E. Pristo Filmmaking Award for my current capstone project.
+    </p>
+    <p>
+      I thrive in dynamic, fast-paced environments that demand both creative problem-solving and technical precision. 
+      Whether crafting an engineering prototype or leading a film project, I bridge design and execution effectively. 
+      With a passion for blending technical expertise and artistic vision, I bring a unique perspective to every challenge, 
+      delivering impactful and practical solutions.
     </p>
   </div>
 
-  <!-- Resume Section -->
+  <!-- Education Section -->
   <div class="resume-section">
     <h2>Education</h2>
     <div class="resume-item">
-      <div class="item-title">Duke University</div>
-      <div class="item-date">Aug 2021 - Present</div>
+      <div class="item-title">
+        Duke University
+        <span class="item-date">Aug 2021 - Present</span>
+      </div>
       <div class="item-subtitle">B.S. in Mechanical Engineering, Cinematic Arts</div>
     </div>
 
+    <!-- Professional Experience Section -->
     <h2>Professional Experience</h2>
     <div class="resume-item">
-      <div class="item-title">Engineering Intern</div>
-      <div class="item-date">May 2023 - Aug 2023</div>
+      <div class="item-title">
+        Engineering Intern
+        <span class="item-date">May 2023 - Aug 2023</span>
+      </div>
       <ul class="item-details">
         <li>Designed and implemented CAD models for new product prototypes.</li>
         <li>Collaborated with the R&D team to test and evaluate design performance.</li>
       </ul>
     </div>
+  </div>
 
-    <h2>Skills & Proficiencies</h2>
-    <div class="skills-grid">
-      <div class="skill-item">
-        <img src="assets/images/python.png" alt="Python" />
-        <span>Python</span>
-      </div>
-      <div class="skill-item">
-        <img src="assets/images/matlab.png" alt="MATLAB" />
-        <span>MATLAB</span>
-      </div>
-      <div class="skill-item">
-        <img src="assets/images/solidworks.png" alt="SolidWorks" />
-        <span>SolidWorks</span>
+  <!-- Skills Section -->
+  <h2>Skills & Proficiencies</h2>
+  <div class="skills-grid">
+    <div class="skill-item">
+      <img src="assets/images/python.png" alt="Python" />
+      <span>Python</span>
+    </div>
+    <div class="skill-item">
+      <img src="assets/images/matlab.png" alt="MATLAB" />
+      <span>MATLAB</span>
+    </div>
+    <div class="skill-item">
+      <img src="assets/images/solidworks.png" alt="SolidWorks" />
+      <span>SolidWorks</span>
+    </div>
+  </div>
+
+  <!-- Extracurricular Section -->
+  <h2>Extracurricular Activities</h2>
+  <div class="extracurricular">
+    <div class="activity-row">
+      <img src="assets/images/freewater.png" alt="Freewater Productions" class="activity-image" />
+      <div class="activity-details">
+        <div class="activity-title">Freewater Productions</div>
+        <p>Collaborated on student-led film projects, contributing as a cinematographer and editor.</p>
       </div>
     </div>
-
-    <h2>Extracurricular Activities</h2>
-    <div class="extracurricular">
-      <div class="activity-row">
-        <img src="assets/images/freewater.png" alt="Freewater Productions" class="activity-image" />
-        <div class="activity-details">
-          <div class="activity-title">Freewater Productions</div>
-          <p>Collaborated on student-led film projects, contributing as a cinematographer and editor.</p>
-        </div>
-      </div>
-      <div class="activity-row">
-        <img src="assets/images/hoofnhorn.png" alt="Hoof 'n' Horn" class="activity-image" />
-        <div class="activity-details">
-          <div class="activity-title">Hoof 'n' Horn</div>
-          <p>Served as a technical lead, managing lighting and set design for theater productions.</p>
-        </div>
+    <div class="activity-row">
+      <img src="assets/images/hoofnhorn.png" alt="Hoof 'n' Horn" class="activity-image" />
+      <div class="activity-details">
+        <div class="activity-title">Hoof 'n' Horn</div>
+        <p>Served as a technical lead, managing lighting and set design for theater productions.</p>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-/* General styling */
+/* General Styling */
 .about-wrapper {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: 'Poppins', sans-serif;
-  color: #ccc;
   line-height: 1.6;
+  color: #ccc;
 }
 
 .about-content h1 {
   font-size: 2.5rem;
   color: white;
-  text-align: left;
+  text-align: center;
 }
 
 .about-content p {
   font-size: 1rem;
   color: #aaa;
-  text-align: left;
+  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -110,28 +125,20 @@ css_class: "about-page"
 }
 
 .resume-item {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 1rem;
 }
 
 .item-title {
+  display: flex;
+  justify-content: space-between;
   font-size: 1.1rem;
   color: #ddd;
   font-weight: 600;
-  text-align: left;
-}
-
-.item-date {
-  font-size: 1rem;
-  color: #888;
-  text-align: right;
 }
 
 .item-subtitle {
   font-size: 1rem;
   color: #aaa;
-  text-align: left;
   margin-top: 0.5rem;
 }
 
