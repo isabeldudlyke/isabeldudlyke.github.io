@@ -9,6 +9,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:title/
+  film:
+    output: true
+    permalink: /film/:title/
 
 # Build settings
 markdown: kramdown
