@@ -4,61 +4,66 @@ title: "Home"
 css_class: Home
 ---
 
-<div class="center-box">
-  <div class="center-content">
+<div class="center-wrapper">
+  <div class="center-box">
     <h1>Isabel Dudlyke</h1>
     <h2>Filmmaker <span class="dot">•</span> Engineer</h2>
   </div>
 </div>
 
 <style>
-  /* Ensure body background stays clean */
-  body {
-    margin: 0;
-    padding: 0;
+  /* Wrapper ensures footer and header positioning is not disturbed */
+  .center-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: calc(100vh - 60px); /* Adjust to account for header and footer */
+    padding-top: 60px; /* Offset for fixed header height */
+    padding-bottom: 60px; /* Offset for fixed footer height */
   }
 
-  /* Box setup */
+  /* The box that holds the centered text */
   .center-box {
-    background-image: url('tower.jpg'); /* Image for the box */
-    background-size: cover; /* Ensure the image covers the entire box */
-    background-position: center; /* Center the image in the box */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
-    display: flex; /* Flex for centering content inside */
+    background-image: url('tower.jpg'); /* Path to the background image */
+    background-size: cover; /* Ensure the image covers the box */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    width: 80%; /* Adjust the box width */
+    max-width: 1200px; /* Limit maximum width */
+    aspect-ratio: 16 / 9; /* Optional: Maintain aspect ratio for a better visual */
+    display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 12px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Subtle shadow effect */
+    overflow: hidden;
   }
 
   /* Centered content */
-  .center-content {
-    text-align: center;
-    color: white; /* Text color for contrast */
-    font-family: 'Poppins', sans-serif; /* Use your chosen font */
-    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* Add shadow for readability */
-  }
-
-  .center-content h1 {
-    font-size: 4rem; /* Larger font size for the name */
+  .center-box h1,
+  .center-box h2 {
     margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* Ensure readability */
   }
 
-  .center-content h2 {
+  .center-box h1 {
+    font-size: 3rem; /* Larger font size for the name */
+  }
+
+  .center-box h2 {
     font-size: 1.5rem; /* Smaller font size for the subtitle */
-    margin: 0.5rem 0 0; /* Add space between name and subtitle */
-    font-weight: 300; /* Light font for contrast */
+    font-weight: 300; /* Lighter font for contrast */
+    margin-top: 0.5rem;
   }
 
-  .center-content .dot {
-    margin: 0 0.5rem; /* Space around the dot */
-    font-size: 1.5rem;
+  .center-box .dot {
+    margin: 0 0.5rem;
+    font-size: 1.5rem; /* Match the font size of the subtitle */
   }
 </style>
+
 
 
 
