@@ -168,8 +168,8 @@ h1 {
 h2,
 h3 {
     font-family: var(--body-font);
-    letter-spacing: 0.1em;
-    word-spacing: 0.2em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
     font-size: 1.3rem;
     color: var(--small-header-text-color);
     margin-top: 1.5rem;
@@ -181,8 +181,8 @@ h3 {
 p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-    letter-spacing: 0.1em;
-    word-spacing: 0.2em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
 }
 h2 img {
     width: 1em;
