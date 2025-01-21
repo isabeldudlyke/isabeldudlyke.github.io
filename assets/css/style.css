@@ -54,30 +54,29 @@ header {
    2) The actual "hamburger" icon can be styled or just text "Menu".
 */
 .hamburger {
-    display: none;
-    font-size: 1.3rem;
-    font-family: var(--header-font);
-    background: none;
-    border: none;
-    cursor: pointer;
+    display: none; /* Hide the hamburger menu on larger screens */
+    font-size: 1.3rem; /* Size of the hamburger icon */
+    font-family: var(--header-font); /* Inherits header font style */
+    background: none; /* No background for the icon */
+    border: none; /* Removes any border around the icon */
+    cursor: pointer; /* Changes the mouse pointer to indicate interactivity */
     color: #fff; /* White color for the hamburger icon */
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
+    display: flex; /* Layout for navigation links */
+    align-items: center; /* Vertically aligns the links */
 }
-
 .nav-links a {
-    margin-left: 1.5rem;
-    text-decoration: none;
-    font-family: var(--header-font);
-    color: var(--link-color);
-    font-size: 1.1rem;
-    font-weight: 400;
+    margin-left: 1.5rem; /* Space between links */
+    text-decoration: none; /* Removes underlines on links */
+    font-family: var(--header-font); /* Font style for the links */
+    color: var(--link-color); /* Link color */
+    font-size: 1.1rem; /* Font size */
+    font-weight: 400; /* Regular font weight */
 }
 .nav-links a:hover {
-    color: var(--link-hover-color);
+    color: var(--link-hover-color); /* Changes link color when hovered */
 }
 
 /*
@@ -88,30 +87,20 @@ header {
 */
 @media (max-width: 800px) {
     .hamburger {
-        display: block; /* Show hamburger button */
+        display: block; /* Shows the hamburger menu icon on smaller screens */
     }
     .nav-links {
-        display: none; /* Hide the nav links by default */
-        flex-direction: column;
-        margin-top: 1rem;
-        background-color: #333; /* Medium gray background for the menu */
+        display: none; /* Hides the navigation links by default */
+        flex-direction: column; /* Stacks the links vertically */
+        margin-top: 1rem; /* Adds spacing at the top */
+        background-color: #333; /* Background color for the menu when open */
     }
     .nav-links a {
-        margin: 0.75rem 0;
-        font-size: 1.2rem;
+        margin: 0.75rem 0; /* Adds spacing between the stacked links */
+        font-size: 1.2rem; /* Adjusts the font size for smaller screens */
     }
-    /*
-    If you want a pure CSS approach, you'd do a checkbox hack or :target hack.
-    But typically you'll add a small JS snippet:
-
-      document.querySelector('.hamburger').addEventListener('click', () => {
-        document.querySelector('.nav-links').classList.toggle('open');
-      });
-
-    Then define:
-  */
     .nav-links.open {
-        display: flex; /* Shows the nav when "open" is toggled */
+        display: flex; /* Makes the menu visible when toggled */
     }
 }
 
@@ -229,18 +218,19 @@ a:hover {
     border: 1px solid #ddd;
     border-radius: 4px;
     background: #111;
+    color: #fff; /* White text */
     transition:
         background 0.2s ease,
         color 0.2s ease;
 }
 .project-filters button:hover {
     background: #333; /* Dark gray for hover effect */
-    color: #ffce00; /* Yellow text for hover */
+    color: #fff; /* Yellow text for hover */
 }
 .project-filters button.active {
     background-color: #444; /* Medium gray for active button background */
-    color: #ffce00; /* Yellow text for active button */
-    border-color: #ffce00; /* Yellow border for active button */
+    color: #fff; /* Yellow text for active button */
+    border-color: #fff; /* Yellow border for active button */
 }
 .projects-page h2 {
     margin-top: 2rem;
