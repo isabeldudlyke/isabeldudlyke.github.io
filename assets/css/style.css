@@ -60,6 +60,7 @@ header {
     background: none;
     border: none;
     cursor: pointer;
+    color: #fff; /* White color for the hamburger icon */
 }
 
 .nav-links {
@@ -93,6 +94,7 @@ header {
         display: none; /* Hide the nav links by default */
         flex-direction: column;
         margin-top: 1rem;
+        background-color: #333; /* Medium gray background for the menu */
     }
     .nav-links a {
         margin: 0.75rem 0;
