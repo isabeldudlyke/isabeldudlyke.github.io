@@ -28,18 +28,22 @@ css_class: "about-page"
     <section class="resume-section">
       <h2>Education</h2>
       <div>
-        <h3>Duke University</h3>
+        <h3>
+          Duke University
+          <span class="date">Aug 2021 - Present</span>
+        </h3>
         <p>Major: Mechanical Engineering and Cinematic Arts</p>
-        <p>Aug 2021 - Present</p>
       </div>
     </section>
 
     <section class="resume-section">
       <h2>Professional Experience</h2>
       <div>
-        <h3>Engineering Intern</h3>
+        <h3>
+          Engineering Intern
+          <span class="date">June 2023 - Aug 2023</span>
+        </h3>
         <p>Company Name</p>
-        <p>June 2023 - Aug 2023</p>
         <ul>
           <li>Contributed to the design and testing of advanced mechanical systems.</li>
           <li>Collaborated with cross-functional teams to solve engineering challenges.</li>
@@ -64,7 +68,7 @@ css_class: "about-page"
     <section class="resume-section">
       <h2>Extracurriculars</h2>
       <div class="extracurricular-item">
-        <img src="path/to/club-image1.png" alt="Club Logo" />
+        <img src="/path/to/club-image1.png" alt="Club Logo" />
         <div>
           <h3>Freewater Productions</h3>
           <ul>
@@ -74,7 +78,7 @@ css_class: "about-page"
         </div>
       </div>
       <div class="extracurricular-item reverse">
-        <img src="path/to/club-image2.png" alt="Club Logo" />
+        <img src="/path/to/club-image2.png" alt="Club Logo" />
         <div>
           <h3>Duke Players</h3>
           <ul>
@@ -88,30 +92,47 @@ css_class: "about-page"
 </div>
 
 <style>
-  /* Center the text and reduce font size */
+  /* Wrapper for centering and padding */
   .about-wrapper {
     text-align: center;
     padding: 2rem;
     font-family: 'Poppins', sans-serif;
+    color: #bbb; /* Lighter text for overall readability */
   }
 
   .about-content {
     max-width: 800px;
     margin: 0 auto;
-    color: #333;
-    font-size: 1rem; /* Slightly smaller font */
+    font-size: 0.9rem; /* Slightly smaller font size */
   }
 
-  .resume-section {
-    margin-top: 2rem;
-    text-align: left;
-  }
-
+  /* Titles and subtitles */
   .resume-section h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: white; /* White for section titles */
   }
 
+  .resume-section h3 {
+    font-size: 1.2rem;
+    color: #ddd; /* Light gray for subtitles */
+    display: flex;
+    justify-content: space-between; /* Align title left and date right */
+    align-items: center;
+  }
+
+  .resume-section p {
+    font-size: 0.9rem;
+    color: #aaa; /* Slightly darker gray for details like majors and companies */
+    margin: 0.5rem 0;
+  }
+
+  .resume-section .date {
+    color: #aaa; /* Darker gray for dates */
+    font-size: 0.9rem;
+  }
+
+  /* Skills section */
   .skills {
     display: flex;
     justify-content: center;
@@ -129,16 +150,18 @@ css_class: "about-page"
     height: 50px;
   }
 
+  /* Extracurricular section */
   .extracurricular-item {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Align image and text */
     margin-bottom: 2rem;
   }
 
   .extracurricular-item img {
-    width: 100px;
-    height: 100px;
-    margin-right: 1rem;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
   }
 
   .extracurricular-item.reverse {
@@ -147,6 +170,11 @@ css_class: "about-page"
 
   .extracurricular-item.reverse img {
     margin-right: 0;
+    margin-left: 1rem;
+  }
+
+  ul {
+    list-style-type: circle; /* Change bullet style to circle */
     margin-left: 1rem;
   }
 </style>
