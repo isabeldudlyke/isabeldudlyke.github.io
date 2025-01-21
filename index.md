@@ -11,10 +11,6 @@ css_class: Home
   </div>
 </div>
 
-<footer class="footer">
-  <p>&copy; 2025 Isabel Dudlyke. All Rights Reserved.</p>
-</footer>
-
 <style>
   /* Background setup */
   body {
