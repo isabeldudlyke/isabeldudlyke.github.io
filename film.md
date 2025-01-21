@@ -42,20 +42,39 @@ permalink: /film/
     filter: brightness(40%);
   }
 
-  /* Centered text */
+  /* Centered text container */
   .film-banner-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff;
+    color: #ffffff; /* White text */
     text-align: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
   }
 
+  /* Text appears on hover */
   .film-banner-wrapper:hover .film-banner-text {
     opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05); /* Slight zoom effect */
+  }
+
+  /* Style for film title */
+  .film-banner-text h2 {
+    font-size: 2em; /* Larger font size for title */
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Optional: Adds depth */
+  }
+
+  /* Style for film role */
+  .film-banner-text p {
+    font-size: 1em; /* Smaller font size for role */
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Optional: Adds depth */
   }
 
   /* Responsive: show only the center image on smaller screens */
