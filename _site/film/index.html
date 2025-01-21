@@ -2,36 +2,55 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Projects</title>
-        <meta name="description" content="A minimal Jekyll site" />
+        <title>Markdown Demo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- SEO tag (optional) --><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Projects | My Jekyll Site</title>
+        <!-- MathJax Config -->
+        <script type="text/javascript">
+            MathJax = {
+                tex: {
+                    inlineMath: [
+                        ["$", "$"],
+                        ["\\(", "\\)"],
+                    ],
+                    displayMath: [
+                        ["$$", "$$"],
+                        ["\\[", "\\]"],
+                    ],
+                },
+            };
+        </script>
+        <!-- Actual MathJax Library (3.x) -->
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+        <!-- Optional: SEO tag --><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Markdown Demo | My Jekyll Site</title>
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Projects" />
+<meta property="og:title" content="Markdown Demo" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A minimal Jekyll site" />
-<meta property="og:description" content="A minimal Jekyll site" />
-<link rel="canonical" href="http://localhost:4000/projects/" />
-<meta property="og:url" content="http://localhost:4000/projects/" />
+<meta name="description" content="This website is an open-source way for students to share their projects. Learn how I made it!" />
+<meta property="og:description" content="This website is an open-source way for students to share their projects. Learn how I made it!" />
+<link rel="canonical" href="http://localhost:4000/projects/demo/" />
+<meta property="og:url" content="http://localhost:4000/projects/demo/" />
 <meta property="og:site_name" content="My Jekyll Site" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-01-20T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Projects" />
+<meta property="twitter:title" content="Markdown Demo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A minimal Jekyll site","headline":"Projects","url":"http://localhost:4000/projects/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-20T00:00:00-05:00","datePublished":"2025-01-20T00:00:00-05:00","description":"This website is an open-source way for students to share their projects. Learn how I made it!","headline":"Markdown Demo","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/demo/"},"url":"http://localhost:4000/projects/demo/"}</script>
 <!-- End Jekyll SEO tag -->
-<!-- Link to the custom CSS file -->
+<!-- Main CSS -->
         <link
             rel="stylesheet"
             href="/assets/css/style.css"
         />
     </head>
+
     <body>
         <header>
             <a href="/" class="site-title"
-                >Michael Scutari</a
+                >Isabel Dudlyke</a
             >
             <!-- HAMBURGER BUTTON -->
             <button class="hamburger" aria-label="Toggle menu">☰</button>
@@ -67,165 +86,104 @@
             });
         </script>
 
-        <!-- Dynamically add a class to the main element -->
-        <main class="projects-page"><h1 id="featured-projects">Featured Projects</h1>
+        <main class="project-page">
+            <p class="back-link">
+                <a href="/projects/"
+                    >← Back to Projects</a
+                >
+            </p>
+
+            
+            <div class="project-hero">
+                <img
+                    src="/assets/images/tower.jpg"
+                    alt="Markdown Demo"
+                />
+            </div>
+            
+
+            <article class="project-content">
+                <h1>Markdown Demo</h1>
+                <p class="project-meta">
+                    
+                    <strong>Date:</strong> January 20, 2025
+                    &nbsp;  
+                    <strong>Category:</strong> personal &nbsp;  
+                    <strong>Priority:</strong> 4 
+                </p>
+
+                
+                <div class="technologies">
+                    <strong>Technologies:</strong>
+                    
+                    <span class="tech-badge">HTML</span>
+                    
+                    <span class="tech-badge">CSS</span>
+                    
+                    <span class="tech-badge">Webdev</span>
+                    
+                </div>
+                 <h1 id="introduction">Introduction</h1>
+
+<p>This page tests various Markdown (and inline HTML) formatting features to ensure your site’s styling handles them well. Below are examples of <strong>two columns</strong>, <strong>images</strong> of different sizes and alignments, <strong>code blocks</strong>, <strong>tables</strong>, <strong>text-wrapped images</strong>, and an <strong>embedded YouTube video</strong>.</p>
 
 <hr />
-<!-- Featured Projects (highest priority) -->
-<div class="featured-gallery">
-  
-  
 
-  
-    <!-- Grab status, default to "" if none -->
-    
+<h2 id="two-columns">Two Columns</h2>
 
-    
-      <!-- Clickable featured item -->
-      <a class="project-item" data-category="personal" href="/projects/demo/">
-        
-          <div class="corner-ribbon">New!</div>
-        
-        
-          <img src="/assets/images/tower.jpg" alt="Markdown Demo" />
-        
-        <h2>Markdown Demo</h2>
-        <p>This website is an open-source way for students to share their projects. Learn how I made it!</p>
-      </a>
-    
-  
-    <!-- Grab status, default to "" if none -->
-    
+<p>Markdown doesn’t have built-in column support, so you can use small HTML blocks:</p>
 
-    
-      <!-- Non-clickable featured item -->
-      <div class="project-item" data-category="professional">
-        <div class="under-construction-banner">
-          🚧 Under Construction 🚧
-        </div>
-        
-
-        
-          <img src="/assets/images/humanoid_teaser.jpg" alt="Duke Humanoid" />
-        
-        <h2>Duke Humanoid</h2>
-        <p>Open source, 10 degrees of freedom humanoid robot. I directed design of electrical and control systems.</p>
-      </div>
-    
-  
-    <!-- Grab status, default to "" if none -->
-    
-
-    
-      <!-- Clickable featured item -->
-      <a class="project-item" data-category="professional" href="/projects/ranker/">
-        
-        
-          <img src="/assets/images/ranker_teaser.jpg" alt="Ranker Program Refactor" />
-        
-        <h2>Ranker Program Refactor</h2>
-        <p>Hired and led a intra-university team of 3 in updating the Amboseli Baboon Lab's 'Ranker' Program.</p>
-      </a>
-    
-  
+<div class="two-col">
+  <div>
+    **Left Column**
+    - Some bullet
+    - Another bullet
+  </div>
+  <div>
+    **Right Column**
+    - Another list
+    - More content
+  </div>
 </div>
-
-<h1 id="all-projects">All Projects</h1>
 
 <hr />
-<!-- Filter Buttons -->
-<div class="project-filters">
-  <button data-filter="all" onclick="filterAllProjects('all')">All</button>
-  <button data-filter="professional" onclick="filterAllProjects('professional')">Professional</button>
-  <button data-filter="personal" onclick="filterAllProjects('personal')">Personal</button>
+<h2 id="examples-of-custom-sized-and-justified-images">Examples of custom sized and justified images.</h2>
+<p><img src="/assets/images/tower.jpg" alt="Avatar" class="float-left" style="width: 150px;" />
+<img src="/assets/images/ranker_teaser.jpg" alt="Avatar" class="float-right" style="width: 150px;" /></p>
+<div style="clear: both;"></div>
+
+<h2 id="another-way-of-doing-images">Another way of doing images</h2>
+<p><img src="/assets/images/tower.jpg" alt="Small Image" style="width:100px; text-align:right; margin-left:1rem;" /></p>
+
+<div style="text-align: right;">
+    <img src="tower.jpg" alt="Example Image" />
 </div>
 
-<!-- All Projects (sorted newest to oldest by date) -->
-<div class="all-gallery">
-  
-  
-    
+<h2 id="code-snippets">Code snippets</h2>
 
-    
-      <!-- Clickable item -->
-      <a class="project-item" data-category="personal" href="/projects/demo/">
-        
-          <div class="corner-ribbon">New!</div>
-        
-        
-          <img src="/assets/images/tower.jpg" alt="Markdown Demo" />
-        
-        <h2>Markdown Demo</h2>
-        <p>This website is an open-source way for students to share their projects. Learn how I made it!</p>
-      </a>
-    
-  
-    
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">!</span><span class="sh">"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="sh">"</span><span class="s">Greeting for </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s"> created.</span><span class="sh">"</span>
+</code></pre></div></div>
 
-    
-      <!-- Clickable item -->
-      <a class="project-item" data-category="professional" href="/projects/ranker/">
-        
-        
-          <img src="/assets/images/ranker_teaser.jpg" alt="Ranker Program Refactor" />
-        
-        <h2>Ranker Program Refactor</h2>
-        <p>Hired and led a intra-university team of 3 in updating the Amboseli Baboon Lab's 'Ranker' Program.</p>
-      </a>
-    
-  
-    
+<h2 id="embedding-videos">embedding videos</h2>
+<p>remeber to add a clear style <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> or suffer the consequences.</p>
+<iframe width="480" height="240" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" style="text-align: center; margin: 10px;" allowfullscreen="">
+</iframe>
+<div style="clear: both;"></div>
 
-    
-      <!-- Non-clickable item -->
-      <div class="project-item" data-category="professional">
-        <div class="under-construction-banner">
-          🚧 Under Construction 🚧
-        </div>
-        
-        
-          <img src="/assets/images/humanoid_teaser.jpg" alt="Duke Humanoid" />
-        
-        <h2>Duke Humanoid</h2>
-        <p>Open source, 10 degrees of freedom humanoid robot. I directed design of electrical and control systems.</p>
-      </div>
-    
-  
-</div>
+<h2 id="math">Math</h2>
+<p>Inline math: ( a^2 + b^2 = c^2 )
+Different inline math: $x^2 +y^2 = z^2$</p>
 
-<script>
-  function filterAllProjects(category) {
-    // Only select items within the all-gallery
-    const items = document.querySelectorAll('.all-gallery .project-item');
-    items.forEach(item => {
-      if (category === 'all') {
-        item.style.display = 'block';
-      } else {
-        const cat = item.getAttribute('data-category');
-        item.style.display = (cat === category) ? 'block' : 'none';
-      }
-    });
+<p>Display math:
+\(\frac{\partial}{\partial x} f(x,y) = 2x + y^2\)</p>
 
-    // Highlight the correct button
-    const buttons = document.querySelectorAll('.project-filters button');
-    buttons.forEach(btn => {
-      btn.classList.remove('active');
-      if (btn.dataset.filter === category) {
-        btn.classList.add('active');
-      }
-    });
-  }
-
-  // Optional: auto-show "All" on page load
-  document.addEventListener('DOMContentLoaded', () => {
-    filterAllProjects('all');
-  });
-</script>
-
-</main>
+            </article>
+        </main>
 
         <footer>
-            <p>&copy; 2025 Isabel Dudlyke</p>
+            <p>&copy; 2025 Michael Scutari</p>
         </footer>
     </body>
 </html>
