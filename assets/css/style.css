@@ -4,12 +4,12 @@
 :root {
     --header-font: "Poppins", sans-serif;
     --body-font: "Poppins", sans-serif;
-    --header-bg: #000; /* Black background */
-    --header-text-color: #fff; /* White text */
-    --small-header-text-color: #fff; /* White text for small headers */
-    --body-text-color: #fff; /* White text for the body */
-    --link-color: #aaa; /* Light gray for links */
-    --link-hover-color: #fff; /* White for hovered links */
+    --header-bg: #fff;
+    --header-text-color: #333;
+    --small-header-text-color: #333;
+    --body-text-color: #333;
+    --link-color: #666;
+    --link-hover-color: #000;
 }
 
 /* ========== GLOBAL RESET & BODY ========== */
@@ -22,18 +22,23 @@
 body {
     font-family: var(--body-font);
     color: var(--body-text-color);
-    background-color: #000; /* Black background */
+    background-color: #fff;
     line-height: 1.6;
 }
 
 /* ========== HEADER ========== */
+/*
+  We make the .nav-links a normal horizontal menu on desktop,
+  but transform it into a hidden menu on mobile with a .hamburger toggle.
+*/
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--header-bg);
     color: var(--header-text-color);
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* White shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 0.75rem 9.25%;
 }
 .site-title {
@@ -44,7 +49,10 @@ header {
     color: var(--header-text-color);
 }
 
-/* HAMBURGER MENU */
+/* HAMBURGER MENU
+   1) We'll hide it on larger screens, show on mobile.
+   2) The actual "hamburger" icon can be styled or just text "Menu".
+*/
 .hamburger {
     display: none;
     font-size: 1.3rem;
@@ -52,7 +60,6 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--header-text-color);
 }
 
 .nav-links {
@@ -72,13 +79,18 @@ header {
     color: var(--link-hover-color);
 }
 
-/* RESPONSIVE NAV */
+/*
+   RESPONSIVE NAV
+   On small screens, we'll hide .nav-links by default,
+   and show them only when .hamburger is clicked (JS needed in your HTML or
+   use the checkbox hack).
+*/
 @media (max-width: 800px) {
     .hamburger {
-        display: block;
+        display: block; /* Show hamburger button */
     }
     .nav-links {
-        display: none;
+        display: none; /* Hide the nav links by default */
         flex-direction: column;
         margin-top: 1rem;
     }
@@ -86,8 +98,18 @@ header {
         margin: 0.75rem 0;
         font-size: 1.2rem;
     }
+    /*
+    If you want a pure CSS approach, you'd do a checkbox hack or :target hack.
+    But typically you'll add a small JS snippet:
+
+      document.querySelector('.hamburger').addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.toggle('open');
+      });
+
+    Then define:
+  */
     .nav-links.open {
-        display: flex;
+        display: flex; /* Shows the nav when "open" is toggled */
     }
 }
 
@@ -97,7 +119,6 @@ main {
     margin: 0 auto;
     padding: 2rem;
     text-align: left;
-    background-color: #111; /* Darker background for contrast */
 }
 /* Remove the big left/right margins on about page for mobile. */
 main.about {
@@ -131,21 +152,21 @@ main ul li {
 footer {
     text-align: center;
     padding: 1rem 0;
-    color: #666; /* Darker gray for text */
+    color: #999;
     font-size: 0.875rem;
-    background-color: #000; /* Black background */
 }
 
 /* ========== HEADINGS ========== */
 h1 {
     font-family: var(--header-font);
     font-size: 4rem;
-    color: var(--header-text-color);
+    color: #111;
     margin-bottom: 1rem;
     line-height: 1.2;
     font-weight: 700;
 }
-h2, h3 {
+h2,
+h3 {
     font-family: var(--body-font);
     letter-spacing: 0.05em;
     word-spacing: 0.1em;
@@ -162,7 +183,13 @@ p {
     margin-bottom: 1.5rem;
     letter-spacing: 0.05em;
     word-spacing: 0.1em;
-    color: var(--body-text-color);
+}
+h2 img {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-left: -0.1em;
+    margin-top: -0.2em;
 }
 a {
     color: var(--link-color);
@@ -172,54 +199,52 @@ a {
 a:hover {
     color: var(--link-hover-color);
 }
+.download-arrow {
+    font-size: 1rem;
+    margin-left: -0.15rem;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+.nav-links a:hover .download-arrow {
+    transform: translateY(3px);
+}
 
 /* ========== PROJECTS PAGE ========== */
-.project-item {
-    display: block;
-    background-color: #222; /* Darker gray */
-    border: 1px solid #333; /* Slightly lighter gray border */
-    border-radius: 8px;
-    padding: 1rem;
-    color: var(--body-text-color);
-    text-align: left;
-    text-decoration: none;
-    transition: box-shadow 0.2s ease;
+.projects-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
-.project-item:hover {
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Subtle white shadow */
+/* Align filter buttons better */
+.project-filters {
+    margin: 1rem auto;
+    text-align: center;
 }
-
 .project-filters button {
     padding: 0.5rem 1.2rem;
     margin: 0 0.5rem 1rem 0.5rem;
     cursor: pointer;
     font-family: var(--body-font);
-    border: 1px solid #333; /* Darker border */
+    border: 1px solid #ddd;
     border-radius: 4px;
-    background: #333; /* Dark gray */
-    color: var(--body-text-color);
-    transition: background 0.2s ease, color 0.2s ease;
+    background: #fff;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
 }
 .project-filters button:hover {
-    background: #555; /* Lighter gray */
+    background: #f5f5f5;
 }
 .project-filters button.active {
-    background-color: #000;
-    color: var(--body-text-color);
-}
-.projects-page h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--header-text-color);
+    background-color: #050505;
+    color: #fff;
+    border-color: #0f0f0f;
 }
 .projects-page h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-family: var(--header-font);
     word-spacing: 0.05em;
-    color: var(--small-header-text-color);
 }
-
 /* Projects gallery: 3 columns on desktop, then reduce on smaller screens. */
 .project-gallery {
     display: grid;
@@ -228,25 +253,110 @@ a:hover {
     justify-content: center;
     margin-bottom: 2rem;
 }
-
+.project-item {
+    display: block;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    color: inherit;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease;
+}
+.project-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .project-item img {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 6px;
     margin-bottom: -1.65rem;
-    border: 1px solid #333; /* Add a subtle border around images */
+}
+.project-item h2 {
+    margin-bottom: 0.5rem;
+    font-family: var(--header-font);
+    font-size: 1.25rem;
+}
+.project-item p {
+    margin-bottom: 0;
+    color: #666;
+    font-weight: 100;
+    font-size: 15px;
+}
+.featured-gallery,
+.all-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+hr {
+    margin-bottom: 10px;
 }
 
-/* Highlight code blocks */
+/* ========== PROJECT DETAIL PAGE ========== */
+.project-page {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.project-hero {
+    margin-bottom: 1.5rem;
+}
+.project-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+.project-content {
+    text-align: left;
+}
+.project-content h1 {
+    font-family: var(--header-font);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #111;
+}
+/* Constrain images so they never overflow the container */
+.project-content img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    align-content: center;
+    margin-bottom: 1rem;
+}
+/* Float-left images with text wrap */
+.project-content img.float-left {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+/* Two-column layout container */
+.project-content .two-col {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.project-content .two-col > div {
+    flex: 1;
+}
+/* Clear floats manually if needed */
+.project-content .clear {
+    clear: both;
+}
+/* Inline <code> style */
 code {
-    background-color: #333; /* Dark gray background */
-    color: #ffce00; /* Yellow text for code */
+    background-color: #f5f5f5;
+    color: #d73a49;
     padding: 2px 4px;
     border-radius: 3px;
     font-size: 90%;
     font-family: monospace;
 }
+/* For multi-line code blocks */
 pre code {
     background-color: inherit;
     color: inherit;
@@ -254,70 +364,289 @@ pre code {
     border-radius: 0;
     font-size: 100%;
 }
-
-/* Highlight block styles */
 .highlight {
     display: block;
     width: 80%;
-    background-color: #222; /* Dark gray background */
+    background-color: #f2f2f2;
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
-    color: #fff; /* White text */
 }
 .highlight .k {
-    color: #ffce00; /* Highlight keywords in yellow */
+    color: #d73a49;
 }
 .highlight .s {
-    color: #1f78d1; /* Blue for strings */
+    color: #032f62;
 }
 .highlight .c {
-    color: #6a737d; /* Gray for comments */
+    color: #6a737d;
     font-style: italic;
 }
+.project-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-family: var(--body-font);
+}
+.project-content p,
+.project-content ul,
+.project-content ol {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-family: var(--body-font);
+}
+.back-link {
+    margin-bottom: 1rem;
+}
+.back-link a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--body-font);
+}
+.back-link a:hover {
+    text-decoration: underline;
+}
+.technologies {
+    margin-bottom: 1.5rem;
+}
+.technologies ul {
+    list-style-type: disc;
+    margin: 0.5rem 0 0.5rem 1.5rem;
+    padding: 0;
+}
+.tech-badge {
+    display: inline-block;
+    background-color: #eee;
+    color: #333;
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.5rem 0.5rem 0;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: var(--body-font);
+}
 
-/* Responsive design adjustments */
+/* ========== RESPONSIVE ADJUSTMENTS ========== */
 @media (max-width: 1200px) {
+    /* For "About" page or any large margin pages,
+       reduce margins so it doesn't look half-empty on medium screens. */
+    main.about {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     .project-page {
         max-width: 80%;
     }
 }
-
 @media (max-width: 900px) {
     .project-gallery,
     .featured-gallery,
     .all-gallery {
-        grid-template-columns: 1fr 1fr; /* 2 columns on medium screens */
+        grid-template-columns: 1fr 1fr; /* 2 columns on mid-size screens */
     }
 }
-
 @media (max-width: 600px) {
-    /* Remove big margins on the About page for mobile */
+    /* Remove big margins on the About page so it fills the screen */
     main.about {
         margin-left: 2%;
         margin-right: 2%;
         padding: 1rem;
     }
-    /* Shrink headings and paragraphs for smaller screens */
+    /* Shrink headings and paragraphs a bit */
     h1 {
         font-size: 2.2rem;
     }
     p {
         font-size: 1.1rem;
     }
-    /* Adjust project gallery for mobile */
+    /* Main container padding less on mobile */
+    main {
+        padding: 1rem;
+        max-width: 90%;
+    }
+    /* Single column on Projects page */
     .project-gallery,
     .featured-gallery,
     .all-gallery {
-        grid-template-columns: 1fr; /* Single column for mobile */
+        grid-template-columns: 1fr;
+    }
+    /* Sort/Filter buttons - ensure spacing on mobile */
+    .project-filters {
+        margin: 1rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .project-filters button {
         margin: 0.5rem;
         font-size: 1rem;
     }
+    /* Project detail narrower */
     .project-page {
         max-width: 95%;
     }
+}
+
+/* ========================= */
+/* Header + Hamburger Menu   */
+/* ========================= */
+
+/* Keep your existing header layout on desktop */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header-bg);
+    color: var(--header-text-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 9.25%;
+}
+
+.site-title {
+    font-family: var(--header-font);
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--header-text-color);
+}
+
+/* The hamburger icon, hidden by default on bigger screens */
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    font-family: var(--header-font);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Desktop nav link styles */
+.nav-links a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-family: var(--header-font);
+    color: var(--link-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.nav-links a:hover {
+    color: var(--link-hover-color);
+}
+
+/* ======== RESPONSIVE HAMBURGER MENU (mobile) ======== */
+@media (max-width: 800px) {
+    .hamburger {
+        display: block; /* Show the hamburger icon on mobile */
+    }
+
+    /* Hide normal nav layout on mobile */
+    .nav-links {
+        /* Start fully hidden off-screen */
+        display: flex; /* Will set direction below */
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px; /* adjust as desired */
+        background-color: #fff;
+        box-shadow: -2px 0 6px rgba(0, 0, 0, 0.15);
+        padding: 2rem 1rem;
+
+        /* Slide out from the right using transform */
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 9999; /* ensure on top of other elements */
+    }
+
+    /* Each link in the mobile nav */
+    .nav-links a {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+        color: var(--link-color);
+    }
+
+    /* When .open is toggled on, the menu slides in */
+    .nav-links.open {
+        transform: translateX(50%);
+    }
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998; /* just behind the nav */
+}
+.overlay.open {
+    display: block;
+}
+
+/* Make each project-item round-cornered and clip children that overflow */
+.project-item {
+    position: relative; /* So absolutely positioned elements anchor here */
+    display: block;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Anything that goes outside is clipped */
+    padding: 1rem;
+    color: inherit;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease;
+}
+
+/* Hover effect (optional) */
+.project-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* The project image inside the card */
+.project-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0; /* We let the container clip corners now */
+    margin-bottom: -1.65rem;
+}
+/* Force the card to clip child elements (ribbon, banner) inside corners */
+.project-item {
+    position: relative;
+    display: block;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1rem;
+    color: inherit;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.project-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0; /* Let container clip corners */
+    margin-bottom: -1.65rem;
 }
 
 /* ========== Under Construction Banner ========== */
@@ -366,3 +695,4 @@ pre code {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     z-index: 3;
 }
+
