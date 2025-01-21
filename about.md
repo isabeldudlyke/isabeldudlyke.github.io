@@ -155,27 +155,22 @@ css_class: "about-page"
 }
 
 /* Skills Section */
-.skills-grid {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
+  .skills {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
 
-.skill-item {
-  text-align: center;
-}
+  .skill-item {
+    text-align: center;
+    width: 100px;
+  }
 
-.skill-item img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 0.5rem;
-}
-
-.skill-item span {
-  font-size: 0.9rem;
-  color: #ccc;
-}
+  .skill-item img {
+    width: 50px;
+    height: 50px;
+  }
 
 /* Extracurricular Section */
 .extracurricular {
