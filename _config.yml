@@ -2,7 +2,7 @@
 title: "My Jekyll Site"
 description: "A minimal Jekyll site"
 baseurl: "" # If you're publishing on GitHub Pages at username.github.io, keep it blank
-url: "https://michaelscutari.com" # Update with your GitHub Pages URL or custom domain
+#url: "https://michaelscutari.com" # Update with your GitHub Pages URL or custom domain
 
 # Collections
 collections:
