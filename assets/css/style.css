@@ -93,7 +93,7 @@ header {
         display: none; /* Hides the navigation links by default */
         flex-direction: column; /* Stacks the links vertically */
         margin-top: 1rem; /* Adds spacing at the top */
-        background-color: #333; /* Background color for the menu when open */
+        background-color: #333 !important; /* Force dark gray background */
     }
     .nav-links a {
         margin: 0.75rem 0; /* Adds spacing between the stacked links */
@@ -101,7 +101,7 @@ header {
     }
     .nav-links.open {
         display: flex; /* Makes the menu visible when toggled */
-        background-color: #333; /* Ensure the background stays dark gray */
+        background-color: #333 !important; /* Maintain dark background */
 
     }
 }
