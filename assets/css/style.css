@@ -3,7 +3,7 @@
 
 :root {
     --header-font: "Poppins", sans-serif;
-    --body-font: "Poppins", monospace;
+    --body-font: "Poppins", sans-serif;
     --header-bg: #fff;
     --header-text-color: #333;
     --small-header-text-color: #333;
