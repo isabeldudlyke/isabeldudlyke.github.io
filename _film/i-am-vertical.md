@@ -3,7 +3,7 @@ title: "I AM VERTICAL"
 layout: default
 description: "A short film that explores the journey of self-discovery through the vibrant imagery of blooming tulips."
 category: "professional" # Options: "professional" or "personal"
-priority: 1
+priority: 2
 status: "new" # Options: "new", "under_construction"
 header_image: "/assets/images/tulips_banner.jpg"
 images:
