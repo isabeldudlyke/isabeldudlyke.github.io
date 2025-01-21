@@ -1,14 +1,10 @@
 ---
 layout: default
-title: "About"
-css_class: about
+title: "Home"
+css_class: Home
 ---
 
-# Hi, I'm Isabel.
-
-I am currently a student at Duke University majoring in Mechanical Engineering and Cinematic arts. I am a proud member of esteemed engineering societies, including Tau Beta Pi, Pi Tau Sigma, which have further fueled my passion for innovation and design. Additionally, I am an active member of Freewater Productions, Duke’s student-run independent film production company, and two theater groups, Duke Players and Hoof ‘n’ Horn, where I frequently take on technical roles in productions. My short film Inner Demons was selected for Duke’s Fall Film Festival following faculty nomination, and I was honored to receive the Robert E. Pristo Filmmaking Award for my current capstone project.
- 
-I thrive in dynamic, fast-paced environments that demand both creative problem-solving and technical precision. Whether crafting an engineering prototype or leading a film project, I bridge design and execution effectively. With a passion for blending technical expertise and artistic vision, I bring a unique perspective to every challenge, delivering impactful and practical solutions.
+# Hi, I'm Isabel. 
 
 <!-----
 ## This is a website for showcasing my projects in more detail than can fit on a resume.
