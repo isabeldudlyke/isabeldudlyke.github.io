@@ -5,7 +5,6 @@ permalink: /projects/
 css_class: "projects-page"
 ---
 
-<!--
 # Featured Projects
 
 ---
@@ -51,7 +50,6 @@ css_class: "projects-page"
     {% endif %}
   {% endfor %}
 </div>
--->
 
 # All Projects
 
