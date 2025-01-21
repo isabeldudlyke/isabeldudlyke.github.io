@@ -17,9 +17,9 @@ css_class: Home
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 60px); /* Adjust to account for header and footer */
-    padding-top: 60px; /* Offset for fixed header height */
-    padding-bottom: 60px; /* Offset for fixed footer height */
+    min-height: calc(100vh - 60px); /* Adjust for header and footer */
+    padding-top: 60px; /* Offset for header height */
+    padding-bottom: 60px; /* Offset for footer height */
   }
 
   /* The box that holds the centered text */
@@ -28,34 +28,34 @@ css_class: Home
     background-size: cover; /* Ensure the image covers the box */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent tiling */
-    width: 80%; /* Adjust the box width */
+    width: 100%; /* Adjust the box width */
     max-width: 1200px; /* Limit maximum width */
-    aspect-ratio: 16 / 9; /* Optional: Maintain aspect ratio for a better visual */
+    aspect-ratio: 16 / 9; /* Maintain aspect ratio */
     display: flex;
+    flex-direction: column; /* Stack name and subtitle vertically */
     justify-content: center;
     align-items: center;
     border-radius: 12px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Subtle shadow effect */
-    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    padding: 2rem; /* Add padding inside the box */
   }
 
-  /* Centered content */
-  .center-box h1,
-  .center-box h2 {
+  /* Centered content styles */
+  .center-box h1 {
     margin: 0;
     color: white;
     font-family: 'Poppins', sans-serif;
-    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* Ensure readability */
-  }
-
-  .center-box h1 {
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
     font-size: 3rem; /* Larger font size for the name */
   }
 
   .center-box h2 {
+    margin: 0.5rem 0 0; /* Space above subtitle */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
     font-size: 1.5rem; /* Smaller font size for the subtitle */
     font-weight: 300; /* Lighter font for contrast */
-    margin-top: 0.5rem;
   }
 
   .center-box .dot {
