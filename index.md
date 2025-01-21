@@ -4,28 +4,43 @@ title: "Home"
 css_class: Home
 ---
 
-<div class="center-content">
-  <h1>Isabel Dudlyke</h1>
-  <h2>Filmmaker <span class="dot">•</span> Engineer</h2>
+<div class="center-wrapper">
+  <div class="center-content">
+    <h1>Isabel Dudlyke</h1>
+    <h2>Filmmaker <span class="dot">•</span> Engineer</h2>
+  </div>
 </div>
+
+<footer class="footer">
+  <p>&copy; 2025 Isabel Dudlyke. All Rights Reserved.</p>
+</footer>
 
 <style>
   /* Background setup */
   body {
-    background-image: url('tower.jpg'); /* Replace 'tower.jpg' with your actual image path */
+    background-image: url('tower.jpg'); /* Ensure this file is in the correct path */
     background-size: cover; /* Make the image cover the entire viewport */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Avoid repeating the image */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* Wrapper to handle content and footer positioning */
+  .center-wrapper {
+    flex: 1; /* Takes up remaining space to push the footer down */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* Centered content */
   .center-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    color: white; /* Ensure the text is readable on a dark background */
+    color: white; /* Ensure text is readable */
     font-family: 'Poppins', sans-serif;
     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* Subtle shadow for readability */
   }
@@ -45,20 +60,17 @@ css_class: Home
     margin: 0 0.5rem;
     font-size: 1.5rem; /* Keep the dot the same size as the subtitle */
   }
+
+  /* Footer styling */
+  .footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.7); /* Slightly transparent background for readability */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+  }
 </style>
 
-<!-----
-## This is a website for showcasing my projects in more detail than can fit on a resume.
-  + Check out the [Projects]({{ '/projects/' | relative_url }}) page for more details.
-  + You can also get in [Contact]({{ '/contact/' | relative_url }}) with me.
-  + My [Resume]({{ '/assets/resume.pdf' | relative_url }}) is available for download here too.
 
-<h2>
-    Connect with me on
-    <a href="https://www.linkedin.com/in/michael-scutari/">LinkedIn</a>
-    <img src="{{ '/assets/icons/linkedin.svg' | relative_url }}" alt="LinkedIn" style="width: 20px; height: 20px; vertical-align: middle;" />
-    or check out my
-    <a href="https://github.com/michaelscutari">GitHub</a>
-    <img src="{{ '/assets/icons/github.svg' | relative_url }}" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;" />.
-</h2>-->
 
