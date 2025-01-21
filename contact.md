@@ -8,6 +8,5 @@ permalink: /contact/
 
 If you want to reach out, here are a few methods:
 
-- **Email**: [michael.scutari@duke.edu](mailto:michael.scutari@duke.edu)
-- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/michael-scutari/)
-- **GitHub**: [GitHub Profile](https://github.com/michaelscutari)
+- **Email**: [izzydudlyke@icloud.com](mailto:izzydudlyke@icloud.com)
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/isabel-dudlyke/)
