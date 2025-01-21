@@ -101,6 +101,8 @@ header {
     }
     .nav-links.open {
         display: flex; /* Makes the menu visible when toggled */
+        background-color: #333; /* Ensure the background stays dark gray */
+
     }
 }
 
