@@ -19,6 +19,8 @@ permalink: /film/
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
   }
 
   /* Images container: 3 images side by side for large screens */
@@ -36,7 +38,7 @@ permalink: /film/
   }
 
   /* Dark overlay on hover */
-  .film-banner-wrapper:hover img {
+  .film-banner-wrapper:hover .film-images img {
     filter: brightness(40%);
   }
 
@@ -56,13 +58,19 @@ permalink: /film/
     opacity: 1;
   }
 
-  /* Responsive: collapse images into one column on smaller screens */
+  /* Responsive: show only the center image on smaller screens */
   @media (max-width: 768px) {
     .film-images {
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
+
     .film-images img {
       width: 100%;
+      display: none; /* Hide all images by default */
+    }
+
+    .film-images img:nth-child(2) {
+      display: block; /* Show only the second (center) image */
     }
   }
 </style>
