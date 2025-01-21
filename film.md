@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Film Projects"
+permalink: /film/
 ---
 
 <style>
