@@ -107,7 +107,7 @@ css_class: "film-page"
 <h1>Film Projects</h1>
 
 <div class="film-projects-container">
-  {% assign sorted_films = site.film | sort: "priority" | reverse %}
+  {% assign sorted_films = site.film | sort: "priority" %}
   {% for fi in sorted_films %}
     <a href="{{ fi.url }}" class="film-banner-wrapper" aria-label="View details for {{ fi.title }}">
       <div class="film-images">
