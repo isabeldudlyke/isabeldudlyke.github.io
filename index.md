@@ -6,28 +6,28 @@ css_class: Home
 
 <div class="center-content">
   <h1>Isabel Dudlyke</h1>
-  <h2>FILMMAKER <span class="dot">•</span> ENGINEER</h2>
+  <h2>Filmmaker <span class="dot">•</span> Engineer</h2>
 </div>
 
 <style>
-  /* Set the background image */
+  /* Background setup */
   body {
-    background-image: url('tower.jpg'); /* Replace 'tower.jpg' with the path to your image */
-    background-size: cover; /* Ensure the image covers the entire background */
+    background-image: url('tower.jpg'); /* Replace 'tower.jpg' with your actual image path */
+    background-size: cover; /* Make the image cover the entire viewport */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Avoid repeating the image */
-    margin: 0;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
+  /* Centered content */
   .center-content {
-    text-align: center; /* Center text horizontally */
-    color: white; /* Make text readable on a dark background */
-    font-family: 'Poppins', sans-serif; /* Use your preferred font */
-    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6); /* Add subtle shadow for readability */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Ensure the text is readable on a dark background */
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* Subtle shadow for readability */
   }
 
   .center-content h1 {
@@ -38,14 +38,14 @@ css_class: Home
   .center-content h2 {
     font-size: 1.5rem; /* Smaller font for the subtitle */
     margin: 0.5rem 0 0; /* Space between title and subtitle */
-    font-weight: 300; /* Make the subtitle lighter for contrast */
+    font-weight: 300;
   }
 
   .center-content .dot {
-    color: white; /* Dot color */
-    margin: 0 0.5rem; /* Add spacing around the dot */
+    margin: 0 0.5rem;
+    font-size: 1.5rem; /* Keep the dot the same size as the subtitle */
   }
-</style> 
+</style>
 
 <!-----
 ## This is a website for showcasing my projects in more detail than can fit on a resume.
