@@ -110,13 +110,13 @@ css_class: "film-page"
   {% for fi in site.film %}
     <a href="{{ fi.url }}" class="film-banner-wrapper" aria-label="View details for {{ fi.title }}">
       <div class="film-images">
-        {% for image in film.images %}
+        {% for image in fi.images %}
           <img src="{{ image | relative_url }}" alt="{{ fi.title }} banner image {{ forloop.index }}" loading="lazy">
         {% endfor %}
       </div>
       <div class="film-banner-text">
-        <h2>{{ film.title }}</h2>
-        <p>{{ film.roles }}</p>
+        <h2>{{ fi.title }}</h2>
+        <p>{{ fi.roles }}</p>
       </div>
     </a>
   {% endfor %}
