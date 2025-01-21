@@ -51,30 +51,30 @@ css_class: "about-page"
     </div>
   </div>
 
-  <!-- Skills Section -->
-  <h2>Skills & Proficiencies</h2>
-  <div class="skills-grid">
-    <div class="skill-item">
-      <img src="assets/images/python.png" alt="Python" />
-      <span>Python</span>
-    </div>
-    <div class="skill-item">
-      <img src="assets/images/matlab.png" alt="MATLAB" />
-      <span>MATLAB</span>
-    </div>
-    <div class="skill-item">
-      <img src="assets/images/solidworks.png" alt="SolidWorks" />
-      <span>SolidWorks</span>
-    </div>
-    <div class="skill-item">
-      <img src="assets/images/adobe.png" alt="Adobe Premiere" />
-      <span>Adobe Premiere</span>
-    </div>
-    <div class="skill-item">
-      <img src="assets/images/autocad.png" alt="AutoCAD" />
-      <span>AutoCAD</span>
-    </div>
+<!-- Skills Section -->
+<h2>Skills & Proficiencies</h2>
+<div class="skills-grid">
+  <div class="skill-item">
+    <img src="assets/images/python.png" alt="Python" />
+    <span>Python</span>
   </div>
+  <div class="skill-item">
+    <img src="assets/images/matlab.png" alt="MATLAB" />
+    <span>MATLAB</span>
+  </div>
+  <div class="skill-item">
+    <img src="assets/images/solidworks.png" alt="SolidWorks" />
+    <span>SolidWorks</span>
+  </div>
+  <div class="skill-item">
+    <img src="assets/images/adobe.png" alt="Adobe Premiere" />
+    <span>Adobe Premiere</span>
+  </div>
+  <div class="skill-item">
+    <img src="assets/images/autocad.png" alt="AutoCAD" />
+    <span>AutoCAD</span>
+  </div>
+</div>
 
   <!-- Extracurricular Section -->
   <h2>Extracurricular Activities</h2>
@@ -167,24 +167,28 @@ css_class: "about-page"
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* Five icons per row */
-  gap: 1.5rem;
-  justify-items: center; /* Center-aligns items in the grid */
+  gap: 1.5rem; /* Add spacing between grid items */
+  justify-items: center; /* Center-align each grid item */
   margin-top: 1.5rem;
 }
 
 .skill-item {
-  text-align: center;
+  text-align: center; /* Ensure text is centered under the icon */
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center-align items */
 }
 
 .skill-item img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 0.5rem;
+  width: 50px; /* Adjust image width */
+  height: 50px; /* Adjust image height */
+  margin-bottom: 0.5rem; /* Add space between icon and text */
 }
 
 .skill-item span {
-  font-size: 0.9rem;
-  color: #ccc;
+  font-size: 0.9rem; /* Adjust font size */
+  color: #ccc; /* Lighter color for text */
+  text-align: center; /* Center-align the text */
 }
 
 /* Extracurricular Section */
