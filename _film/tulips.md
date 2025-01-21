@@ -5,6 +5,11 @@ category: "professional" # Options: "professional" or "personal"
 priority: 1
 status: "new" # Options: "new", "under_construction"
 header_image: "/assets/images/tulips_banner.jpg"
+images:
+  - "/assets/images/tower.jpg"
+  - "/assets/images/tower.jpg"
+  - "/assets/images/tower.jpg"
+roles: "DP, DIRECTOR, EDITOR"
 ---
   
 ![Tulips Project Image](/assets/images/tulips1.jpg)
