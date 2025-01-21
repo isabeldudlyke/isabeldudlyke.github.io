@@ -1,6 +1,21 @@
 ---
-title: "My First Film"
-layout: film
+title: "Tulips"
+description: "A short film that explores the journey of self-discovery through the vibrant imagery of blooming tulips."
+category: "professional" # Options: "professional" or "personal"
+priority: 1
+status: "new" # Options: "new", "under_construction"
+header_image: "/assets/images/tulips_banner.jpg"
 ---
+  
+![Tulips Project Image](/assets/images/tulips1.jpg)
 
-Description text goes here. You can include embedded images, trailers, or any other details.
+**Tulips** is a short film that explores the journey of self-discovery through the vibrant imagery of blooming tulips. As the Director of Photography, I aimed to capture the essence of transformation and growth, both in nature and within the characters.
+
+## Credits
+
+- **Director:** Jane Doe
+- **Director of Photography:** Your Name
+- **Editor:** John Smith
+- **Release Year:** 2024
+
+[← Back to Films](/films/)
