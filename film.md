@@ -65,6 +65,7 @@ permalink: /film/
   .film-banner-text h2 {
     font-size: 2em; /* Larger font size for title */
     margin: 0;
+    color: #ffffff !important;
     font-family: 'Poppins', sans-serif; /* Apply Poppins font */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Optional: Adds depth */
   }
@@ -73,6 +74,7 @@ permalink: /film/
   .film-banner-text p {
     font-size: 1em; /* Smaller font size for role */
     margin: 0;
+    color: #ffffff !important;
     font-family: 'Poppins', sans-serif; /* Apply Poppins font */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Optional: Adds depth */
   }
