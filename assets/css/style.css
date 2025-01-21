@@ -9,7 +9,7 @@
     --small-header-text-color: #fff;
     --body-text-color: #fff;
     --link-color: #fff;
-    --link-hover-color: #ddd;
+    --link-hover-color: #bbb;
 }
 
 /* ========== GLOBAL RESET & BODY ========== */
@@ -75,6 +75,11 @@ header {
     font-size: 1.1rem; /* Font size */
     font-weight: 400; /* Regular font weight */
 }
+.nav-links a.active {
+    color: var(--link-hover-color); /* Highlight color */
+    font-weight: bold; /* Emphasize active link */
+    border-bottom: 2px solid var(--link-hover-color); /* Optional: Add an underline */
+}
 .nav-links a:hover {
     color: var(--link-hover-color); /* Changes link color when hovered */
 }
@@ -102,7 +107,9 @@ header {
     .nav-links.open {
         display: flex; /* Makes the menu visible when toggled */
         background-color: #333 !important; /* Maintain dark background */
-
+    }
+    .nav-links a.active {
+        color: var(--link-hover-color); /* Ensure highlight works in hamburger menu */
     }
 }
 
