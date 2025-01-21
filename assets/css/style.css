@@ -320,7 +320,7 @@ pre code {
     }
 }
 
-/* "Under Construction" Banner */
+/* ========== Under Construction Banner ========== */
 .under-construction-banner {
     position: absolute;
     top: 50%;
@@ -332,29 +332,33 @@ pre code {
     font-size: 20px;
     font-weight: 800;
     text-align: center;
-    color: #000; /* Black text */
-    text-shadow: 0 3px 3px rgba(255, 255, 255, 0.5); /* Subtle shadow */
+    color: #fff;
+    /* Make stripes slightly lighter so text is visible; add text-shadow for clarity */
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
 
     background: repeating-linear-gradient(
         45deg,
-        #fff 0px, /* White stripes */
-        #fff 15px,
-        #ffce00 15px, /* Yellow stripes */
+        #222 0px,
+        #222 15px,
+        #ffce00 15px,
         #ffce00 30px
     );
     z-index: 2;
 }
 
-/* "New" Corner Ribbon */
+/* ========== "New" Corner Ribbon ========== */
 .corner-ribbon {
     position: absolute;
+    /* Move the ribbon a bit lower so it doesn’t get clipped at the top corner */
     top: 1rem;
+    /* Adjust how far it extends horizontally so text is fully visible */
     right: -2.4rem;
+    /* Slightly narrower width for smaller text */
     width: 9rem;
     padding: 0.4rem 0;
     text-align: center;
-    background-color: #ffce00; /* Yellow background */
-    color: #000; /* Black text */
+    background-color: #000;
+    color: #fff;
     font-weight: bold;
     font-size: 0.9rem;
     font-family: var(--header-font, sans-serif);
