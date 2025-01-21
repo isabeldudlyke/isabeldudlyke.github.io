@@ -1,10 +1,15 @@
 ---
 title: "I AM VERTICAL"
-description: "Delves into the struggles and triumphs of overcoming personal barriers, portraying the ascent towards self-empowerment and resilience."
-category: "personal" # Options: "professional" or "personal"
-priority: 2
+description: "A short film that explores the journey of self-discovery through the vibrant imagery of blooming tulips."
+category: "professional" # Options: "professional" or "personal"
+priority: 1
 status: "new" # Options: "new", "under_construction"
-header_image: "/assets/images/i-am-vertical_banner.jpg"
+header_image: "/assets/images/tulips_banner.jpg"
+images:
+  - "/assets/images/tower.jpg"
+  - "/assets/images/tower.jpg"
+  - "/assets/images/tower.jpg"
+roles: "DP, DIRECTOR, EDITOR"
 ---
   
 ![I AM VERTICAL Project Image](/assets/images/i-am-vertical1.jpg)
