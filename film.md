@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Projects"
-permalink: /projects/
+title: "Film"
+permalink: /film/
 css_class: "projects-page"
 ---
 
