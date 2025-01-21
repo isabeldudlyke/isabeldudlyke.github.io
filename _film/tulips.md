@@ -1,5 +1,6 @@
 ---
 title: "Tulips"
+layout: default
 description: "A short film that explores the journey of self-discovery through the vibrant imagery of blooming tulips."
 category: "professional" # Options: "professional" or "personal"
 priority: 1
