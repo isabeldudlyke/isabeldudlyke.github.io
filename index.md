@@ -4,7 +4,7 @@ title: "About"
 css_class: about
 ---
 
-# Hi, I'm Izzy.
+# Hi, I'm Isabel.
 
 I am currently a student at Duke University majoring in Mechanical Engineering and Cinematic arts. I am a proud member of esteemed engineering societies, including Tau Beta Pi, Pi Tau Sigma, which have further fueled my passion for innovation and design. Additionally, I am an active member of Freewater Productions, Duke’s student-run independent film production company, and two theater groups, Duke Players and Hoof ‘n’ Horn, where I frequently take on technical roles in productions. My short film Inner Demons was selected for Duke’s Fall Film Festival following faculty nomination, and I was honored to receive the Robert E. Pristo Filmmaking Award for my current capstone project.
  
