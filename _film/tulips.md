@@ -1,5 +1,5 @@
 ---
-title: "Tulips"
+title: "TULIPS"
 layout: default
 description: "A short film that explores the journey of self-discovery through the vibrant imagery of blooming tulips."
 category: "professional" # Options: "professional" or "personal"
