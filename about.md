@@ -34,21 +34,45 @@ css_class: "about-page"
         Duke University
         <span class="item-date">Aug 2021 - Present</span>
       </div>
-      <div class="item-subtitle">B.S. in Mechanical Engineering, Cinematic Arts</div>
+      <div class="item-subtitle">B.S.E in Mechanical Engineering, Minor in Cinematic Arts</div>
+      <div class="item-subtitle">4.0 GPA, Deans List with Distinction (6x), Tau Beta Pi, Pi Tau Sigma, Robert E. Priso Filmmaking Award</div>
     </div>
 
     <!-- Professional Experience Section -->
     <h2>Professional Experience</h2>
     <div class="resume-item">
       <div class="item-title">
-        Engineering Intern
-        <span class="item-date">May 2023 - Aug 2023</span>
+        Cinematic Arts Cage Equipment Assistant
+        <span class="item-date">Dec 2024 - Present</span>
       </div>
       <ul class="item-details">
-        <li>Designed and implemented CAD models for new product prototypes.</li>
-        <li>Collaborated with the R&D team to test and evaluate design performance.</li>
+        <li>Advised students on equipment selection, setup, and usage, assisting with gear to meet project-specific needs.</li>
+        <li>Maintained cameras, lighting, sound, and other film equipment, troubleshooting issues to ensure functionality.</li>
       </ul>
     </div>
+    
+    <div class="resume-item">
+      <div class="item-title">
+       Research Assistant and Graphics Developer
+        <span class="item-date">Jan 2024 - Present</span>
+      </div>
+      <ul class="item-details">
+        <li>Designed 3D models and graphics to optimize research methodologies and improve project outcomes.</li>
+        <li>Collaborated with researchers to visualize data and develop presentations, enhancing communication of complex ideas.</li>
+      </ul>
+    </div>
+
+    <div class="resume-item">
+      <div class="item-title">
+       Development Intern
+        <span class="item-date">June 2024 - Aug 2024</span>
+      </div>
+      <ul class="item-details">
+        <li>Provided coverage and feedback on scripts, analyzing IP for adaptation opportunities.</li>
+        <li>Conducted market analysis on emerging trends, synthesizing data to shape IP acquisitions for top media projects.</li>
+      </ul>
+    </div>
+    
   </div>
 
 <!-- Skills Section -->
@@ -68,11 +92,11 @@ css_class: "about-page"
   </div>
   <div class="skill-item">
     <img src="assets/images/adobe.png" alt="Adobe Premiere" />
-    <span>Adobe Premiere</span>
+    <span>Fusion360</span>
   </div>
   <div class="skill-item">
     <img src="assets/images/autocad.png" alt="AutoCAD" />
-    <span>AutoCAD</span>
+    <span>Adobe Creative Suite</span>
   </div>
 </div>
 
@@ -82,17 +106,37 @@ css_class: "about-page"
     <div class="activity-row">
       <img src="assets/images/freewater.png" alt="Freewater Productions" class="activity-image" />
       <div class="activity-details">
-        <div class="activity-title">Freewater Productions</div>
-        <p>Collaborated on student-led film projects, contributing as a cinematographer and editor.</p>
+        <div class="activity-title">Tau Beta Pi</div>
+        <p>Selected to be a member of Duke's chapter of Tau Beta Pi, based on academic achievement and commitment to personal and professional achievement.
+</p>
       </div>
     </div>
     <div class="activity-row">
       <img src="assets/images/hoofnhorn.png" alt="Hoof 'n' Horn" class="activity-image" />
       <div class="activity-details">
-        <div class="activity-title">Hoof 'n' Horn</div>
-        <p>Served as a technical lead, managing lighting and set design for theater productions.</p>
+        <div class="activity-title">Freewater Productions</div>
+        <p>Director, Producer, DP, Sound Crew for Duke’s foremost and only student-run film production company. </p>
       </div>
     </div>
+
+ <div class="activity-row">
+      <img src="assets/images/freewater.png" alt="Freewater Productions" class="activity-image" />
+      <div class="activity-details">
+        <div class="activity-title">Theta Tau Engineering Fraternity</div>
+        <p>Member of Social Committee of first pledge class of Duke’s Theta Tau chapter.
+</p>
+      </div>
+    </div>
+
+ <div class="activity-row">
+      <img src="assets/images/freewater.png" alt="Freewater Productions" class="activity-image" />
+      <div class="activity-details">
+        <div class="activity-title">Duke Players & Hoof'n'Horn</div>
+        <p>Tech Crew for Duke Theatre Productions through both “Duke Players” and “Hoof’n’Horn Club”.
+</p>
+      </div>
+    </div>
+
   </div>
 </div>
 
