@@ -1,7 +1,7 @@
 ---
 title: "TULIPS"
 layout: default
-description: "A visual interpretation of Sylvia Plath’s poem "Tulips"
+description: "A visual interpretation of Sylvia Plath’s poem \"Tulips\""
 category: "professional" # Options: "professional" or "personal"
 priority: 1
 status: "new" # Options: "new", "under_construction"
