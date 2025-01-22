@@ -35,7 +35,7 @@ roles: "DP, DIRECTOR, EDITOR"
   <!-- Embedded Video -->
   <div class="film-video">
     <iframe
-      width="80%" 
+      width="90%" 
       height="400" 
       src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
       title="YouTube video player"
@@ -53,6 +53,7 @@ roles: "DP, DIRECTOR, EDITOR"
   background-size: cover;
   background-position: center;
   height: 300px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
