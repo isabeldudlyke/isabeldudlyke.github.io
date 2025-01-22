@@ -12,16 +12,119 @@ images:
   - "/assets/images/tower.jpg"
 roles: "DP, DIRECTOR, EDITOR"
 ---
-  
-![Tulips Project Image](/assets/images/tulips1.jpg)
 
-**Tulips** is a short film that explores the journey of self-discovery through the vibrant imagery of blooming tulips. As the Director of Photography, I aimed to capture the essence of transformation and growth, both in nature and within the characters.
+<div class="banner">
+  <div class="banner-content">
+    <h1>TULIPS</h1>
+    <a href="/film/" class="back-button">← Back to Films</a>
+  </div>
+</div>
 
-## Credits
+<div class="film-detail-container">
+  <!-- Role, Genre, and Summary -->
+  <div class="film-info">
+    <div class="film-role-genre">
+      <p><strong>Role:</strong> Director, Editor, Cinematographer</p>
+      <p><strong>Genre:</strong> Visual Poem, Short</p>
+    </div>
+    <div class="film-summary">
+      <p><strong>Summary:</strong> A visual interpretation of Sylvia Plath’s poem "Tulips", blending experimental and narrative elements. A woman confronts the suffocating presence of vibrant tulips that disturb her yearning for peace.</p>
+    </div>
+  </div>
 
-- **Director:** Jane Doe
-- **Director of Photography:** Your Name
-- **Editor:** John Smith
-- **Release Year:** 2024
+  <!-- Embedded Video -->
+  <div class="film-video">
+    <iframe
+      width="80%" 
+      height="400" 
+      src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
 
-[← Back to Films](/film/)
+<style>
+/* Banner Section */
+.banner {
+  background-image: url('/assets/images/tower.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner-content {
+  text-align: center;
+  color: white;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Film Info Section */
+.film-detail-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  font-family: 'Poppins', sans-serif;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.film-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.film-role-genre {
+  flex: 1;
+}
+
+.film-role-genre p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.film-summary {
+  flex: 2;
+}
+
+.film-summary p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Embedded Video Section */
+.film-video {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.film-video iframe {
+  border-radius: 8px; /* Optional: rounded corners */
+}
+</style>
