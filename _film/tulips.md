@@ -24,11 +24,11 @@ roles: "DP, DIRECTOR, EDITOR"
   <!-- Role, Genre, and Summary -->
   <div class="film-info">
     <div class="film-role-genre">
-      <p><strong>Role:</strong> </p> <p>Director, Editor, Cinematographer</p>
-      <p><strong>Genre:</strong> <p> Visual Poem, Short</p>
+      <p><strong>Role:</strong> Director, Editor, Cinematographer</p>
+      <p><strong>Genre:</strong> Visual Poem, Short</p>
     </div>
     <div class="film-summary">
-      <p><strong>Summary:</strong> </p> <p> A visual interpretation of Sylvia Plath’s poem "Tulips", blending experimental and narrative elements. A woman confronts the suffocating presence of vibrant tulips that disturb her yearning for peace.</p>
+      <p><strong>Summary:</strong>A visual interpretation of Sylvia Plath’s poem "Tulips", blending experimental and narrative elements. A woman confronts the suffocating presence of vibrant tulips that disturb her yearning for peace.</p>
     </div>
   </div>
 
