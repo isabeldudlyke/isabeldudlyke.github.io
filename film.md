@@ -104,8 +104,8 @@ css_class: "film-page"
   }
     /* Smaller Title for Film Projects */
   .film-page h1 {
-    font-size: 1rem; /* Adjust this value for the desired size */
-    margin-bottom: 0.5rem; /* Optional: Adjust spacing below the title */
+    font-size: 1.25rem; /* Adjust this value for the desired size */
+    margin-bottom: 0rem; /* Optional: Adjust spacing below the title */
   }
 </style>
 
