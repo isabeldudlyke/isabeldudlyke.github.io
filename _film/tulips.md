@@ -52,7 +52,7 @@ roles: "DP, DIRECTOR, EDITOR"
 <style>
 /* Banner Section */
 .banner {
-  background-image: url('assets/images/Still 2024-12-01 155205_1.17.1.jpg');
+  background-image: url('/assets/images/Still 2024-12-01 155205_1.17.1.jpg');
   background-size: cover;
   background-position: center;
   height: 300px; /* Adjust the height as needed */
