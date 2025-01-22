@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Engineering"
-permalink: /engineering/
+permalink: /projects/
 css_class: "projects-page"
 ---
 
