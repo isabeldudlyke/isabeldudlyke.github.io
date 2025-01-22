@@ -5,7 +5,7 @@ description: "A short film that explores the journey of self-discovery through t
 category: "professional" # Options: "professional" or "personal"
 priority: 1
 status: "new" # Options: "new", "under_construction"
-header_image: "/assets/images/tulips_banner.jpg"
+header_image: "assets/images/Still 2024-12-01 155205_1.17.1.jpg"
 images:
   - "/assets/images/tower.jpg"
   - "/assets/images/tower.jpg"
@@ -40,7 +40,7 @@ roles: "DP, DIRECTOR, EDITOR"
     <iframe
       width="95%" 
       height="500" 
-      src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+      src="https://youtu.be/3EWcq8XknL0" 
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
