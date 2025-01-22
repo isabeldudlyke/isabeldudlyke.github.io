@@ -104,8 +104,9 @@ css_class: "film-page"
   }
 </style>
 
-<h1>Film Projects</h1>
+# Film Portfolio
 
+---
 <div class="film-projects-container">
   {% assign sorted_films = site.film | sort: "priority" %}
   {% for fi in sorted_films %}
