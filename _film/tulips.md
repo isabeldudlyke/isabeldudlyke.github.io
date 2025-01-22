@@ -1,13 +1,13 @@
 ---
 title: "TULIPS"
 layout: default
-description: "A short film that explores the journey of self-discovery through the vibrant imagery of blooming tulips."
+description: "A visual interpretation of Sylvia Plath’s poem "Tulips""
 category: "professional" # Options: "professional" or "personal"
 priority: 1
 status: "new" # Options: "new", "under_construction"
-header_image: "assets/images/Still 2024-12-01 155205_1.17.1.jpg"
+header_image: "/assets/images/Still 2024-12-01 155205_1.17.1.jpg"
 images:
-  - "/assets/images/tower.jpg"
+  - "/assets/images/ranker_teaser.jpg"
   - "/assets/images/tower.jpg"
   - "/assets/images/tower.jpg"
 roles: "DP, DIRECTOR, EDITOR"
@@ -40,7 +40,7 @@ roles: "DP, DIRECTOR, EDITOR"
     <iframe
       width="95%" 
       height="500" 
-      src="https://youtu.be/3EWcq8XknL0" 
+      src="[https://youtu.be/3EWcq8XknL0](https://youtu.be/3EWcq8XknL0)" 
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -52,7 +52,7 @@ roles: "DP, DIRECTOR, EDITOR"
 <style>
 /* Banner Section */
 .banner {
-  background-image: url('/assets/images/tower.jpg');
+  background-image: url('assets/images/Still 2024-12-01 155205_1.17.1.jpg');
   background-size: cover;
   background-position: center;
   height: 300px; /* Adjust the height as needed */
