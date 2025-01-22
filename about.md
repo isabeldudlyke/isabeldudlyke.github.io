@@ -199,13 +199,6 @@ css_class: "about-page"
   padding-left: 1.2rem;
 }
 
-.item-details li {
-  list-style-type: circle; /* Apply only circles */
-  margin-left: 1rem; /* Align the circles */
-  font-size: 0.9rem;
-  color: #ccc;
-  margin-bottom: 0.5rem;
-}
 
 /* Skills Section */
 .skills-grid {
