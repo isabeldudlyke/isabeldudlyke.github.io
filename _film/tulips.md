@@ -35,8 +35,8 @@ roles: "DP, DIRECTOR, EDITOR"
   <!-- Embedded Video -->
   <div class="film-video">
     <iframe
-      width="90%" 
-      height="400" 
+      width="95%" 
+      height="500" 
       src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
       title="YouTube video player"
       frameborder="0"
@@ -49,15 +49,16 @@ roles: "DP, DIRECTOR, EDITOR"
 <style>
 /* Banner Section */
 .banner {
-  background-image: url('/assets/images/tower.jpg');
+  background-image: url('/assets/images/tulips_banner.jpg');
   background-size: cover;
   background-position: center;
-  height: 300px;
-  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  width: 100vw; /* Use viewport width to span the screen */
+  margin-left: calc(-50vw + 50%); /* Negate container constraints */
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .banner-content {
@@ -67,7 +68,7 @@ roles: "DP, DIRECTOR, EDITOR"
 }
 
 .banner h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 0;
 }
 
@@ -86,7 +87,7 @@ roles: "DP, DIRECTOR, EDITOR"
 /* Film Info Section */
 .film-detail-container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 2rem auto;
   font-family: 'Poppins', sans-serif;
   color: #ccc;
@@ -127,5 +128,6 @@ roles: "DP, DIRECTOR, EDITOR"
 
 .film-video iframe {
   border-radius: 8px; /* Optional: rounded corners */
+  max-width: 1200px; /* Cap the maximum width */
 }
 </style>
