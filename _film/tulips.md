@@ -7,9 +7,9 @@ priority: 1
 status: "new" # Options: "new", "under_construction"
 header_image: "/assets/images/Still 2024-12-01 155205_1.17.1.jpg"
 images:
-  - "/assets/images/ranker_teaser.jpg"
-  - "/assets/images/tower.jpg"
-  - "/assets/images/tower.jpg"
+  - "/assets/images/Still 2024-12-01 155205_1.11.1.jpg"
+  - "/assets/images/Still 2024-12-01 155205_1.17.1.jpg"
+  - "/assets/images/Still 2024-12-01 155205_1.21.1.jpg"
 roles: "DP, DIRECTOR, EDITOR"
 ---
 
