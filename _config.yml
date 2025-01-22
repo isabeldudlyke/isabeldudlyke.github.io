@@ -6,9 +6,9 @@ baseurl: "" # If you're publishing on GitHub Pages at username.github.io, keep i
 
 # Collections
 collections:
-  projects:
+  engineering:
     output: true
-    permalink: /projects/:title/
+    permalink: /engineering/:title/
   film:
     output: true
     permalink: /film/:title/
