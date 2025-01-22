@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Engineering"
+title: "Projects"
 permalink: /projects/
 css_class: "projects-page"
 ---
