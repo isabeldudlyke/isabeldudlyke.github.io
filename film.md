@@ -32,11 +32,13 @@ css_class: "film-page"
   }
 
   .film-images img {
-    width: 33.333%;
-    height: auto;
-    display: block;
-    transition: filter 0.3s ease;
-  }
+  flex: 0 0 auto; /* Prevent images from stretching */
+  height: auto; /* Maintain original aspect ratio */
+  max-width: 100%; /* Limit the image width to fit the container */
+  object-fit: cover; /* Crop the image to fit within the space without distortion */
+  display: block;
+  transition: filter 0.3s ease;
+}
 
   /* Dark overlay on hover */
   .film-banner-wrapper:hover .film-images img {
