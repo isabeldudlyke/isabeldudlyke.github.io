@@ -15,7 +15,7 @@ roles: "DP, DIRECTOR, EDITOR"
 
 <div class="banner">
   <div class="banner-content">
-    <h1>TULIPS</h1>
+    <h1>I AM VERTICAL</h1>
     <a href="/film/" class="back-button">← Back to Films</a>
   </div>
 </div>
@@ -27,7 +27,7 @@ roles: "DP, DIRECTOR, EDITOR"
       <p><strong>Role:</strong></p>
       <p>Director, Editor, Cinematographer</p>
       <p><strong>Genre:</strong></p>
-      <p>Visual Poem, Short</p>
+      <p>Visual Poem, Short, Analog</p>
     </div>
     <div class="film-summary">
       <p><strong>Summary:</strong></p>
