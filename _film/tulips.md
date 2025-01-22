@@ -24,11 +24,11 @@ roles: "DP, DIRECTOR, EDITOR"
   <!-- Role, Genre, and Summary -->
   <div class="film-info">
     <div class="film-role-genre">
-      <p><strong>Role:</strong> Director, Editor, Cinematographer</p>
-      <p><strong>Genre:</strong> Visual Poem, Short</p>
+      <p><strong>Role:</strong> </p> <p>Director, Editor, Cinematographer</p>
+      <p><strong>Genre:</strong> <p> Visual Poem, Short</p>
     </div>
     <div class="film-summary">
-      <p><strong>Summary:</strong> A visual interpretation of Sylvia Plath’s poem "Tulips", blending experimental and narrative elements. A woman confronts the suffocating presence of vibrant tulips that disturb her yearning for peace.</p>
+      <p><strong>Summary:</strong> </p> <p> A visual interpretation of Sylvia Plath’s poem "Tulips", blending experimental and narrative elements. A woman confronts the suffocating presence of vibrant tulips that disturb her yearning for peace.</p>
     </div>
   </div>
 
@@ -49,10 +49,10 @@ roles: "DP, DIRECTOR, EDITOR"
 <style>
 /* Banner Section */
 .banner {
-  background-image: url('/assets/images/tulips_banner.jpg');
+  background-image: url('/assets/images/tower.jpg');
   background-size: cover;
   background-position: center;
-  height: 400px; /* Adjust the height as needed */
+  height: 300px; /* Adjust the height as needed */
   width: 100vw; /* Use viewport width to span the screen */
   margin-left: calc(-50vw + 50%); /* Negate container constraints */
   position: relative;
