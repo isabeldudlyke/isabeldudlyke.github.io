@@ -26,7 +26,7 @@ css_class: Home
 
   /* Box with the background image */
   .center-box {
-    background-image: url('assets/images/tower.JPG'); /* Ensure this path is correct */
+    background-image: url('assets/images/IMG_5332.jpeg'); /* Ensure this path is correct */
     background-size: cover; /* Stretch the image to cover the box */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repeating the image */
