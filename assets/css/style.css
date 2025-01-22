@@ -130,15 +130,11 @@ main.about {
 
 /* ========== CUSTOM LIST STYLING ========== */
 main ul {
-    list-style: none;
-    padding-left: 1.5rem;
+    list-style: circle; /* Use circle bullets */
+    padding-left: 1.5rem; /* Add indentation for alignment */
 }
 main ul li::before {
-    content: "➜";
-    color: var(--link-color);
-    font-weight: bold;
-    margin-right: 0.5rem;
-    display: inline-block;
+    content: none; /* Remove the custom "o" bullet replacement */
 }
 main ul li {
     margin-bottom: 0.8rem;
