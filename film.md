@@ -104,11 +104,6 @@ css_class: "film-page"
       display: block; /* Show only the second (center) image */
     }
   }
-    /* Smaller Title for Film Projects */
-  .film-page h1 {
-    font-size: 1.5rem; /* Adjust this value for the desired size */
-    margin-bottom: 1rem; /* Optional: Adjust spacing below the title */
-  }
 </style>
 
 # Film Portfolio
