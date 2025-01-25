@@ -32,7 +32,7 @@ css_class: "contact-page"
     border-radius: 50%;
     background-size: cover;
     background-position: center;
-    background-image: url("assets/images/tower.jpg"); /* Replace with the path to your profile image */
+    background-image: url("assets/images/tower.jpg");
     flex-shrink: 0;
   }
 
@@ -55,11 +55,11 @@ css_class: "contact-page"
   }
 
   .contact-email {
-    background-image: url("assets/icons/email-icon.svg"); /* Replace with your email icon path */
+    background-image: url("assets/icons/github.svg"); 
   }
 
   .contact-linkedin {
-    background-image: url("assets/icons/linkedin-icon.svg"); /* Replace with your LinkedIn icon path */
+    background-image: url("assets/icons/linkedin.svg"); 
   }
 
   /* Text next to the icon */
