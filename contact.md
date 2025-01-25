@@ -27,12 +27,12 @@ css_class: "contact-page"
 
   /* Circular profile image */
   .profile-image {
-    width: 120px;
-    height: 120px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
-    background-image: url("/assets/images/tower.jpg"); /* Ensure correct file path */
+    background-image: url("/assets/images/IMG_5332.jpeg"); /* Ensure correct file path */
     flex-shrink: 0;
   }
 
