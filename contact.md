@@ -32,7 +32,7 @@ css_class: "contact-page"
     border-radius: 50%;
     background-size: cover;
     background-position: center;
-    background-image: url("assets/images/tower.jpg");
+    background-image: url("/assets/images/tower.jpg"); /* Ensure correct file path */
     flex-shrink: 0;
   }
 
@@ -40,14 +40,14 @@ css_class: "contact-page"
   .contact-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     margin-bottom: 1rem;
   }
 
   /* Contact icons */
   .contact-icon {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     display: block;
     background-size: cover;
     background-position: center;
@@ -55,22 +55,17 @@ css_class: "contact-page"
   }
 
   .contact-email {
-    background-image: url("assets/icons/github.svg"); 
+    background-image: url("/assets/icons/github.svg"); /* Correct icon path */
   }
 
   .contact-linkedin {
-    background-image: url("assets/icons/linkedin.svg"); 
+    background-image: url("/assets/icons/linkedin.svg"); /* Correct icon path */
   }
 
-  /* Text next to the icon */
-  .contact-details {
-    font-size: 1.2rem;
-    color: #fff;
-    text-align: left;
-  }
-
+  /* Contact text */
   .contact-details a {
-    color: #0077b5; /* LinkedIn blue for links */
+    font-size: 1.2rem;
+    color: #0077b5; /* Link color */
     text-decoration: none;
     font-weight: bold;
   }
@@ -90,16 +85,12 @@ css_class: "contact-page"
       height: 100px;
     }
 
-    .contact-item {
-      gap: 0.5rem;
-    }
-
     .contact-icon {
-      width: 30px;
-      height: 30px;
+      width: 20px;
+      height: 20px;
     }
 
-    .contact-details {
+    .contact-details a {
       font-size: 1rem;
     }
   }
@@ -117,19 +108,13 @@ css_class: "contact-page"
       <!-- Email Section -->
       <div class="contact-item">
         <div class="contact-icon contact-email"></div>
-        <div class="contact-details">
-          <p>Email:</p>
-          <a href="mailto:izzydudlyke@icloud.com">izzydudlyke@icloud.com</a>
-        </div>
+        <a href="mailto:izzydudlyke@icloud.com">izzydudlyke@icloud.com</a>
       </div>
 
       <!-- LinkedIn Section -->
       <div class="contact-item">
         <div class="contact-icon contact-linkedin"></div>
-        <div class="contact-details">
-          <p>LinkedIn:</p>
-          <a href="https://www.linkedin.com/in/isabel-dudlyke/" target="_blank">LinkedIn Profile</a>
-        </div>
+        <a href="https://www.linkedin.com/in/isabel-dudlyke/" target="_blank">LinkedIn Profile</a>
       </div>
     </div>
   </div>
