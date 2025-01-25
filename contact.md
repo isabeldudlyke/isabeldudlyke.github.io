@@ -11,24 +11,15 @@ css_class: "contact-page"
     width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-  }
-
-  /* Profile and contact details layout */
-  .contact-section {
-    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    padding: 2rem 0;
+    padding: 3rem 1rem;
   }
 
-  /* Circular profile image */
+  /* Profile image styling */
   .profile-image {
-    width: 240px;
-    height: 240px;
+    width: 300px; /* Larger image */
+    height: 300px;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
@@ -36,87 +27,101 @@ css_class: "contact-page"
     flex-shrink: 0;
   }
 
+  /* Contact details container */
+  .contact-details-container {
+    flex-grow: 1;
+    margin-left: 2rem;
+    text-align: left;
+  }
+
+  /* Title styling */
+  .contact-details-container h1 {
+    font-size: 3rem; /* Larger title */
+    color: #ddd; /* Lighter color for the title */
+    margin-bottom: 1.5rem;
+  }
+
   /* Contact item wrapper */
   .contact-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   /* Contact icons */
   .contact-icon {
-    width: 24px;
-    height: 24px;
+    width: 40px; /* Larger icons */
+    height: 40px;
     display: block;
     background-size: cover;
     background-position: center;
-    flex-shrink: 0;
   }
 
   .contact-email {
-    background-image: url("/assets/icons/github.svg"); /* Correct icon path */
+    background-image: url("/assets/icons/github.svg"); /* Correct path */
   }
 
   .contact-linkedin {
-    background-image: url("/assets/icons/linkedin.svg"); /* Correct icon path */
+    background-image: url("/assets/icons/linkedin.svg"); /* Correct path */
   }
 
   /* Contact text */
-  .contact-details a {
-    font-size: 1.2rem;
+  .contact-details-container a {
+    font-size: 1.5rem; /* Bigger text */
     color: #0077b5; /* Link color */
     text-decoration: none;
     font-weight: bold;
   }
 
-  .contact-details a:hover {
+  .contact-details-container a:hover {
     text-decoration: underline;
   }
 
   /* Responsive adjustments */
   @media (max-width: 768px) {
-    .contact-section {
+    .contact-page-container {
       flex-direction: column;
+      align-items: center;
     }
 
     .profile-image {
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
+    }
+
+    .contact-details-container {
+      margin-left: 0;
+      text-align: center;
     }
 
     .contact-icon {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
     }
 
-    .contact-details a {
-      font-size: 1rem;
+    .contact-details-container a {
+      font-size: 1.2rem;
     }
   }
 </style>
 
-# Get in Touch
-
 <div class="contact-page-container">
-  <div class="contact-section">
-    <!-- Profile Image -->
-    <div class="profile-image"></div>
+  <!-- Profile Image -->
+  <div class="profile-image"></div>
 
-    <!-- Contact Details -->
-    <div>
-      <!-- Email Section -->
-      <div class="contact-item">
-        <div class="contact-icon contact-email"></div>
-        <a href="mailto:izzydudlyke@icloud.com">izzydudlyke@icloud.com</a>
-      </div>
-
-      <!-- LinkedIn Section -->
-      <div class="contact-item">
-        <div class="contact-icon contact-linkedin"></div>
-        <a href="https://www.linkedin.com/in/isabel-dudlyke/" target="_blank">LinkedIn Profile</a>
-      </div>
+  <!-- Contact Details -->
+  <div class="contact-details-container">
+    <h1>Get in Touch</h1>
+    <!-- Email Section -->
+    <div class="contact-item">
+      <div class="contact-icon contact-email"></div>
+      <a href="mailto:izzydudlyke@icloud.com">izzydudlyke@icloud.com</a>
+    </div>
+    <!-- LinkedIn Section -->
+    <div class="contact-item">
+      <div class="contact-icon contact-linkedin"></div>
+      <a href="https://www.linkedin.com/in/isabel-dudlyke/" target="_blank">LinkedIn Profile</a>
     </div>
   </div>
 </div>
-
