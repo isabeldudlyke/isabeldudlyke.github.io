@@ -112,7 +112,7 @@ css_class: "about-page"
       </div>
     </div>
     <div class="activity-row">
-      <img src="/assets/icons/freewater" alt="Freewater" class="activity-image" />
+      <img src="/assets/icons/freewater.png" alt="Freewater" class="activity-image" />
       <div class="activity-details">
         <div class="activity-title">Freewater Productions</div>
         <p>Director, Producer, DP, Sound Crew for Duke’s foremost and only student-run film production company. </p>
@@ -129,7 +129,7 @@ css_class: "about-page"
     </div>
 
  <div class="activity-row">
-      <img src="/assets/icons/hoofnhorn" alt="Hoof 'n' Horn" class="activity-image" />
+      <img src="/assets/icons/hoofnhorn.png" alt="Hoof 'n' Horn" class="activity-image" />
       <div class="activity-details">
         <div class="activity-title">Duke Players & Hoof'n'Horn</div>
         <p>Tech Crew for Duke Theatre Productions through both “Duke Players” and “Hoof’n’Horn Club”.
