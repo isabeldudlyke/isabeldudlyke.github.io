@@ -69,11 +69,11 @@ css_class: "contact-page"
   }
 
   .contact-email {
-    background-image: url("/assets/icons/github.svg"); /* Correct path */
+    background-image: url("/assets/icons/icons8-email-64.png"); /* Correct path */
   }
 
   .contact-linkedin {
-    background-image: url("/assets/icons/linkedin.svg"); /* Correct path */
+    background-image: url("/assets/icons/linkedin-app-white-icon.svg"); /* Correct path */
   }
 
   /* Contact text */
