@@ -22,7 +22,7 @@ css_class: "contact-page"
     display: flex;
     align-items: flex-start; /* Align text to top of the photo */
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
   }
 
   /* Circular profile image */
