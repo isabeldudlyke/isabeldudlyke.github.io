@@ -79,23 +79,23 @@ css_class: "about-page"
 <h2>Skills & Proficiencies</h2>
 <div class="skills-grid">
   <div class="skill-item">
-    <img src="assets/images/python.png" alt="Python" />
+    <img src="assets/icons/python.svg" alt="Python" />
     <span>Python</span>
   </div>
   <div class="skill-item">
-    <img src="assets/images/matlab.png" alt="MATLAB" />
+    <img src="assets/icons/MATLAB.svg" alt="MATLAB" />
     <span>MATLAB</span>
   </div>
   <div class="skill-item">
-    <img src="assets/images/solidworks.png" alt="SolidWorks" />
+    <img src="assets/icons/solidworks.svg" alt="SolidWorks" />
     <span>SolidWorks</span>
   </div>
   <div class="skill-item">
-    <img src="assets/images/adobe.png" alt="Adobe Premiere" />
+    <img src="assets/icons/adobe.svg" alt="Adobe Premiere" />
     <span>Fusion360</span>
   </div>
   <div class="skill-item">
-    <img src="assets/images/autocad.png" alt="AutoCAD" />
+    <img src="assets/icons/autodesk.png" alt="AutoCAD" />
     <span>Adobe Creative Suite</span>
   </div>
 </div>
