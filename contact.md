@@ -14,23 +14,33 @@ css_class: "contact-page"
     align-items: center;
     justify-content: center;
     padding: 3rem 1rem;
+    text-align: center;
   }
 
-  /* Profile image styling */
+  /* Profile and contact details layout */
+  .contact-section {
+    display: flex;
+    align-items: flex-start; /* Align text to top of the photo */
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  /* Circular profile image */
   .profile-image {
     width: 300px; /* Larger image */
     height: 300px;
     border-radius: 50%;
     background-size: cover;
-    background-position: center;
+    background-position: left center; /* Adjust to show the leftmost part of the image */
     background-image: url("/assets/images/IMG_5332.jpeg"); /* Ensure correct file path */
     flex-shrink: 0;
   }
 
   /* Contact details container */
   .contact-details-container {
-    flex-grow: 1;
-    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align title with top of the image */
     text-align: left;
   }
 
@@ -80,7 +90,7 @@ css_class: "contact-page"
 
   /* Responsive adjustments */
   @media (max-width: 768px) {
-    .contact-page-container {
+    .contact-section {
       flex-direction: column;
       align-items: center;
     }
@@ -91,7 +101,6 @@ css_class: "contact-page"
     }
 
     .contact-details-container {
-      margin-left: 0;
       text-align: center;
     }
 
@@ -107,21 +116,23 @@ css_class: "contact-page"
 </style>
 
 <div class="contact-page-container">
-  <!-- Profile Image -->
-  <div class="profile-image"></div>
+  <div class="contact-section">
+    <!-- Profile Image -->
+    <div class="profile-image"></div>
 
-  <!-- Contact Details -->
-  <div class="contact-details-container">
-    <h1>Get in Touch</h1>
-    <!-- Email Section -->
-    <div class="contact-item">
-      <div class="contact-icon contact-email"></div>
-      <a href="mailto:izzydudlyke@icloud.com">izzydudlyke@icloud.com</a>
-    </div>
-    <!-- LinkedIn Section -->
-    <div class="contact-item">
-      <div class="contact-icon contact-linkedin"></div>
-      <a href="https://www.linkedin.com/in/isabel-dudlyke/" target="_blank">LinkedIn Profile</a>
+    <!-- Contact Details -->
+    <div class="contact-details-container">
+      <h1>Get in Touch</h1>
+      <!-- Email Section -->
+      <div class="contact-item">
+        <div class="contact-icon contact-email"></div>
+        <a href="mailto:izzydudlyke@icloud.com">izzydudlyke@icloud.com</a>
+      </div>
+      <!-- LinkedIn Section -->
+      <div class="contact-item">
+        <div class="contact-icon contact-linkedin"></div>
+        <a href="https://www.linkedin.com/in/isabel-dudlyke/" target="_blank">LinkedIn Profile</a>
+      </div>
     </div>
   </div>
 </div>
