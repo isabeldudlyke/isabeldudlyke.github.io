@@ -92,11 +92,11 @@ css_class: "about-page"
   </div>
   <div class="skill-item">
     <img src="/assets/icons/adobe.svg" alt="Adobe Premiere" />
-    <span>Fusion360</span>
+    <span>Adobe Creative Suite</span>
   </div>
   <div class="skill-item">
-    <img src="/assets/icons/autodesk.png" alt="AutoCAD" />
-    <span>Adobe Creative Suite</span>
+    <img src="/assets/icons/autodesk.svg" alt="AutoCAD" />
+    <span>Fusion360</span>
   </div>
 </div>
 
