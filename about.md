@@ -45,6 +45,7 @@ css_class: "about-page"
         Cinematic Arts Cage Equipment Assistant
         <span class="item-date">Dec 2024 - Present</span>
       </div>
+       <div class="company-name">Duke University</div>
       <ul class="item-details">
         <li>Advised students on equipment selection, setup, and usage, assisting with gear to meet project-specific needs.</li>
         <li>Maintained cameras, lighting, sound, and other film equipment, troubleshooting issues to ensure functionality.</li>
@@ -56,6 +57,7 @@ css_class: "about-page"
        Research Assistant and Graphics Developer
         <span class="item-date">Jan 2024 - Present</span>
       </div>
+      <div class="company-name">Duke University</div>
       <ul class="item-details">
         <li>Designed 3D models and graphics to optimize research methodologies and improve project outcomes.</li>
         <li>Collaborated with researchers to visualize data and develop presentations, enhancing communication of complex ideas.</li>
@@ -67,9 +69,57 @@ css_class: "about-page"
        Development Intern
         <span class="item-date">June 2024 - Aug 2024</span>
       </div>
+       <div class="company-name">Di Bonaventura Pictures</div>
       <ul class="item-details">
         <li>Provided coverage and feedback on scripts, analyzing IP for adaptation opportunities.</li>
         <li>Conducted market analysis on emerging trends, synthesizing data to shape IP acquisitions for top media projects.</li>
+      </ul>
+    </div>
+
+    <div class="resume-item">
+      <div class="item-title">
+       Arts+ Intern
+        <span class="item-date">May 2024 - June 2024</span>
+      </div>
+      <div class="company-name">Duke University</div>
+      <ul class="item-details">
+        <li>Developed a Verbatim Theatre script, conducting in-depth research, coordinating with community actors, and refining through a live table reading.</li>
+        <li>Compiled and edited footage to create a polished video presentation of the table read for a project presentation.</li>
+      </ul>
+    </div>
+
+    <div class="resume-item">
+      <div class="item-title">
+       Videography Team Member
+        <span class="item-date">Feb 2024 - Present</span>
+      </div>
+      <div class="company-name">Pitch Story Labs</div>
+      <ul class="item-details">
+        <li>Produced high-quality videos aligning with client objectives, from conceptualization to editing.</li>
+        <li>Managed and operated video and sound equipment and conducted interviews to create compelling video content.</li>
+      </ul>
+    </div>
+
+    <div class="resume-item">
+      <div class="item-title">
+       Head Barista & Front of House
+        <span class="item-date">May 2021 - Aug 2023</span>
+      </div>
+      <div class="company-name">Pear Tree Cafe</div>
+      <ul class="item-details">
+        <li>Managed coffee station during peak hours, provided customer service, and assisted with opening/closing the cafe, demonstrating excellent hospitality and time-management skills in high-stress environments.</li>
+      </ul>
+    </div>
+
+    <div class="resume-item">
+      <div class="item-title">
+       Social Media Manager & Assistant
+        <span class="item-date">Sep 2020 - Dec 2020</span>
+      </div>
+      <div class="company-name">Cannnonball Cafe</div>
+      <ul class="item-details">
+        <li>Oversaw the cafe's online presence by posting daily on Instagram and Facebook, ensuring the stories and feed are engaging, informative and aligned with the cafe's brand image.</li>
+        <li>Handled the financial records of the Cafe by inputting the invoices and daily sales into Quickbooks, and using Excel to calculate the income from each of the locations and tax.</li>
       </ul>
     </div>
     
@@ -187,7 +237,15 @@ css_class: "about-page"
 .resume-item {
   margin-bottom: 1rem;
 }
-
+  
+.company-name {
+  font-size: 0.95rem; /* Slightly smaller than job title */
+  color: #bbb; /* Lighter than job title, but visible */
+  margin-top: 0.3rem; /* Spacing below job title */
+  margin-bottom: 0.3rem; /* Spacing above bullet points */
+  text-align: left; /* Align text properly */
+}
+  
 .item-title {
   display: flex;
   justify-content: space-between;
