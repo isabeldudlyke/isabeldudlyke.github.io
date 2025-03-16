@@ -26,7 +26,17 @@ technologies:
 ---
 
 ## **Poster Presentation**
-<img src="/assets/images/ChladniPoster.jpg" alt="Chladni Effect Poster" class="project-image" />
+<img src="/assets/images/ChaldniPoster.jpg" alt="Chladni Effect Poster" class="project-image" />
+
+---
+
+## **Simulation Video**
+<div class="video-container">
+    <video width="640" height="360" controls>
+        <source src="https://raw.githubusercontent.com/isabeldudlyke/isabeldudlyke.github.io/main/assets/videos/ParticleSimulation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
 
 ---
 
