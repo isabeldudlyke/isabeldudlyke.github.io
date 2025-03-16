@@ -3,7 +3,7 @@ title: "Happy Meal Ball Maze Toy"
 date: Feb 2022
 category: "Professional"  
 priority: 3
-header_image: "/assets/images/Toy.png"  
+header_image: "/assets/images/Toy.png"  # Update with actual image file
 description: "A fun, cost-efficient, and sustainable Happy Meal toy designed for mass production."
 layout: "project"  
 technologies:
@@ -28,151 +28,164 @@ technologies:
 
 ## **Technical Drawings & Prototyping**
 <div class="carousel-container">
-    <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
-    <div class="carousel">
-        <img src="/assets/images/Toy.png" alt="Final Happy Meal Toys" class="carousel-image active expandable-image" onclick="toggleImageSize(this)">
-        <img src="/assets/images/TechSketch.png" alt="Technical Drawing" class="carousel-image expandable-image" onclick="toggleImageSize(this)">
-        <img src="/assets/images/ExplodedView.png" alt="Exploded View" class="carousel-image expandable-image" onclick="toggleImageSize(this)">
-    </div>
-    <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+  <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+  <div class="carousel">
+    <img src="/assets/images/Toy.png" alt="Final Happy Meal Toys" class="carousel-image active">
+    <img src="/assets/images/TechSketch.png" alt="Technical Drawing" class="carousel-image">
+    <img src="/assets/images/ExplodedView.png" alt="Exploded View" class="carousel-image">
+  </div>
+  <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
 </div>
+
 
 ---
 
 ## **Project Documentation**
 <embed src="/assets/documents/HappyMeals.pdf" width="100%" height="600px" type="application/pdf">
 <p style="text-align: center;">
-View the full **project report** above or <a href="/assets/documents/HappyMeals.pdf" target="_blank">download it here</a>.
-</p>
 
 ---
 
 ## **Cost Analysis**
+
 - **Manufacturing Cost:** The total cost per unit was estimated at **$0.38** using **injection molding**.
 - **Material Costs:** ABS plastic was selected for its **durability, low cost, and recyclability**.
 - **Production Feasibility:** The mold was designed for **high-volume manufacturing**, reducing per-unit costs as production scales.
 
 ## **Marketing Analysis**
+
 - **Target Audience:** Children ages **3-10**, incorporating **popular themes (Encanto, Cars, Lightyear)**.
 - **Brand Alignment:** The design integrates with **McDonald's existing Happy Meal branding**, enhancing collectibility.
 - **Sustainability Considerations:** The toy is designed for **recyclability and minimal material waste**, aligning with sustainability goals.
 
 ## **Project Results & Key Findings**
+
 - **User Testing:** Positive feedback was received on **ease of use and durability**.
 - **Manufacturability Success:** The toy was successfully **manufactured using injection molding**, demonstrating feasibility.
 - **Improvements:** Adjustments to **snap-fit tolerances and friction joints** improved the final design's assembly quality.
 
 ---
 
-<!-- CSS -->
 <style>
-/* Carousel Container */
-.carousel-container {
-  position: relative;
-  width: 100%;
-  max-width: 700px;
-  margin: auto;
-  overflow: hidden;
+.project-content h1 {
+    color: #f0f0f0;  /* Light gray */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+  
+.project-meta {
+    font-size: 1rem;
+    color: #888;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
-/* Carousel */
-.carousel {
-  position: relative;
-  width: 100%;
-  height: auto;
+.project-date {
+    display: block;
+    font-size: 1rem;
+    color: #bbb;
 }
 
-/* Carousel Images: hide all except active */
-.carousel-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-width: 700px;
-  display: none;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-.carousel-image.active {
-  display: block;
+/* Main image styling */
+.project-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-/* Navigation Buttons */
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 2rem;
-  border-radius: 50%;
-  z-index: 10;
-}
-.prev { left: -40px; }
-.next { right: -40px; }
-.carousel-btn:hover {
-  background-color: rgba(0,0,0,0.8);
+/* Click to expand */
+.project-image.expanded {
+    transform: scale(1.8);
+    cursor: zoom-out;
 }
 
-/* Click-to-Expand: default pointer */
-.expandable-image {
-  cursor: pointer;
+/* Small images layout */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-/* Expanded image styling: limit to 90vw/90vh */
-.expandable-image.expanded {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 90vw;
-  max-height: 90vh;
-  z-index: 1000;
-  background: rgba(0,0,0,0.8);
-  padding: 10px;
-  border-radius: 8px;
-}
-
-/* PDF embed styling */
+/* PDF Styling */
 embed {
-  display: block;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
+
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  /* All images are absolutely positioned and hidden by default */
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    border-radius: 8px;
+  }
+  /* Only the active image is displayed */
+  .carousel-image.active {
+    display: block;
+  }
+  /* Navigation arrow buttons */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .carousel-btn.prev {
+    left: 10px;
+  }
+  .carousel-btn.next {
+    right: 10px;
+  }
+  .carousel-btn:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
 </style>
 
-<!-- JavaScript -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll('.carousel-image');
   let currentSlide = 0;
-  const images = document.querySelectorAll(".carousel-image");
-
   function showSlide(index) {
     images.forEach((img, i) => {
-      if(i === index) {
-        img.classList.add("active");
-      } else {
-        img.classList.remove("active");
-      }
+      img.classList.toggle('active', i === index);
     });
   }
-
   window.changeSlide = function(step) {
     currentSlide += step;
     if (currentSlide >= images.length) currentSlide = 0;
     if (currentSlide < 0) currentSlide = images.length - 1;
     showSlide(currentSlide);
-  };
-
-  window.toggleImageSize = function(img) {
-    img.classList.toggle("expanded");
-  };
-
-  // Initialize carousel with first image visible
-  showSlide(currentSlide);
+  }
 });
+function toggleImageSize(img) {
+    img.classList.toggle("expanded");
+}
 </script>
