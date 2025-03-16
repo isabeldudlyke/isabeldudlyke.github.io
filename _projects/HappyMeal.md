@@ -30,9 +30,9 @@ technologies:
 <div class="carousel-container">
   <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
   <div class="carousel">
-    <img src="/assets/images/Toy.png" alt="Final Happy Meal Toys" class="carousel-image active">
-    <img src="/assets/images/TechSketch.png" alt="Technical Drawing" class="carousel-image">
-    <img src="/assets/images/ExplodedView.png" alt="Exploded View" class="carousel-image">
+    <img src="/assets/images/Toy.png" alt="Final Happy Meal Toys" class="carousel-image active" onclick="toggleImageSize(this)">
+    <img src="/assets/images/TechSketch.png" alt="Technical Drawing" class="carousel-image" onclick="toggleImageSize(this)">
+    <img src="/assets/images/ExplodedView.png" alt="Exploded View" class="carousel-image" onclick="toggleImageSize(this)">
   </div>
   <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
 </div>
@@ -61,7 +61,7 @@ technologies:
 
 ---
 
-<!-- Inline CSS for the Carousel -->
+<!-- Inline CSS for Carousel -->
 <style>
   /* Carousel Container */
   .carousel-container {
@@ -70,23 +70,25 @@ technologies:
     max-width: 700px;
     margin: 20px auto;
     overflow: hidden;
-  }
-  /* Carousel using simple display toggling */
-  .carousel {
     text-align: center;
   }
-  /* Carousel images: show only active image */
-  .carousel-image {
+  /* Carousel: images will be stacked vertically, but only one is shown */
+  .carousel {
+    width: 100%;
+  }
+  /* Carousel images: override global styles with a more specific selector */
+  .carousel-container .carousel-image {
     width: 100%;
     max-width: 700px;
     display: none;
     border-radius: 8px;
+    cursor: pointer;
     margin: 0 auto;
   }
-  .carousel-image.active {
+  .carousel-container .carousel-image.active {
     display: block;
   }
-  /* Navigation buttons */
+  /* Navigation Buttons */
   .carousel-btn {
     position: absolute;
     top: 50%;
@@ -108,12 +110,25 @@ technologies:
   .carousel-btn:hover {
     background-color: rgba(0,0,0,0.8);
   }
+  /* Click-to-Expand: limit expanded size */
+  .carousel-container .carousel-image.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+    max-height: 90vh;
+    z-index: 1000;
+    background: rgba(0,0,0,0.8);
+    padding: 10px;
+    border-radius: 8px;
+  }
 </style>
 
 <!-- Inline JavaScript for Carousel Functionality -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const images = document.querySelectorAll('.carousel-image');
+  const images = document.querySelectorAll('.carousel-container .carousel-image');
   let currentSlide = 0;
   function showSlide(index) {
     images.forEach((img, i) => {
@@ -125,6 +140,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if (currentSlide >= images.length) currentSlide = 0;
     if (currentSlide < 0) currentSlide = images.length - 1;
     showSlide(currentSlide);
+  }
+  window.toggleImageSize = function(img) {
+    img.classList.toggle('expanded');
   }
   showSlide(currentSlide);
 });
