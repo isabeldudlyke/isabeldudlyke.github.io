@@ -111,18 +111,21 @@ technologies:
     background-color: rgba(0,0,0,0.8);
   }
   /* Click-to-Expand: limit expanded size */
-  .carousel-container .carousel-image.expanded {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 90vw;
-    max-height: 90vh;
-    z-index: 1000;
-    background: rgba(0,0,0,0.8);
-    padding: 10px;
-    border-radius: 8px;
-  }
+.carousel-container .carousel-image.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  z-index: 1000;
+  background: rgba(0,0,0,0.8);
+  padding: 10px;
+  border-radius: 8px;
+  object-fit: contain;
+}
 </style>
 
 <!-- Inline JavaScript for Carousel Functionality -->
