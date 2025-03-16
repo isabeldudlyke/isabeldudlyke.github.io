@@ -25,12 +25,9 @@ technologies:
 
 ---
 
-## **Project Image**
 <img src="/assets/images/Dunk_Circuit.png" alt="Duke Dunk Tank" class="project-image" />
 
 ---
-
-## **Project Video**
 <div class="video-container">
 <iframe width="640" height="360" 
     src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
@@ -44,7 +41,7 @@ technologies:
 
 ## **Project Documentation**
 <embed src="/assets/documents/EGR_421_Mini_Project_FINAL.pdf" width="100%" height="600px" type="application/pdf">
-<p style="text-align: center;">View the full **project memo** above or <a href="/assets/documents/duke-dunk-tank-memo.pdf" target="_blank">download it here</a>.</p>
+<p style="text-align: center;">
 
 ---
 
