@@ -1,0 +1,123 @@
+---
+title: "Happy Meal Ball Maze Toy"
+date: March 2022
+category: "Professional"  
+priority: 3
+header_image: "/assets/images/Screenshot 2025-01-15 at 2.36.04 PM.png"  # Update with actual image file
+description: "A fun, cost-efficient, and sustainable Happy Meal toy designed for mass production."
+layout: "project"  
+technologies:
+  - SolidWorks
+  - Injection Molding
+  - Rapid Prototyping
+  - Design for Manufacturability
+---
+
+<div class="project-meta">
+    <span class="project-date">{{ page.date | date: "%b %Y" }}</span>
+</div>
+
+## **Project Overview**
+- Designed a **puzzle maze toy** with interchangeable backgrounds for **Happy Meals**.
+- Used **SolidWorks** for CAD modeling and **tolerance analysis** for manufacturability.
+- Developed a **cost-effective** design with **ABS plastic** to ensure durability and safety.
+- Implemented **injection molding manufacturing** with an estimated cost of **$0.38 per toy**.
+- Conducted **user testing** and improved friction-fit tolerances for an optimal user experience.
+
+---
+
+## **Technical Drawings & Prototyping**
+### **Technical Sketch**
+<img src="/assets/images/Screenshot 2025-01-15 at 2.34.27 PM.png" alt="Technical Drawing" class="project-image expandable-image" onclick="toggleImageSize(this)">
+
+### **Exploded View**
+<img src="/assets/images/Screenshot 2025-01-15 at 2.36.12 PM.png" alt="Exploded View" class="project-image expandable-image" onclick="toggleImageSize(this)">
+
+### **Final Toy Designs**
+<img src="/assets/images/Screenshot 2025-01-15 at 2.36.04 PM.png" alt="Final Happy Meal Toys" class="project-image expandable-image" onclick="toggleImageSize(this)">
+
+---
+
+## **Project Documentation**
+<embed src="/assets/documents/HappyMeals.pdf" width="100%" height="600px" type="application/pdf">
+<p style="text-align: center;">
+
+---
+
+## **Cost Analysis**
+- **Manufacturing Cost:** The total cost per unit was estimated at **$0.38** using **injection molding**.
+- **Material Costs:** ABS plastic was selected for its **durability, low cost, and recyclability**.
+- **Production Feasibility:** The mold was designed for **high-volume manufacturing**, reducing per-unit costs as production scales.
+
+## **Marketing Analysis**
+- **Target Audience:** Children ages **3-10**, incorporating **popular themes (Encanto, Cars, Lightyear)**.
+- **Brand Alignment:** The design integrates with **McDonald's existing Happy Meal branding**, enhancing collectibility.
+- **Sustainability Considerations:** The toy is designed for **recyclability and minimal material waste**, aligning with sustainability goals.
+
+## **Project Results & Key Findings**
+- **User Testing:** Positive feedback was received on **ease of use and durability**.
+- **Manufacturability Success:** The toy was successfully **manufactured using injection molding**, demonstrating feasibility.
+- **Improvements:** Adjustments to **snap-fit tolerances and friction joints** improved the final design's assembly quality.
+
+---
+
+<style>
+.project-content h1 {
+    color: #f0f0f0;  /* Light gray */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+  
+.project-meta {
+    font-size: 1rem;
+    color: #888;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.project-date {
+    display: block;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+/* Main image styling */
+.project-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Click to expand */
+.project-image.expanded {
+    transform: scale(1.8);
+    cursor: zoom-out;
+}
+
+/* Small images layout */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* PDF Styling */
+embed {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+</style>
+
+<script>
+function toggleImageSize(img) {
+    img.classList.toggle("expanded");
+}
+</script>
