@@ -3,14 +3,14 @@ title: "Duke Dunk Tank"
 date: Aug 2024
 category: "Professional"  
 priority: 3
-header_image: "/assets/images/duke-dunk-tank.jpg"  # Change as needed
-description: "A physics-driven interactive dunk tank system for Duke University’s engineering fair."
+header_image: "/assets/images/Screenshot 2025-01-15 at 8.04.02 PM.png"  # Change as needed
+description: "An interactive dunk tank system for Duke University’s engineering fair."
 layout: "project"  
 technologies:
   - SolidWorks
-  - MATLAB
   - FEA Analysis
   - Fluid Dynamics
+  - Soldering
 ---
 
 <div class="project-meta">
@@ -26,7 +26,7 @@ technologies:
 ---
 
 ## **Project Image**
-<img src="/assets/images/duke-dunk-tank-demo.jpg" alt="Duke Dunk Tank" class="project-image" />
+<img src="/assets/images/Dunk_Circuit.png" alt="Duke Dunk Tank" class="project-image" />
 
 ---
 
@@ -43,7 +43,7 @@ technologies:
 ---
 
 ## **Project Documentation**
-<embed src="/assets/documents/duke-dunk-tank-memo.pdf" width="100%" height="600px" type="application/pdf">
+<embed src="/assets/documents/EGR_421_Mini_Project_FINAL.pdf" width="100%" height="600px" type="application/pdf">
 <p style="text-align: center;">View the full **project memo** above or <a href="/assets/documents/duke-dunk-tank-memo.pdf" target="_blank">download it here</a>.</p>
 
 ---
