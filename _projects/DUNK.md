@@ -1,73 +1,51 @@
 ---
-title: "Dunk Tank"
-category: "personal"
-priority: 4
-header_image: "/assets/images/tower.jpg"
-description: "This website is an open-source way for students to share their projects. Learn how I made it!"
-layout: "project"  # We'll create a project layout or use default
+title: "Duke Dunk Tank"
+date: Aug 2024 - Oct 2024 
+category: "Professional"  
+priority: 3
+header_image: "/assets/images/duke-dunk-tank.jpg"  # Change as needed
+description: "A physics-driven interactive dunk tank system for Duke University’s engineering fair."
+layout: "project"  
+technologies:
+  - SolidWorks
+  - MATLAB
+  - FEA Analysis
+  - Fluid Dynamics
+---
 
-# Introduction
+# Duke Dunk Tank
 
-This page tests various Markdown (and inline HTML) formatting features to ensure your site's styling handles them well. Below are examples of **two columns**, **images** of different sizes and alignments, **code blocks**, **tables**, **text-wrapped images**, and an **embedded YouTube video**.
+<div class="project-meta">
+    <span class="project-date">{{ page.date | date: "%b %Y" }} Aug 2024 - Dec 2024</span>
+</div>
+
+## Project Overview
+- Designed and fabricated an interactive **dunk tank system** for a university engineering state fair.
+- Used **SolidWorks** for CAD modeling and **FEA analysis** to ensure structural integrity.
+- Developed a **custom trigger mechanism** using sensors and microcontrollers.
+- Integrated **fluid dynamics principles** to optimize water displacement and dunk response.
 
 ---
 
-## Two Columns
-
-Markdown doesn't have built-in column support, so you can use small HTML blocks:
-
-<div class="two-col">
-  <div>
-    **Left Column**
-    - Some bullet
-    - Another bullet
-  </div>
-  <div>
-    **Right Column**
-    - Another list
-    - More content
-  </div>
-</div>
+## **Project Image**
+<img src="/assets/images/duke-dunk-tank-demo.jpg" alt="Duke Dunk Tank" class="project-image" />
 
 ---
-## Examples of custom sized and justified images.
-<img src="/assets/images/tower.jpg" alt="Avatar" class="float-left" style="width: 150px;" />
-<img src="/assets/images/ranker_teaser.jpg" alt="Avatar" class="float-right" style="width: 150px;" />
-<div style="clear: both;"></div>
 
-## Another way of doing images
-![Small Image](/assets/images/tower.jpg){: style="width:100px; text-align:right; margin-left:1rem;" }
-
-<div style="text-align: right;">
-    <img src="tower.jpg" alt="Example Image" />
-</div>
-
-## Code snippets
-
-```python
-def greet(name):
-    print(f"Hello, {name}!")
-    return f"Greeting for {name} created."
-```
-
-
-
-## embedding videos
-remeber to add a clear style `<div>` or suffer the consequences.
-<iframe width="480" height="240"
-  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-  title="YouTube video player"
-  frameborder="0"
-  style="text-align: center; margin: 10px;"
-  allowfullscreen>
+## **Project Video**
+<div class="video-container">
+<iframe width="640" height="360" 
+    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+    title="Project Video"
+    frameborder="0"
+    allowfullscreen>
 </iframe>
-<div style="clear: both;"></div>
+</div>
 
-## Math
-Inline math: \( a^2 + b^2 = c^2 \)
-Different inline math: $x^2 +y^2 = z^2$
+---
 
-Display math:
-$$
-\frac{\partial}{\partial x} f(x,y) = 2x + y^2
-$$
+## **Project Documentation**
+<embed src="/assets/documents/duke-dunk-tank-memo.pdf" width="100%" height="600px" type="application/pdf">
+<p style="text-align: center;">View the full **project memo** above or <a href="/assets/documents/duke-dunk-tank-memo.pdf" target="_blank">download it here</a>.</p>
+
+---
