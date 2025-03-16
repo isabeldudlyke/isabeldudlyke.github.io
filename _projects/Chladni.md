@@ -27,7 +27,7 @@ technologies:
 
 ## **Poster Presentation**
 <div class="image-container">
-    <img src="/assets/images/ChladniPoster.jpg" alt="Chladni Effect Poster" class="project-image expandable-image" onclick="toggleImageSize(this)">
+    <img src="/assets/images/ChaldniPoster.jpg" alt="Chladni Effect Poster" class="project-image expandable-image" onclick="toggleImageSize(this)">
 </div>
 
 ---
@@ -49,8 +49,6 @@ technologies:
 
 ---
 
-### **JavaScript for Click-to-Expand Effect**
-```html
 <script>
 function toggleImageSize(img) {
     img.classList.toggle("expanded");
