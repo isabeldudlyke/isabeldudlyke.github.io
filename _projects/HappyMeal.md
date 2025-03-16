@@ -63,6 +63,33 @@ View the full **project report** above or <a href="/assets/documents/HappyMeals.
 - **Improvements:** Adjustments to **snap-fit tolerances and friction joints** improved the final design's assembly quality.
 
 ---
+  
+<script>
+let currentSlide = 0;
+const images = document.querySelectorAll(".carousel-image");
+
+function showSlide(index) {
+    images.forEach((img, i) => {
+        img.classList.toggle("active", i === index);
+    });
+}
+
+function changeSlide(step) {
+    currentSlide += step;
+    if (currentSlide >= images.length) currentSlide = 0;
+    if (currentSlide < 0) currentSlide = images.length - 1;
+    showSlide(currentSlide);
+}
+
+// Initialize first slide
+showSlide(currentSlide);
+
+// Expandable Image Functionality
+function toggleImageSize(img) {
+    img.classList.toggle("expanded");
+}
+</script>
+---
 <style>
 .project-content h1 {
     color: #f0f0f0;
@@ -165,29 +192,5 @@ embed {
 }
   
 <style>
-  
-<script>
-let currentSlide = 0;
-const images = document.querySelectorAll(".carousel-image");
 
-function showSlide(index) {
-    images.forEach((img, i) => {
-        img.classList.toggle("active", i === index);
-    });
-}
-
-function changeSlide(step) {
-    currentSlide += step;
-    if (currentSlide >= images.length) currentSlide = 0;
-    if (currentSlide < 0) currentSlide = images.length - 1;
-    showSlide(currentSlide);
-}
-
-// Initialize first slide
-showSlide(currentSlide);
-
-// Expandable Image Functionality
-function toggleImageSize(img) {
-    img.classList.toggle("expanded");
-}
-</script>
+---
