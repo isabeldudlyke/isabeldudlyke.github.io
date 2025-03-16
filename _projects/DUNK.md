@@ -1,7 +1,7 @@
 ---
 title: "Duke Dunk Tank"
 date: Aug 2024
-category: "Professional"  
+category: "professional"  
 priority: 3
 header_image: "/assets/images/Dunk_Image.png" 
 description: "An interactive dunk tank system for Duke University’s engineering fair."
