@@ -26,13 +26,15 @@ technologies:
 ---
 
 ## **Poster Presentation**
-<img src="/assets/images/ChaldniPoster.jpg" alt="Chladni Effect Poster" class="project-image" />
+<div class="image-container">
+    <img src="/assets/images/ChladniPoster.jpg" alt="Chladni Effect Poster" class="project-image expandable-image" onclick="toggleImageSize(this)">
+</div>
 
 ---
 
 ## **Simulation Video**
 <div class="video-container">
-    <video width="640" height="360" autoplay loop muted playsinline>
+    <video class="wide-video" autoplay loop muted playsinline>
         <source src="https://raw.githubusercontent.com/isabeldudlyke/isabeldudlyke.github.io/main/assets/videos/Simulation.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -47,7 +49,18 @@ technologies:
 
 ---
 
+### **JavaScript for Click-to-Expand Effect**
+```html
+<script>
+function toggleImageSize(img) {
+    img.classList.toggle("expanded");
+}
+</script>
+
+---
+
 <style>
+
 .project-content h1 {
     color: #f0f0f0;  /* Light gray */
     font-size: 2.5rem;
@@ -68,12 +81,33 @@ technologies:
     color: #bbb;
 }
 
-.project-image {
-    display: block;
+/* Make poster and video match section width */
+.image-container, .video-container {
     max-width: 100%;
+    text-align: center;
+}
+
+.project-image, .wide-video {
+    width: 100%;  /* Make image and video as wide as section dividers */
+    max-width: 900px; /* Limit size on larger screens */
     height: auto;
     margin: 20px auto;
     border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Click to expand the image */
+.project-image.expanded {
+    transform: scale(1.8); /* Expand image */
+    cursor: zoom-out;
+}
+
+/* Limit max expansion to avoid overflow */
+@media (max-width: 768px) {
+    .project-image.expanded {
+        transform: scale(1.2);
+    }
 }
 
 embed {
