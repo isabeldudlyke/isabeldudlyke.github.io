@@ -1,7 +1,7 @@
 ---
 title: "Modelling the Chladni Effect"
 date: July 2023
-category: "Professional"  
+category: "professional"  
 priority: 3
 header_image: "/assets/images/ChaldniPoster_edited.jpg" 
 description: "Modelling the Chladni Effect using Partial Differential Equations"
