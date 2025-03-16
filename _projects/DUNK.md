@@ -49,3 +49,39 @@ technologies:
 <p style="text-align: center;">View the full **project memo** above or <a href="/assets/documents/duke-dunk-tank-memo.pdf" target="_blank">download it here</a>.</p>
 
 ---
+
+<style>
+  .project-meta {
+    font-size: 1rem;
+    color: #888;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.project-date {
+    display: block;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.project-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+embed {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+</style>
