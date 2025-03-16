@@ -32,8 +32,8 @@ technologies:
 
 ## **Simulation Video**
 <div class="video-container">
-    <video width="640" height="360" controls>
-        <source src="https://raw.githubusercontent.com/isabeldudlyke/isabeldudlyke.github.io/main/assets/videos/ParticleSimulation.mp4" type="video/mp4">
+    <video width="640" height="360" autoplay loop muted playsinline>
+        <source src="https://raw.githubusercontent.com/isabeldudlyke/isabeldudlyke.github.io/main/assets/videos/Simulation.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
