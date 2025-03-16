@@ -1,59 +1,50 @@
 ---
-title: "Duke Dunk Tank"
-date: Aug 2024
+title: "Modelling the Chladni Effect"
+date: July 2023
 category: "Professional"  
 priority: 3
-header_image: "/assets/images/Dunk_Image.png" 
-description: "An interactive dunk tank system for Duke University’s engineering fair."
+header_image: "/assets/images/ChaldniPoster_edited.jpg" 
+description: "Modelling the Chladni Effect using Partial Differential Equations"
 layout: "project"  
 technologies:
-  - SolidWorks
-  - FEA Analysis
-  - Fluid Dynamics
-  - Soldering
+  - MATLAB
+  - Partial Differential Equations
+  - Numerical Simulation
+  - Physics-based Modeling
 ---
 
 <div class="project-meta">
-    <span class="project-date">{{ page.date | date: "%b %Y" }} - Dec 2024</span>
+    <span class="project-date">{{ page.date | date: "%b %Y" }} - Aug 2023</span>
 </div>
 
-## Project Overview
-- Designed and fabricated an interactive **dunk tank system** for a university engineering state fair.
-- Used **SolidWorks** for CAD modeling and **FEA analysis** to ensure structural integrity.
-- Developed a **custom trigger mechanism** using sensors and microcontrollers.
-- Integrated **fluid dynamics principles** to optimize water displacement and dunk response.
+## **Project Overview**
+- Modeled **Chladni plate vibrations** using the **2D wave equation**.
+- Used **analytical and numerical methods** to solve the PDEs for standing wave solutions.
+- Simulated **sand particle motion** to visualize **nodal and anti-nodal patterns**.
+- Implemented **MATLAB simulations** and compared theoretical vs. experimental results.
 
 ---
 
-<img src="/assets/images/Dunk_Circuit.png" alt="Duke Dunk Tank" class="project-image" />
-
----
-<div class="video-container">
-<iframe width="640" height="360" 
-    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-    title="Project Video"
-    frameborder="0"
-    allowfullscreen>
-</iframe>
-</div>
+## **Poster Presentation**
+<img src="/assets/images/ChladniPoster.jpg" alt="Chladni Effect Poster" class="project-image" />
 
 ---
 
-## **Project Documentation**
-<embed src="/assets/documents/EGR_421_Mini_Project_FINAL.pdf" width="100%" height="600px" type="application/pdf">
-<p style="text-align: center;">
+## **Simulation Results**
+- The 2D **wave equation solutions** provided accurate predictions of Chladni pattern formations.
+- **3D wave functions** were plotted to visualize **standing wave behavior** on the plate.
+- A **particle-based simulation** modeled sand movement, confirming theoretical predictions.
 
 ---
 
 <style>
-
 .project-content h1 {
-    color: #f0f0f0;  /* Light gray (adjust as needed) */
-    font-size: 2.5rem;  /* Adjust for visibility */
+    color: #f0f0f0;  /* Light gray */
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
   
-  .project-meta {
+.project-meta {
     font-size: 1rem;
     color: #888;
     font-weight: 400;
@@ -73,11 +64,6 @@ technologies:
     height: auto;
     margin: 20px auto;
     border-radius: 8px;
-}
-
-.video-container {
-    text-align: center;
-    margin: 20px 0;
 }
 
 embed {
