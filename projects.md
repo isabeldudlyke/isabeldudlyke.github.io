@@ -17,8 +17,8 @@ css_class: "projects-page"
 
 <!-- All Projects (sorted newest to oldest by date) -->
 <div class="all-gallery">
-  {% assign sorted_by_date = site.projects | sort: 'date' | reverse %}
-  {% for project in sorted_by_date %}
+  {% assign sorted_proj = site.projects | sort: 'priority' %}
+  {% for proj in sorted_proj %}
     {% assign s = project.status | default: "" %}
 
     {% if s contains "under_construction" %}
