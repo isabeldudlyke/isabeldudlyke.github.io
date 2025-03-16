@@ -1,7 +1,7 @@
 ---
 title: "Happy Meal Ball Maze Toy"
 date: Feb 2022
-category: "Professional"  
+category: "professional"  
 priority: 3
 header_image: "/assets/images/Toy.png"  # Update with actual image file
 description: "A fun, cost-efficient, and sustainable Happy Meal toy designed for mass production."
