@@ -14,15 +14,15 @@ technologies:
 ---
 
 <div class="project-meta">
-    <span class="project-date">{{ page.date | date: "%b %Y" }} - March 2022</span>
+  <span class="project-date">{{ page.date | date: "%b %Y" }} - March 2022</span>
 </div>
 
 ## **Project Overview**
 - Designed a **puzzle maze toy** with interchangeable backgrounds for **Happy Meals**.
 - Used **SolidWorks** for CAD modeling and **tolerance analysis** for manufacturability.
-- Developed a **cost-effective** design with **ABS plastic** to ensure durability and safety.
+- Developed a **cost‑effective** design with **ABS plastic** to ensure durability and safety.
 - Implemented **injection molding manufacturing** with an estimated cost of **$0.38 per toy**.
-- Conducted **user testing** and improved friction-fit tolerances for an optimal user experience.
+- Conducted **user testing** and improved friction‑fit tolerances for an optimal user experience.
 
 ---
 
@@ -37,89 +37,33 @@ technologies:
   <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
 </div>
 
-
 ---
 
 ## **Project Documentation**
 <embed src="/assets/documents/HappyMeals.pdf" width="100%" height="600px" type="application/pdf">
-<p style="text-align: center;">
 
 ---
 
 ## **Cost Analysis**
-
 - **Manufacturing Cost:** The total cost per unit was estimated at **$0.38** using **injection molding**.
 - **Material Costs:** ABS plastic was selected for its **durability, low cost, and recyclability**.
-- **Production Feasibility:** The mold was designed for **high-volume manufacturing**, reducing per-unit costs as production scales.
+- **Production Feasibility:** The mold was designed for **high‑volume manufacturing**, reducing per‑unit costs as production scales.
 
 ## **Marketing Analysis**
-
-- **Target Audience:** Children ages **3-10**, incorporating **popular themes (Encanto, Cars, Lightyear)**.
+- **Target Audience:** Children ages **3‑10**, incorporating **popular themes (Encanto, Cars, Lightyear)**.
 - **Brand Alignment:** The design integrates with **McDonald's existing Happy Meal branding**, enhancing collectibility.
 - **Sustainability Considerations:** The toy is designed for **recyclability and minimal material waste**, aligning with sustainability goals.
 
 ## **Project Results & Key Findings**
-
 - **User Testing:** Positive feedback was received on **ease of use and durability**.
 - **Manufacturability Success:** The toy was successfully **manufactured using injection molding**, demonstrating feasibility.
-- **Improvements:** Adjustments to **snap-fit tolerances and friction joints** improved the final design's assembly quality.
+- **Improvements:** Adjustments to **snap‑fit tolerances and friction joints** improved the final design's assembly quality.
 
 ---
 
+<!-- Inline CSS for the Carousel -->
 <style>
-.project-content h1 {
-    color: #f0f0f0;  /* Light gray */
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-  
-.project-meta {
-    font-size: 1rem;
-    color: #888;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    text-align: left;
-}
-
-.project-date {
-    display: block;
-    font-size: 1rem;
-    color: #bbb;
-}
-
-/* Main image styling */
-.project-image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-/* Click to expand */
-.project-image.expanded {
-    transform: scale(1.8);
-    cursor: zoom-out;
-}
-
-/* Small images layout */
-.image-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-/* PDF Styling */
-embed {
-    display: block;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
+  /* Carousel Container */
   .carousel-container {
     position: relative;
     width: 100%;
@@ -127,25 +71,22 @@ embed {
     margin: 20px auto;
     overflow: hidden;
   }
+  /* Carousel using simple display toggling */
   .carousel {
-    position: relative;
-    width: 100%;
-    height: auto;
+    text-align: center;
   }
-  /* All images are absolutely positioned and hidden by default */
+  /* Carousel images: show only active image */
   .carousel-image {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
+    max-width: 700px;
     display: none;
     border-radius: 8px;
+    margin: 0 auto;
   }
-  /* Only the active image is displayed */
   .carousel-image.active {
     display: block;
   }
-  /* Navigation arrow buttons */
+  /* Navigation buttons */
   .carousel-btn {
     position: absolute;
     top: 50%;
@@ -169,6 +110,7 @@ embed {
   }
 </style>
 
+<!-- Inline JavaScript for Carousel Functionality -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const images = document.querySelectorAll('.carousel-image');
@@ -184,8 +126,6 @@ document.addEventListener("DOMContentLoaded", function() {
     if (currentSlide < 0) currentSlide = images.length - 1;
     showSlide(currentSlide);
   }
+  showSlide(currentSlide);
 });
-function toggleImageSize(img) {
-    img.classList.toggle("expanded");
-}
 </script>
