@@ -12,6 +12,7 @@ technologies:
   - Rapid Prototyping
   - Design for Manufacturability
 ---
+
 <div class="project-meta">
     <span class="project-date">{{ page.date | date: "%b %Y" }} - March 2022</span>
 </div>
@@ -63,127 +64,115 @@ View the full **project report** above or <a href="/assets/documents/HappyMeals.
 
 ---
 
+<!-- CSS -->
 <style>
-/* General Styles */
-.project-content h1 {
-    color: #f0f0f0;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-.project-meta {
-    font-size: 1rem;
-    color: #888;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    text-align: left;
-}
-.project-date {
-    display: block;
-    font-size: 1rem;
-    color: #bbb;
-}
-
 /* Carousel Container */
 .carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    position: relative;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
 }
 
-/* Image Carousel */
+/* Carousel */
 .carousel {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
+
+/* Carousel Images: hide all except active */
 .carousel-image {
-    display: none;
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 700px;
+  display: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 .carousel-image.active {
-    display: block;
+  display: block;
 }
 
 /* Navigation Buttons */
 .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 2rem;
-    border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 50%;
+  z-index: 10;
 }
 .prev { left: -40px; }
 .next { right: -40px; }
 .carousel-btn:hover {
-    background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
-/* Click-to-Expand */
+/* Click-to-Expand: default pointer */
 .expandable-image {
-    cursor: pointer;
-}
-.expandable-image.expanded {
-    transform: translate(-50%, -50%) scale(1.8);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 1000;
-    background: rgba(0,0,0,0.8);
-    padding: 10px;
-    border-radius: 8px;
+  cursor: pointer;
 }
 
-/* PDF Styling */
+/* Expanded image styling: limit to 90vw/90vh */
+.expandable-image.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90vw;
+  max-height: 90vh;
+  z-index: 1000;
+  background: rgba(0,0,0,0.8);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* PDF embed styling */
 embed {
-    display: block;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 </style>
 
+<!-- JavaScript -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    let currentSlide = 0;
-    const images = document.querySelectorAll(".carousel-image");
+  let currentSlide = 0;
+  const images = document.querySelectorAll(".carousel-image");
 
-    function showSlide(index) {
-        images.forEach((img, i) => {
-            if (i === index) {
-                img.classList.add("active");
-            } else {
-                img.classList.remove("active");
-            }
-        });
-    }
+  function showSlide(index) {
+    images.forEach((img, i) => {
+      if(i === index) {
+        img.classList.add("active");
+      } else {
+        img.classList.remove("active");
+      }
+    });
+  }
 
-    window.changeSlide = function(step) {
-        currentSlide += step;
-        if (currentSlide >= images.length) currentSlide = 0;
-        if (currentSlide < 0) currentSlide = images.length - 1;
-        showSlide(currentSlide);
-    };
-
-    window.toggleImageSize = function(img) {
-        img.classList.toggle("expanded");
-    };
-
+  window.changeSlide = function(step) {
+    currentSlide += step;
+    if (currentSlide >= images.length) currentSlide = 0;
+    if (currentSlide < 0) currentSlide = images.length - 1;
     showSlide(currentSlide);
+  };
+
+  window.toggleImageSize = function(img) {
+    img.classList.toggle("expanded");
+  };
+
+  // Initialize carousel with first image visible
+  showSlide(currentSlide);
 });
 </script>
