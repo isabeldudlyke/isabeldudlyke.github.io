@@ -17,8 +17,8 @@ css_class: "projects-page"
 
 <!-- All Projects (sorted newest to oldest by date) -->
 <div class="all-gallery">
-   {% assign sorted_by_date = site.projects | sort: 'date' | reverse %}
-   {% for project in sorted_by_date %}
+  {% assign sorted_by_date = site.projects | sort: 'date' | reverse %}
+  {% for project in sorted_by_date %}
     {% assign s = project.status | default: "" %}
 
     {% if s contains "under_construction" %}
@@ -37,9 +37,8 @@ css_class: "projects-page"
         <p>{{ project.description }}</p>
       </div>
     {% else %}
-      <!-- Clickable item -->
-      <a class="project-item"
-         href="{{ project.url }}">
+      <!-- Clickable item (data-category added) -->
+      <a class="project-item" data-category="{{ project.category }}" href="{{ project.url }}">
         {% if s contains "new" %}
           <div class="corner-ribbon">New!</div>
         {% endif %}
