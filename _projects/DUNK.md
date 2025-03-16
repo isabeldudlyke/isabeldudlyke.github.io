@@ -40,7 +40,6 @@ technologies:
 
 ## **Project Documentation**
 <embed src="/assets/documents/EGR_421_Mini_Project_FINAL.pdf" width="100%" height="600px" type="application/pdf">
-<p style="text-align: center;">
 
 ---
 
