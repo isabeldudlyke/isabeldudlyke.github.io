@@ -3,7 +3,7 @@ title: "Duke Dunk Tank"
 date: Aug 2024
 category: "Professional"  
 priority: 3
-header_image: "/assets/images/Screenshot 2025-01-15 at 8.04.02 PM.png"  # Change as needed
+header_image: "/assets/images/Dunk_Image.png" 
 description: "An interactive dunk tank system for Duke University’s engineering fair."
 layout: "project"  
 technologies:
