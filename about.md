@@ -96,13 +96,21 @@ css_class: "about-page"
   </div>
   <div class="skill-item">
     <img src="/assets/icons/autodesk.svg" alt="AutoCAD" />
-    <span>Fusion360</span>
+    <span>Autodesk</span>
   </div>
 </div>
 
   <!-- Extracurricular Section -->
   <h2>Extracurricular Activities</h2>
   <div class="extracurricular">
+     <div class="activity-row">
+      <img src="/assets/icons/BRIGHT-1-1024x576.png" alt="PBK" class="activity-image" />
+      <div class="activity-details">
+        <div class="activity-title">Phi Beta Kappa</div>
+        <p>Selected to be a member of Duke's chapter of Phi Beta Kappa, the nation's most prestigious academic honor society. 
+</p>
+      </div>
+    </div>
     <div class="activity-row">
       <img src="/assets/icons/Vertical_BLUE2.png" alt="Tau Beta Pi" class="activity-image" />
       <div class="activity-details">
