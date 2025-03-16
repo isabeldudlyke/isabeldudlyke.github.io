@@ -39,7 +39,6 @@ css_class: "projects-page"
     {% else %}
       <!-- Clickable item -->
       <a class="project-item"
-         data-category="{{ project.category }}"
          href="{{ project.url }}">
         {% if s contains "new" %}
           <div class="corner-ribbon">New!</div>
