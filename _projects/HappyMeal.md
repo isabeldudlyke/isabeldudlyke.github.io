@@ -3,7 +3,7 @@ title: "Happy Meal Ball Maze Toy"
 date: March 2022
 category: "Professional"  
 priority: 3
-header_image: "/assets/images/Screenshot 2025-01-15 at 2.36.04 PM.png"  # Update with actual image file
+header_image: "/assets/images/Toy.png"  # Update with actual image file
 description: "A fun, cost-efficient, and sustainable Happy Meal toy designed for mass production."
 layout: "project"  
 technologies:
@@ -28,13 +28,13 @@ technologies:
 
 ## **Technical Drawings & Prototyping**
 ### **Technical Sketch**
-<img src="/assets/images/Screenshot 2025-01-15 at 2.34.27 PM.png" alt="Technical Drawing" class="project-image expandable-image" onclick="toggleImageSize(this)">
+<img src="/assets/images/TechSketch.png" alt="Technical Drawing" class="project-image expandable-image" onclick="toggleImageSize(this)">
 
 ### **Exploded View**
-<img src="/assets/images/Screenshot 2025-01-15 at 2.36.12 PM.png" alt="Exploded View" class="project-image expandable-image" onclick="toggleImageSize(this)">
+<img src="/assets/images/ExplodedView.png" alt="Exploded View" class="project-image expandable-image" onclick="toggleImageSize(this)">
 
 ### **Final Toy Designs**
-<img src="/assets/images/Screenshot 2025-01-15 at 2.36.04 PM.png" alt="Final Happy Meal Toys" class="project-image expandable-image" onclick="toggleImageSize(this)">
+<img src="/assets/images/Toy.png" alt="Final Happy Meal Toys" class="project-image expandable-image" onclick="toggleImageSize(this)">
 
 ---
 
@@ -45,16 +45,19 @@ technologies:
 ---
 
 ## **Cost Analysis**
+
 - **Manufacturing Cost:** The total cost per unit was estimated at **$0.38** using **injection molding**.
 - **Material Costs:** ABS plastic was selected for its **durability, low cost, and recyclability**.
 - **Production Feasibility:** The mold was designed for **high-volume manufacturing**, reducing per-unit costs as production scales.
 
 ## **Marketing Analysis**
+
 - **Target Audience:** Children ages **3-10**, incorporating **popular themes (Encanto, Cars, Lightyear)**.
 - **Brand Alignment:** The design integrates with **McDonald's existing Happy Meal branding**, enhancing collectibility.
 - **Sustainability Considerations:** The toy is designed for **recyclability and minimal material waste**, aligning with sustainability goals.
 
 ## **Project Results & Key Findings**
+
 - **User Testing:** Positive feedback was received on **ease of use and durability**.
 - **Manufacturability Success:** The toy was successfully **manufactured using injection molding**, demonstrating feasibility.
 - **Improvements:** Adjustments to **snap-fit tolerances and friction joints** improved the final design's assembly quality.
