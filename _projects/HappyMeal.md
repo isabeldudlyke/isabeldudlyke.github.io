@@ -44,23 +44,28 @@ technologies:
 
 ---
 
-## **Cost Analysis**
+<div class="text-content">
+    <h2>Cost Analysis</h2>
+    <ul>
+        <li><strong>Manufacturing Cost:</strong> The total cost per unit was estimated at <strong>$0.38</strong> using injection molding.</li>
+        <li><strong>Material Costs:</strong> ABS plastic was selected for its <strong>durability, low cost, and recyclability</strong>.</li>
+        <li><strong>Production Feasibility:</strong> The mold was designed for <strong>high-volume manufacturing</strong>, reducing per-unit costs as production scales.</li>
+    </ul>
 
-- **Manufacturing Cost:** The total cost per unit was estimated at **$0.38** using **injection molding**.
-- **Material Costs:** ABS plastic was selected for its **durability, low cost, and recyclability**.
-- **Production Feasibility:** The mold was designed for **high-volume manufacturing**, reducing per-unit costs as production scales.
+    <h2>Marketing Analysis</h2>
+    <ul>
+        <li><strong>Target Audience:</strong> Children ages <strong>3-10</strong>, incorporating popular themes (<em>Encanto, Cars, Lightyear</em>).</li>
+        <li><strong>Brand Alignment:</strong> The design integrates with <strong>McDonald's existing Happy Meal branding</strong>, enhancing collectibility.</li>
+        <li><strong>Sustainability Considerations:</strong> The toy is designed for <strong>recyclability and minimal material waste</strong>, aligning with sustainability goals.</li>
+    </ul>
 
-## **Marketing Analysis**
-
-- **Target Audience:** Children ages **3-10**, incorporating **popular themes (Encanto, Cars, Lightyear)**.
-- **Brand Alignment:** The design integrates with **McDonald's existing Happy Meal branding**, enhancing collectibility.
-- **Sustainability Considerations:** The toy is designed for **recyclability and minimal material waste**, aligning with sustainability goals.
-
-## **Project Results & Key Findings**
-
-- **User Testing:** Positive feedback was received on **ease of use and durability**.
-- **Manufacturability Success:** The toy was successfully **manufactured using injection molding**, demonstrating feasibility.
-- **Improvements:** Adjustments to **snap-fit tolerances and friction joints** improved the final design's assembly quality.
+    <h2>Project Results & Key Findings</h2>
+    <ul>
+        <li><strong>User Testing:</strong> Positive feedback was received on <strong>ease of use and durability</strong>.</li>
+        <li><strong>Manufacturability Success:</strong> The toy was successfully <strong>manufactured using injection molding</strong>, demonstrating feasibility.</li>
+        <li><strong>Improvements:</strong> Adjustments to <strong>snap-fit tolerances and friction joints</strong> improved the final design's assembly quality.</li>
+    </ul>
+</div>
 
 ---
 
