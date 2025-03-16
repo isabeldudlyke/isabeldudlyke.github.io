@@ -13,8 +13,6 @@ technologies:
   - Fluid Dynamics
 ---
 
-# Duke Dunk Tank
-
 <div class="project-meta">
     <span class="project-date">{{ page.date | date: "%b %Y" }} - Dec 2024</span>
 </div>
