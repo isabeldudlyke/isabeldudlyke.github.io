@@ -53,27 +53,28 @@ css_class: "projects-page"
 </div>
 
 <script>
-  function filterAllProjects(category) {
-    // Only select items within the all-gallery
-    const items = document.querySelectorAll('.all-gallery .project-item');
-    items.forEach(item => {
-      if (category === 'all') {
-        item.style.display = 'block';
-      } else {
-        const cat = item.getAttribute('data-category');
-        item.style.display = (cat === category) ? 'block' : 'none';
-      }
-    });
+function filterAllProjects(category) {
+  // Only select items within the all-gallery
+  const items = document.querySelectorAll('.all-gallery .project-item');
+  items.forEach(item => {
+    if (category === 'all') {
+      item.style.display = 'block';
+    } else {
+      const cat = item.getAttribute('data-category');
+      // Compare in lower case after trimming whitespace
+      item.style.display = (cat.trim().toLowerCase() === category.toLowerCase()) ? 'block' : 'none';
+    }
+  });
 
-    // Highlight the correct button
-    const buttons = document.querySelectorAll('.project-filters button');
-    buttons.forEach(btn => {
-      btn.classList.remove('active');
-      if (btn.dataset.filter === category) {
-        btn.classList.add('active');
-      }
-    });
-  }
+  // Highlight the correct button
+  const buttons = document.querySelectorAll('.project-filters button');
+  buttons.forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.dataset.filter.toLowerCase() === category.toLowerCase()) {
+      btn.classList.add('active');
+    }
+  });
+}
 
   // Optional: auto-show "All" on page load
   document.addEventListener('DOMContentLoaded', () => {
