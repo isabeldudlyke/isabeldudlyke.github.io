@@ -27,54 +27,53 @@ technologies:
 ---
 
 ## **Technical Drawings & Prototyping**
-### **Technical Sketch**
-<img src="/assets/images/TechSketch.png" alt="Technical Drawing" class="project-image expandable-image" onclick="toggleImageSize(this)">
-
-### **Exploded View**
-<img src="/assets/images/ExplodedView.png" alt="Exploded View" class="project-image expandable-image" onclick="toggleImageSize(this)">
-
-### **Final Toy Designs**
-<img src="/assets/images/Toy.png" alt="Final Happy Meal Toys" class="project-image expandable-image" onclick="toggleImageSize(this)">
+<div class="carousel">
+    <button class="carousel-prev" onclick="changeSlide(-1)">❮</button>
+    <div class="carousel-container">
+        <img src="/assets/images/Toy.png" alt="Final Happy Meal Toys" class="carousel-image expandable-image" onclick="toggleImageSize(this)">
+        <img src="/assets/images/TechSketch.png" alt="Technical Drawing" class="carousel-image expandable-image" onclick="toggleImageSize(this)">
+        <img src="/assets/images/ExplodedView.png" alt="Exploded View" class="carousel-image expandable-image" onclick="toggleImageSize(this)">
+    </div>
+    <button class="carousel-next" onclick="changeSlide(1)">❯</button>
+</div>
 
 ---
 
 ## **Project Documentation**
 <embed src="/assets/documents/HappyMeals.pdf" width="100%" height="600px" type="application/pdf">
+<p style="text-align: center;">
+View the full **project report** above or <a href="/assets/documents/HappyMeals.pdf" target="_blank">download it here</a>.
+</p>
 
 ---
 
-<div class="text-content">
-    <h2>Cost Analysis</h2>
-    <ul>
-        <li><strong>Manufacturing Cost:</strong> The total cost per unit was estimated at <strong>$0.38</strong> using injection molding.</li>
-        <li><strong>Material Costs:</strong> ABS plastic was selected for its <strong>durability, low cost, and recyclability</strong>.</li>
-        <li><strong>Production Feasibility:</strong> The mold was designed for <strong>high-volume manufacturing</strong>, reducing per-unit costs as production scales.</li>
-    </ul>
+## **Cost Analysis**
 
-    <h2>Marketing Analysis</h2>
-    <ul>
-        <li><strong>Target Audience:</strong> Children ages <strong>3-10</strong>, incorporating popular themes (<em>Encanto, Cars, Lightyear</em>).</li>
-        <li><strong>Brand Alignment:</strong> The design integrates with <strong>McDonald's existing Happy Meal branding</strong>, enhancing collectibility.</li>
-        <li><strong>Sustainability Considerations:</strong> The toy is designed for <strong>recyclability and minimal material waste</strong>, aligning with sustainability goals.</li>
-    </ul>
+- **Manufacturing Cost:** The total cost per unit was estimated at **$0.38** using **injection molding**.
+- **Material Costs:** ABS plastic was selected for its **durability, low cost, and recyclability**.
+- **Production Feasibility:** The mold was designed for **high-volume manufacturing**, reducing per-unit costs as production scales.
 
-    <h2>Project Results & Key Findings</h2>
-    <ul>
-        <li><strong>User Testing:</strong> Positive feedback was received on <strong>ease of use and durability</strong>.</li>
-        <li><strong>Manufacturability Success:</strong> The toy was successfully <strong>manufactured using injection molding</strong>, demonstrating feasibility.</li>
-        <li><strong>Improvements:</strong> Adjustments to <strong>snap-fit tolerances and friction joints</strong> improved the final design's assembly quality.</li>
-    </ul>
-</div>
+## **Marketing Analysis**
+
+- **Target Audience:** Children ages **3-10**, incorporating **popular themes (Encanto, Cars, Lightyear)**.
+- **Brand Alignment:** The design integrates with **McDonald's existing Happy Meal branding**, enhancing collectibility.
+- **Sustainability Considerations:** The toy is designed for **recyclability and minimal material waste**, aligning with sustainability goals.
+
+## **Project Results & Key Findings**
+
+- **User Testing:** Positive feedback was received on **ease of use and durability**.
+- **Manufacturability Success:** The toy was successfully **manufactured using injection molding**, demonstrating feasibility.
+- **Improvements:** Adjustments to **snap-fit tolerances and friction joints** improved the final design's assembly quality.
 
 ---
 
 <style>
 .project-content h1 {
-    color: #f0f0f0;  /* Light gray */
+    color: #f0f0f0;
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
-  
+
 .project-meta {
     font-size: 1rem;
     color: #888;
@@ -89,29 +88,64 @@ technologies:
     color: #bbb;
 }
 
-/* Main image styling */
-.project-image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto;
+/* Carousel Styling */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.carousel-container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    display: none;
     border-radius: 8px;
-    cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-/* Click to expand */
-.project-image.expanded {
-    transform: scale(1.8);
-    cursor: zoom-out;
+.carousel-image.active {
+    display: block;
 }
 
-/* Small images layout */
-.image-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+/* Navigation Buttons */
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.carousel-prev { left: -40px; }
+.carousel-next { right: -40px; }
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Click to Expand */
+.expandable-image {
+    cursor: pointer;
+}
+
+.expandable-image.expanded {
+    transform: scale(1.8);
+    cursor: zoom-out;
 }
 
 /* PDF Styling */
@@ -121,9 +155,28 @@ embed {
     border: 1px solid #ccc;
     border-radius: 8px;
 }
-</style>
 
 <script>
+let currentSlide = 0;
+const images = document.querySelectorAll(".carousel-image");
+
+function showSlide(index) {
+    images.forEach((img, i) => {
+        img.classList.toggle("active", i === index);
+    });
+}
+
+function changeSlide(step) {
+    currentSlide += step;
+    if (currentSlide >= images.length) currentSlide = 0;
+    if (currentSlide < 0) currentSlide = images.length - 1;
+    showSlide(currentSlide);
+}
+
+// Initialize first slide
+showSlide(currentSlide);
+
+// Expandable Image Functionality
 function toggleImageSize(img) {
     img.classList.toggle("expanded");
 }
