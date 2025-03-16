@@ -12,7 +12,6 @@ technologies:
   - Rapid Prototyping
   - Design for Manufacturability
 ---
-
 <div class="project-meta">
     <span class="project-date">{{ page.date | date: "%b %Y" }} - March 2022</span>
 </div>
@@ -30,9 +29,9 @@ technologies:
 <div class="carousel-container">
     <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
     <div class="carousel">
-        <img src="/assets/images/Toy.png" alt="Final Happy Meal Toys" class="carousel-image active" onclick="toggleImageSize(this)">
-        <img src="/assets/images/TechSketch.png" alt="Technical Drawing" class="carousel-image" onclick="toggleImageSize(this)">
-        <img src="/assets/images/ExplodedView.png" alt="Exploded View" class="carousel-image" onclick="toggleImageSize(this)">
+        <img src="/assets/images/Toy.png" alt="Final Happy Meal Toys" class="carousel-image active expandable-image" onclick="toggleImageSize(this)">
+        <img src="/assets/images/TechSketch.png" alt="Technical Drawing" class="carousel-image expandable-image" onclick="toggleImageSize(this)">
+        <img src="/assets/images/ExplodedView.png" alt="Exploded View" class="carousel-image expandable-image" onclick="toggleImageSize(this)">
     </div>
     <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
 </div>
@@ -63,40 +62,14 @@ View the full **project report** above or <a href="/assets/documents/HappyMeals.
 - **Improvements:** Adjustments to **snap-fit tolerances and friction joints** improved the final design's assembly quality.
 
 ---
-  
-<script>
-let currentSlide = 0;
-const images = document.querySelectorAll(".carousel-image");
 
-function showSlide(index) {
-    images.forEach((img, i) => {
-        img.classList.toggle("active", i === index);
-    });
-}
-
-function changeSlide(step) {
-    currentSlide += step;
-    if (currentSlide >= images.length) currentSlide = 0;
-    if (currentSlide < 0) currentSlide = images.length - 1;
-    showSlide(currentSlide);
-}
-
-// Initialize first slide
-showSlide(currentSlide);
-
-// Expandable Image Functionality
-function toggleImageSize(img) {
-    img.classList.toggle("expanded");
-}
-</script>
----
 <style>
+/* General Styles */
 .project-content h1 {
     color: #f0f0f0;
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
-
 .project-meta {
     font-size: 1rem;
     color: #888;
@@ -104,7 +77,6 @@ function toggleImageSize(img) {
     margin-bottom: 1rem;
     text-align: left;
 }
-
 .project-date {
     display: block;
     font-size: 1rem;
@@ -129,8 +101,8 @@ function toggleImageSize(img) {
     width: 100%;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
-
 .carousel-image {
     display: none;
     width: 100%;
@@ -139,7 +111,6 @@ function toggleImageSize(img) {
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
-
 .carousel-image.active {
     display: block;
 }
@@ -149,7 +120,7 @@ function toggleImageSize(img) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.5);
     color: white;
     border: none;
     cursor: pointer;
@@ -157,28 +128,23 @@ function toggleImageSize(img) {
     font-size: 2rem;
     border-radius: 50%;
 }
-
 .prev { left: -40px; }
 .next { right: -40px; }
-
 .carousel-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
-/* Click to Expand */
+/* Click-to-Expand */
 .expandable-image {
     cursor: pointer;
 }
-
 .expandable-image.expanded {
-    transform: scale(1.8);
-    cursor: zoom-out;
+    transform: translate(-50%, -50%) scale(1.8);
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.8);
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0,0,0,0.8);
     padding: 10px;
     border-radius: 8px;
 }
@@ -190,7 +156,34 @@ embed {
     border: 1px solid #ccc;
     border-radius: 8px;
 }
-  
-<style>
+</style>
 
----
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    let currentSlide = 0;
+    const images = document.querySelectorAll(".carousel-image");
+
+    function showSlide(index) {
+        images.forEach((img, i) => {
+            if (i === index) {
+                img.classList.add("active");
+            } else {
+                img.classList.remove("active");
+            }
+        });
+    }
+
+    window.changeSlide = function(step) {
+        currentSlide += step;
+        if (currentSlide >= images.length) currentSlide = 0;
+        if (currentSlide < 0) currentSlide = images.length - 1;
+        showSlide(currentSlide);
+    };
+
+    window.toggleImageSize = function(img) {
+        img.classList.toggle("expanded");
+    };
+
+    showSlide(currentSlide);
+});
+</script>
