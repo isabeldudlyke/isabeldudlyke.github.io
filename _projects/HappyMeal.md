@@ -1,6 +1,6 @@
 ---
 title: "Happy Meal Ball Maze Toy"
-date: March 2022
+date: Feb 2022
 category: "Professional"  
 priority: 3
 header_image: "/assets/images/Toy.png"  # Update with actual image file
@@ -14,7 +14,7 @@ technologies:
 ---
 
 <div class="project-meta">
-    <span class="project-date">{{ page.date | date: "%b %Y" }}</span>
+    <span class="project-date">{{ page.date | date: "%b %Y" }} - March 2022</span>
 </div>
 
 ## **Project Overview**
