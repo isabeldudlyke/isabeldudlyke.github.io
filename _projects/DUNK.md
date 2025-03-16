@@ -29,13 +29,12 @@ technologies:
 
 ---
 <div class="video-container">
-<iframe width="640" height="360" 
-    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-    title="Project Video"
-    frameborder="0"
-    allowfullscreen>
-</iframe>
+    <video width="640" height="360" controls>
+        <source src="https://raw.githubusercontent.com/isabeldudlyke/isabeldudlyke.github.io/main/assets/videos/demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </div>
+
 
 ---
 
