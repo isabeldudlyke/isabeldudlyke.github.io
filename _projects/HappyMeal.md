@@ -3,7 +3,7 @@ title: "Happy Meal Ball Maze Toy"
 date: Feb 2022
 category: "Professional"  
 priority: 3
-header_image: "/assets/images/Toy.png"  # Update with actual image file
+header_image: "/assets/images/Toy.png"  
 description: "A fun, cost-efficient, and sustainable Happy Meal toy designed for mass production."
 layout: "project"  
 technologies:
@@ -27,14 +27,14 @@ technologies:
 ---
 
 ## **Technical Drawings & Prototyping**
-<div class="carousel">
-    <button class="carousel-prev" onclick="changeSlide(-1)">❮</button>
-    <div class="carousel-container">
-        <img src="/assets/images/Toy.png" alt="Final Happy Meal Toys" class="carousel-image expandable-image" onclick="toggleImageSize(this)">
-        <img src="/assets/images/TechSketch.png" alt="Technical Drawing" class="carousel-image expandable-image" onclick="toggleImageSize(this)">
-        <img src="/assets/images/ExplodedView.png" alt="Exploded View" class="carousel-image expandable-image" onclick="toggleImageSize(this)">
+<div class="carousel-container">
+    <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+    <div class="carousel">
+        <img src="/assets/images/Toy.png" alt="Final Happy Meal Toys" class="carousel-image active" onclick="toggleImageSize(this)">
+        <img src="/assets/images/TechSketch.png" alt="Technical Drawing" class="carousel-image" onclick="toggleImageSize(this)">
+        <img src="/assets/images/ExplodedView.png" alt="Exploded View" class="carousel-image" onclick="toggleImageSize(this)">
     </div>
-    <button class="carousel-next" onclick="changeSlide(1)">❯</button>
+    <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
 </div>
 
 ---
@@ -48,25 +48,21 @@ View the full **project report** above or <a href="/assets/documents/HappyMeals.
 ---
 
 ## **Cost Analysis**
-
 - **Manufacturing Cost:** The total cost per unit was estimated at **$0.38** using **injection molding**.
 - **Material Costs:** ABS plastic was selected for its **durability, low cost, and recyclability**.
 - **Production Feasibility:** The mold was designed for **high-volume manufacturing**, reducing per-unit costs as production scales.
 
 ## **Marketing Analysis**
-
 - **Target Audience:** Children ages **3-10**, incorporating **popular themes (Encanto, Cars, Lightyear)**.
 - **Brand Alignment:** The design integrates with **McDonald's existing Happy Meal branding**, enhancing collectibility.
 - **Sustainability Considerations:** The toy is designed for **recyclability and minimal material waste**, aligning with sustainability goals.
 
 ## **Project Results & Key Findings**
-
 - **User Testing:** Positive feedback was received on **ease of use and durability**.
 - **Manufacturability Success:** The toy was successfully **manufactured using injection molding**, demonstrating feasibility.
 - **Improvements:** Adjustments to **snap-fit tolerances and friction joints** improved the final design's assembly quality.
 
 ---
-
 <style>
 .project-content h1 {
     color: #f0f0f0;
@@ -88,27 +84,31 @@ View the full **project report** above or <a href="/assets/documents/HappyMeals.
     color: #bbb;
 }
 
-/* Carousel Styling */
-.carousel {
+/* Carousel Container */
+.carousel-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
+    position: relative;
 }
 
-.carousel-container {
-    width: 100%;
+/* Image Carousel */
+.carousel {
     display: flex;
     overflow: hidden;
-    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-image {
-    width: 100%;
     display: none;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
@@ -118,7 +118,7 @@ View the full **project report** above or <a href="/assets/documents/HappyMeals.
 }
 
 /* Navigation Buttons */
-.carousel-prev, .carousel-next {
+.carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -127,14 +127,14 @@ View the full **project report** above or <a href="/assets/documents/HappyMeals.
     border: none;
     cursor: pointer;
     padding: 10px;
-    font-size: 1.5rem;
-    border-radius: 5px;
+    font-size: 2rem;
+    border-radius: 50%;
 }
 
-.carousel-prev { left: -40px; }
-.carousel-next { right: -40px; }
+.prev { left: -40px; }
+.next { right: -40px; }
 
-.carousel-prev:hover, .carousel-next:hover {
+.carousel-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -146,6 +146,14 @@ View the full **project report** above or <a href="/assets/documents/HappyMeals.
 .expandable-image.expanded {
     transform: scale(1.8);
     cursor: zoom-out;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.8);
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
 }
 
 /* PDF Styling */
@@ -155,7 +163,9 @@ embed {
     border: 1px solid #ccc;
     border-radius: 8px;
 }
-
+  
+<style>
+  
 <script>
 let currentSlide = 0;
 const images = document.querySelectorAll(".carousel-image");
