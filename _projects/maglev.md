@@ -1,9 +1,9 @@
 ---
 title: "Magnetic Levitation Control System"
-date: Feb 2025
+date: April 2024
 category: "professional"
 priority: 3
-header_image: "/assets/images/maglev.jpg"  # Replace with your actual image file
+header_image: "/assets/images/maglev.png"  # Replace with your actual image file
 description: "A magnetic levitation system using a PID controller to stably levitate a metal ball."
 layout: "project"
 technologies:
