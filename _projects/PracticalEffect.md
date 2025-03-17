@@ -29,13 +29,23 @@ technologies:
 
 ---
 
+## How I Made It
+- **Prosthetic & Tubing:**  
+  I used a latex prosthetic with strategically cut holes and attached flat heat shrink tubing (with a side slit) so it could sit flush against the actor’s neck.
+- **Sealing & Connection:**  
+  I sealed the tubing around the prosthetic with glue and shrunk the tubing section from ~1 inch off the prosthetic to connect it to a large plastic syringe.
+- **Operation:**  
+  The syringe, loaded with thin fake blood, was pressed during filming to force the liquid through the tubing, out the slit and holes. The prosthetic was attached with Pros-Aide, colored to match the actor’s skin, and accented with thicker fake blood to mask the edges.
+
+---
+
 ## Project Video
 <div class="video-warning" style="border: 1px solid red; padding: 0.5rem; margin: 1rem 0; color: red; text-align: center;">
   Warning: This video contains simulated blood effects.
 </div>
 
 <div class="video-container">
-    <video class="wide-video" autoplay loop muted playsinline>
+    <video class="wide-video" controls>
         <source src="https://raw.githubusercontent.com/isabeldudlyke/isabeldudlyke.github.io/main/assets/videos/Effect.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
