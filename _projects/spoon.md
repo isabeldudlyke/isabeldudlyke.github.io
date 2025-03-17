@@ -45,6 +45,11 @@ technologies:
 
 <!-- Inline CSS for Responsive Image & Video -->
 <style>
+.project-content h1 {
+    color: #f0f0f0;  /* Light gray (adjust as needed) */
+    font-size: 2.5rem;  /* Adjust for visibility */
+    margin-bottom: 10px;
+}
 /* Project Metadata */
 .project-meta {
   font-size: 0.9rem;
