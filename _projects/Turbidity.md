@@ -26,11 +26,6 @@ technologies:
 
 ---
 
-## **Poster Presentation**
-<div class="image-container">
-    <img src="/assets/images/ChaldniPoster.jpg" alt="Chladni Effect Poster" class="project-image expandable-image" onclick="toggleImageSize(this)">
-</div>
-
 ## **Project Poster**
 <div class="image-container">
     <img src="/assets/images/TribidityPoster.jpg" alt="Turbidity Meter Poster" class="project-image expandable-image" onclick="toggleImageSize(this)">
