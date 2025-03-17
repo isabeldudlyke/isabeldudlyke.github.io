@@ -6,9 +6,9 @@ css_class: "reel-page"
 ---
 
 <!-- Reel Header in the Top Corner -->
-<div class="reel-header">
-  <h1>Reel</h1>
-</div>
+# Reel
+
+---
 
 <!-- Video Container for Embedded YouTube Video -->
 <div class="video-container">
@@ -22,7 +22,7 @@ css_class: "reel-page"
 
 <!-- Inline CSS -->
 <style>
-  .film-page h1 {
+  .reel-page h1 {
     font-size: 2rem; /* Adjust this value for the desired size */
     margin-bottom: 1rem; /* Optional: Adjust spacing below the title */
   }
