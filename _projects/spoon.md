@@ -23,83 +23,92 @@ technologies:
 - Produced a **video** documenting the design ideation and iteration process, demonstrating how the product functions.
 
 ---
+
+<!-- Project Image -->
 <div class="image-container">
-    <img src="/assets/images/IMG_0433.jpeg" alt="Spoon for Arthrogryposis" class="project-image expandable-image" onclick="toggleImageSize(this)">
+  <img src="/assets/images/IMG_0433.jpeg" alt="Spoon for Arthrogryposis" class="project-image expandable-image" onclick="toggleImageSize(this)">
 </div>
 
 ---
 
-## **Project Video**
-<div style="text-align: center;">
-  <iframe width="800"
-          src="https://www.youtube.com/embed/0wa5HLWD5Lg" 
-          title="Spoon for Arthrogryposis - Demonstration"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+<!-- Project Video -->
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/0wa5HLWD5Lg" 
+          title="Spoon for Arthrogryposis - Demonstration" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen>
   </iframe>
 </div>
 
 ---
 
-
+<!-- Inline JavaScript for Click-to-Expand -->
 <script>
 function toggleImageSize(img) {
-    img.classList.toggle("expanded");
+  img.classList.toggle("expanded");
 }
 </script>
 
----
-
+<!-- Inline CSS for Responsive Image & Video -->
 <style>
-
-.project-content h1 {
-    color: #f0f0f0;  /* Light gray */
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+/* Back Link Styling */
+.back-link a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-family: var(--body-font);
 }
-  
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Project Metadata */
 .project-meta {
-    font-size: 1rem;
-    color: #888;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    text-align: left;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-family: var(--body-font);
 }
-
 .project-date {
-    display: block;
-    font-size: 1rem;
-    color: #bbb;
+  display: block;
+  font-size: 1rem;
+  color: #bbb;
 }
 
-* Make poster and video match section width */
+/* Project Image */
 .image-container {
-    max-width: 100%;
-    text-align: center;
+  text-align: center;
 }
-
-.project-image{
-    width: 100%;  /* Make image and video as wide as section dividers */
-    max-width: 900px; /* Limit size on larger screens */
-    height: auto;
-    margin: 20px auto;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.project-image {
+  display: block;
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 20px auto;
 }
-
-/* Click to expand the image */
 .project-image.expanded {
-    transform: scale(1.8); /* Expand image */
-    cursor: zoom-out;
+  transform: scale(1.8);
+  cursor: zoom-out;
 }
 
-/* Limit max expansion to avoid overflow */
-@media (max-width: 768px) {
-    .project-image.expanded {
-        transform: scale(1.2);
-    }
+/* Video Container: Using aspect-ratio trick for 16:9 ratio */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding-top: 56.25%;  /* 16:9 ratio = 9/16 * 100% = 56.25% */
 }
-
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 </style>
