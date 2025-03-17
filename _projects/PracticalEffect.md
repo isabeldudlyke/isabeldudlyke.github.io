@@ -13,7 +13,7 @@ technologies:
 
 <!-- Project Metadata -->
 <div class="project-meta">
-  <span class="project-date">{{ page.date | date: "%b %Y" }} </span>
+  <span class="project-date">{{ page.date | date: "%b %Y" }}</span>
 </div>
 
 ## Project Overview
@@ -29,17 +29,6 @@ technologies:
 
 ---
 
-## How I Made It
-- **Prosthetic & Tubing:**  
-  I used a latex prosthetic with strategically cut holes and attached flat heat shrink tubing (with a side slit) so it could sit flush against the actor’s neck.
-- **Sealing & Connection:**  
-  I sealed the tubing around the prosthetic with glue and shrunk the tubing section from ~1 inch off the prosthetic to connect it to a large plastic syringe.
-- **Operation:**  
-  The syringe, loaded with thin fake blood, was pressed during filming to force the liquid through the tubing, out the slit and holes. The prosthetic was attached with Pros-Aide, colored to match the actor’s skin, and accented with thicker fake blood to mask the edges.
-
----
-
-
 ## Project Video
 <div class="video-warning" style="border: 1px solid red; padding: 0.5rem; margin: 1rem 0; color: red; text-align: center;">
   Warning: This video contains simulated blood effects.
@@ -47,7 +36,7 @@ technologies:
 
 <div class="video-container">
     <video class="wide-video" autoplay loop muted playsinline>
-        <source src="https://raw.githubusercontent.com/isabeldudlyke/isabeldudlyke.github.io/main/assets/videos/A002_A031_0303ZI_001.mov" type="video/mov">
+        <source src="https://raw.githubusercontent.com/isabeldudlyke/isabeldudlyke.github.io/main/assets/videos/Effect.mp4" type="video/mov">
         Your browser does not support the video tag.
     </video>
 </div>
@@ -63,13 +52,7 @@ function toggleImageSize(img) {
 ---
 
 <style>
-
-.project-content h1 {
-    color: #f0f0f0;  /* Light gray */
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-  
+/* Project Metadata */
 .project-meta {
     font-size: 1rem;
     color: #888;
@@ -77,36 +60,54 @@ function toggleImageSize(img) {
     margin-bottom: 1rem;
     text-align: left;
 }
-
 .project-date {
     display: block;
     font-size: 1rem;
     color: #bbb;
 }
 
-/* Make poster and video match section width */
-.image-container, .video-container {
-    max-width: 80%;
-    text-align: center;
-}
-
-.project-image, .wide-video {
-    width: 100%;  /* Make image and video as wide as section dividers */
-    max-width: 900px; /* Limit size on larger screens */
-    height: auto;
+/* Center the image container using flexbox */
+.image-container {
+    width: 100%;
+    max-width: 900px;
     margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.project-image {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    /* Remove any extra margins if necessary */
 }
 
-/* Click to expand the image */
+/* Video Container: maintain a 16:9 ratio */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding-top: 56.25%;  /* 16:9 aspect ratio */
+}
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Click-to-expand styling (if still enabled) */
 .project-image.expanded {
-    transform: scale(1.8); /* Expand image */
+    transform: scale(1.8);
     cursor: zoom-out;
 }
 
-/* Limit max expansion to avoid overflow */
 @media (max-width: 768px) {
     .project-image.expanded {
         transform: scale(1.2);
