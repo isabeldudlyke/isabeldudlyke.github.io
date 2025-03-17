@@ -31,8 +31,8 @@ css_class: "contact-page"
     height: 300px;
     border-radius: 50%;
     background-size: cover;
-    background-position: left center; /* Adjust to show the leftmost part of the image */
-    background-image: url("/assets/images/IMG_5332.jpeg"); /* Ensure correct file path */
+    background-position: center; /* Adjust to show the leftmost part of the image */
+    background-image: url("/assets/images/Contact.jpg"); /* Ensure correct file path */
     flex-shrink: 0;
   }
 
