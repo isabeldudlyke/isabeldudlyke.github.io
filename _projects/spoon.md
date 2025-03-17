@@ -52,15 +52,11 @@ function toggleImageSize(img) {
 
 <!-- Inline CSS for Responsive Image & Video -->
 <style>
-/* Back Link Styling */
-.back-link a {
-  color: var(--link-color);
-  text-decoration: none;
-  font-weight: 600;
-  font-family: var(--body-font);
-}
-.back-link a:hover {
-  text-decoration: underline;
+/* Back Link Styling if needed */
+.project-content h1 {
+    color: #f0f0f0;  /* Light gray */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 /* Project Metadata */
@@ -76,14 +72,19 @@ function toggleImageSize(img) {
   color: #bbb;
 }
 
-/* Project Image */
+/* Image Container */
 .image-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
   text-align: center;
 }
+
+/* Project Image */
 .project-image {
   display: block;
-  max-width: 900px;
   width: 100%;
+  max-width: 900px;
   height: auto;
   border-radius: 8px;
   cursor: pointer;
@@ -91,8 +92,19 @@ function toggleImageSize(img) {
   margin: 20px auto;
 }
 .project-image.expanded {
-  transform: scale(1.8);
-  cursor: zoom-out;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.8);
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  z-index: 1001; /* Higher z-index so it sits on top */
+  background: rgba(0,0,0,0.8);
+  padding: 10px;
+  border-radius: 8px;
+  object-fit: contain;
 }
 
 /* Video Container: Using aspect-ratio trick for 16:9 ratio */
@@ -101,7 +113,7 @@ function toggleImageSize(img) {
   width: 100%;
   max-width: 900px;
   margin: 20px auto;
-  padding-top: 56.25%;  /* 16:9 ratio = 9/16 * 100% = 56.25% */
+  padding-top: 56.25%;  /* 16:9 ratio */
 }
 .video-container iframe {
   position: absolute;
