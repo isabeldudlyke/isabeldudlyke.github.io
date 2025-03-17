@@ -26,7 +26,7 @@ technologies:
 
 <!-- Project Image -->
 <div class="image-container">
-  <img src="/assets/images/IMG_0433.jpeg" alt="Spoon for Arthrogryposis" class="project-image expandable-image" onclick="toggleImageSize(this)">
+  <img src="/assets/images/IMG_0433.jpeg" alt="Spoon for Arthrogryposis" class="project-image">
 </div>
 
 ---
@@ -43,22 +43,8 @@ technologies:
 
 ---
 
-<!-- Inline JavaScript for Click-to-Expand -->
-<script>
-function toggleImageSize(img) {
-  img.classList.toggle("expanded");
-}
-</script>
-
 <!-- Inline CSS for Responsive Image & Video -->
 <style>
-/* Back Link Styling if needed */
-.project-content h1 {
-    color: #f0f0f0;  /* Light gray */
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
 /* Project Metadata */
 .project-meta {
   font-size: 0.9rem;
@@ -75,45 +61,29 @@ function toggleImageSize(img) {
 /* Image Container */
 .image-container {
   width: 100%;
-  max-width: 1000px; /* Increased max width for wider image on page */
+  max-width: 1000px;
   margin: 20px auto;
   text-align: center;
 }
 
-/* Project Image */
+/* Project Image: Make it the same width as the video */
 .project-image {
   display: block;
   width: 100%;
-  max-width: 1000px; /* Regular image appears wider */
+  max-width: 1000px;
   height: auto;
   border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
   margin: 20px auto;
-}
-.project-image.expanded {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.5); /* Less expansion */
-  max-width: 90vw;
-  max-height: 90vh;
-  width: auto;
-  height: auto;
-  z-index: 1001;
-  background: rgba(0,0,0,0.8);
-  padding: 10px;
-  border-radius: 8px;
-  object-fit: contain;
+  /* No click-to-expand functionality */
 }
 
 /* Video Container: Using aspect-ratio trick for 16:9 ratio */
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 1000px; /* Match image width */
+  max-width: 1000px;
   margin: 20px auto;
-  padding-top: 56.25%;  /* 16:9 ratio = 56.25% */
+  padding-top: 56.25%;  /* 16:9 ratio */
 }
 .video-container iframe {
   position: absolute;
