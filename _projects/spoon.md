@@ -75,7 +75,7 @@ function toggleImageSize(img) {
 /* Image Container */
 .image-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px; /* Increased max width for wider image on page */
   margin: 20px auto;
   text-align: center;
 }
@@ -84,7 +84,7 @@ function toggleImageSize(img) {
 .project-image {
   display: block;
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px; /* Regular image appears wider */
   height: auto;
   border-radius: 8px;
   cursor: pointer;
@@ -95,12 +95,12 @@ function toggleImageSize(img) {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.8);
+  transform: translate(-50%, -50%) scale(1.5); /* Less expansion */
   max-width: 90vw;
   max-height: 90vh;
   width: auto;
   height: auto;
-  z-index: 1001; /* Higher z-index so it sits on top */
+  z-index: 1001;
   background: rgba(0,0,0,0.8);
   padding: 10px;
   border-radius: 8px;
@@ -111,9 +111,9 @@ function toggleImageSize(img) {
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px; /* Match image width */
   margin: 20px auto;
-  padding-top: 56.25%;  /* 16:9 ratio */
+  padding-top: 56.25%;  /* 16:9 ratio = 56.25% */
 }
 .video-container iframe {
   position: absolute;
