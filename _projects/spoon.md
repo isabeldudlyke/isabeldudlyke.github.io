@@ -74,12 +74,12 @@ function toggleImageSize(img) {
 }
 
 * Make poster and video match section width */
-.image-container, .video-container {
+.image-container {
     max-width: 100%;
     text-align: center;
 }
 
-.project-image, .wide-video {
+.project-image{
     width: 100%;  /* Make image and video as wide as section dividers */
     max-width: 900px; /* Limit size on larger screens */
     height: auto;
