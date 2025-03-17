@@ -15,12 +15,17 @@ css_class: "projects-page"
   <button data-filter="personal" onclick="filterAllProjects('personal')">Personal</button>
 </div>
 
-<!-- All Projects (sorted newest to oldest by date) -->
+<!-- All Projects (sorted by category and date) -->
 <div class="all-gallery">
-  {% assign sorted_by_date = site.projects | sort: 'date' | reverse %}
-  {% for project in sorted_by_date %}
+  {%- comment -%}
+  First, create two groups: professional and personal. Each is sorted by date (newest first).
+  {%- endcomment -%}
+  {% assign professional_projects = site.projects | where:"category", "professional" | sort:"date" | reverse %}
+  {% assign personal_projects = site.projects | where:"category", "personal" | sort:"date" | reverse %}
+  {% assign sorted_projects = professional_projects | concat: personal_projects %}
+  
+  {% for project in sorted_projects %}
     {% assign s = project.status | default: "" %}
-
     {% if s contains "under_construction" %}
       <!-- Non-clickable item -->
       <div class="project-item" data-category="{{ project.category }}">
@@ -76,8 +81,7 @@ function filterAllProjects(category) {
   });
 }
 
-  // Optional: auto-show "All" on page load
-  document.addEventListener('DOMContentLoaded', () => {
-    filterAllProjects('all');
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  filterAllProjects('all');
+});
 </script>
