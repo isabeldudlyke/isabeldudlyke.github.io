@@ -2,12 +2,12 @@
 layout: default
 title: "Reel"
 permalink: /reel/
-css_class: "film-page"
+css_class: "reel-page"
 ---
 
 <!-- Reel Header in the Top Corner -->
 <div class="reel-header">
-  <h2>Reel</h2>
+  <h1>Reel</h1>
 </div>
 
 <!-- Video Container for Embedded YouTube Video -->
@@ -22,15 +22,9 @@ css_class: "film-page"
 
 <!-- Inline CSS -->
 <style>
-  /* Reel Header positioned in the top left corner */
-  .reel-header {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    color: #fff; /* Adjust based on your background */
-    z-index: 10;
+  .film-page h1 {
+    font-size: 2rem; /* Adjust this value for the desired size */
+    margin-bottom: 1rem; /* Optional: Adjust spacing below the title */
   }
 
   /* Video container: full width, with a 16:9 aspect ratio */
@@ -50,8 +44,4 @@ css_class: "film-page"
     border: none;
   }
 
-  /* Optional: Set a background color for the page */
-  body {
-    background-color: #000;  /* or adjust as desired */
-  }
 </style>
