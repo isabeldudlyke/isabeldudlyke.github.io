@@ -26,9 +26,15 @@ technologies:
 
 ---
 
+## **Poster Presentation**
+<div class="image-container">
+    <img src="/assets/images/ChaldniPoster.jpg" alt="Chladni Effect Poster" class="project-image expandable-image" onclick="toggleImageSize(this)">
+</div>
+
 ## **Project Poster**
-<!-- Display your Turbidity Poster image -->
-<img src="/assets/images/TribidityPoster.jpg" alt="Turbidity Meter Poster" class="project-image" style="max-width: 700px; margin: 20px auto; display: block;">
+<div class="image-container">
+    <img src="/assets/images/TribidityPoster.jpg" alt="Turbidity Meter Poster" class="project-image expandable-image" onclick="toggleImageSize(this)">
+</div>
 
 ---
 
@@ -39,20 +45,69 @@ technologies:
 
 ---
 
-<!-- Inline CSS (Optional, to match your project style) -->
-<style>
-.project-content h1 {
-  color: #f0f0f0; /* Light gray, adjust as needed */
-  font-size: 2.5rem; /* Adjust for visibility */
-  margin-bottom: 10px;
+<script>
+function toggleImageSize(img) {
+    img.classList.toggle("expanded");
 }
-.project-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 20px auto;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+</script>
+
+---
+
+<style>
+
+.project-content h1 {
+    color: #f0f0f0;  /* Light gray */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+  
+.project-meta {
+    font-size: 1rem;
+    color: #888;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.project-date {
+    display: block;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+/* Make poster and video match section width */
+.image-container, .video-container {
+    max-width: 100%;
+    text-align: center;
+}
+
+.project-image, .wide-video {
+    width: 100%;  /* Make image and video as wide as section dividers */
+    max-width: 900px; /* Limit size on larger screens */
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Click to expand the image */
+.project-image.expanded {
+    transform: scale(1.8); /* Expand image */
+    cursor: zoom-out;
+}
+
+/* Limit max expansion to avoid overflow */
+@media (max-width: 768px) {
+    .project-image.expanded {
+        transform: scale(1.2);
+    }
+}
+
+embed {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 </style>
