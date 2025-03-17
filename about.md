@@ -26,7 +26,7 @@ css_class: "about-page"
     </p>
   </div>
   
----
+<hr>
 
   <!-- Education Section -->
   <div class="resume-section">
@@ -40,7 +40,7 @@ css_class: "about-page"
       <div class="item-subtitle">4.0 GPA, Deans List with Distinction (6x), Tau Beta Pi, Pi Tau Sigma, Robert E. Priso Filmmaking Award</div>
     </div>
     
----
+<hr>
 
     <!-- Professional Experience Section -->
     <h2>Professional Experience</h2>
@@ -129,7 +129,7 @@ css_class: "about-page"
     
   </div>
   
----
+<hr>
 
 <!-- Skills Section -->
 <h2>Skills & Proficiencies</h2>
@@ -156,7 +156,7 @@ css_class: "about-page"
   </div>
 </div>
 
----
+<hr>
 
   <!-- Extracurricular Section -->
   <h2>Extracurricular Activities</h2>
@@ -206,9 +206,9 @@ css_class: "about-page"
   </div>
 </div>
 
----
+<hr>
 
----
+<hr>
 
 <style>
 /* General Styling */
