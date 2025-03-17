@@ -31,7 +31,7 @@ technologies:
 
 ## **Project Video**
 <div style="text-align: center;">
-  <iframe width=100%
+  <iframe width="800"
           src="https://www.youtube.com/embed/0wa5HLWD5Lg" 
           title="Spoon for Arthrogryposis - Demonstration"
           frameborder="0"
@@ -102,10 +102,4 @@ function toggleImageSize(img) {
     }
 }
 
-embed {
-    display: block;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
 </style>
