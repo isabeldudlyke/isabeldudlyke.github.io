@@ -1,19 +1,15 @@
 ---
 title: "Spoon for Arthrogryposis"
-date: Sep 2021
+date: Aug 2021
 category: "professional"
 priority: 3
-header_image: "/assets/images/arthrogryposis-spoon.jpg"
+header_image: "/assets/images/IMG_0433.jpeg"
 description: "A custom-designed spoon for individuals with Arthrogryposis, enhancing ease of use."
 layout: "project"
 technologies:
   - CAD Modeling
   - Prototyping
 ---
-<!-- Back to Projects Link -->
-<p class="back-link">
-  <a href="{{ '/projects/' | relative_url }}">← Back to Projects</a>
-</p>
 
 <!-- Project Metadata -->
 <div class="project-meta">
@@ -27,14 +23,15 @@ technologies:
 - Produced a **video** documenting the design ideation and iteration process, demonstrating how the product functions.
 
 ---
-
-<img src="/assets/images/IMG_0433.jpeg" alt="Spoon for Arthrogryposis" class="project-image" style="max-width: 700px; display: block; margin: 20px auto;">
+<div class="image-container">
+    <img src="/assets/images/IMG_0433.jpeg" alt="Spoon for Arthrogryposis" class="project-image expandable-image" onclick="toggleImageSize(this)">
+</div>
 
 ---
 
 ## **Project Video**
 <div style="text-align: center;">
-  <iframe width="560" height="315"
+  <iframe width=100%
           src="https://www.youtube.com/embed/0wa5HLWD5Lg" 
           title="Spoon for Arthrogryposis - Demonstration"
           frameborder="0"
@@ -46,45 +43,69 @@ technologies:
 ---
 
 
-<!-- Optional Inline CSS (Adjust as needed) -->
-<style>
-.project-content h1 {
-  color: #f0f0f0;  /* Light gray */
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-/* .project-image is the same styling you used in other projects */
-.project-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  display: block;
-  margin: 20px auto;
-}
-
-/* If you want click-to-expand, reuse the .expanded class styling. */
-.project-image.expanded {
-  transform: scale(1.8);
-  cursor: zoom-out;
-}
-
-/* Adjust the back link styling if needed */
-.back-link a {
-  color: #666;
-  text-decoration: none;
-  font-weight: 600;
-}
-.back-link a:hover {
-  text-decoration: underline;
-}
-</style>
-
-<!-- Optional JS for Click-to-Expand (If you want the same expand effect) -->
 <script>
 function toggleImageSize(img) {
-  img.classList.toggle("expanded");
+    img.classList.toggle("expanded");
 }
 </script>
+
+---
+
+<style>
+
+.project-content h1 {
+    color: #f0f0f0;  /* Light gray */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+  
+.project-meta {
+    font-size: 1rem;
+    color: #888;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.project-date {
+    display: block;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+* Make poster and video match section width */
+.image-container, .video-container {
+    max-width: 100%;
+    text-align: center;
+}
+
+.project-image, .wide-video {
+    width: 100%;  /* Make image and video as wide as section dividers */
+    max-width: 900px; /* Limit size on larger screens */
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Click to expand the image */
+.project-image.expanded {
+    transform: scale(1.8); /* Expand image */
+    cursor: zoom-out;
+}
+
+/* Limit max expansion to avoid overflow */
+@media (max-width: 768px) {
+    .project-image.expanded {
+        transform: scale(1.2);
+    }
+}
+
+embed {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+</style>
