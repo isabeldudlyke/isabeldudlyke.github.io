@@ -25,7 +25,9 @@ css_class: "about-page"
       delivering impactful and practical solutions.
     </p>
   </div>
+  
 ---
+
   <!-- Education Section -->
   <div class="resume-section">
     <h2>Education</h2>
@@ -37,7 +39,9 @@ css_class: "about-page"
       <div class="item-subtitle">B.S.E in Mechanical Engineering, Minor in Cinematic Arts</div>
       <div class="item-subtitle">4.0 GPA, Deans List with Distinction (6x), Tau Beta Pi, Pi Tau Sigma, Robert E. Priso Filmmaking Award</div>
     </div>
+    
 ---
+
     <!-- Professional Experience Section -->
     <h2>Professional Experience</h2>
     <div class="resume-item">
@@ -124,7 +128,9 @@ css_class: "about-page"
     </div>
     
   </div>
+  
 ---
+
 <!-- Skills Section -->
 <h2>Skills & Proficiencies</h2>
 <div class="skills-grid">
@@ -149,7 +155,9 @@ css_class: "about-page"
     <span>Autodesk</span>
   </div>
 </div>
+
 ---
+
   <!-- Extracurricular Section -->
   <h2>Extracurricular Activities</h2>
   <div class="extracurricular">
@@ -197,8 +205,11 @@ css_class: "about-page"
 
   </div>
 </div>
+
 ---
+
 ---
+
 <style>
 /* General Styling */
 .about-wrapper {
