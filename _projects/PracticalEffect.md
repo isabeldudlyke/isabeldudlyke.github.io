@@ -36,7 +36,7 @@ technologies:
 
 <div class="video-container">
     <video class="wide-video" autoplay loop muted playsinline>
-        <source src="https://raw.githubusercontent.com/isabeldudlyke/isabeldudlyke.github.io/main/assets/videos/Effect.mp4" type="video/mov">
+        <source src="https://raw.githubusercontent.com/isabeldudlyke/isabeldudlyke.github.io/main/assets/videos/Effect.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
