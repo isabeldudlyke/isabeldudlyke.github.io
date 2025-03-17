@@ -11,7 +11,7 @@ css_class: "about-page"
     <h1>Hi, I'm Isabel.</h1>
     <p>
       I am currently a student at Duke University majoring in Mechanical Engineering and Cinematic Arts. 
-      I am a proud member of esteemed engineering societies, including Tau Beta Pi and Pi Tau Sigma, which 
+      I am a proud member of esteemed honor societies, including Phi Beta Kappa, Tau Beta Pi and Pi Tau Sigma, which 
       have further fueled my passion for innovation and design. Additionally, I am an active member of 
       Freewater Productions, Duke’s student-run independent film production company, and two theater 
       groups, Duke Players and Hoof ‘n’ Horn, where I frequently take on technical roles in productions. 
