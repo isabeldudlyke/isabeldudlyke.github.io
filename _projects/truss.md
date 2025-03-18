@@ -9,8 +9,8 @@ layout: "project"
 technologies:
   - SolidWorks
   - FEA Analysis
-  - Fluid Dynamics
-  - Soldering
+  - Mechanical Design
+  - Material Science
 ---
 
 <div class="project-meta">
