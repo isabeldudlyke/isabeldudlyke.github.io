@@ -43,6 +43,18 @@ technologies:
 <embed src="/assets/documents/DC 6.pdf" width="100%" height="600px" type="application/pdf">
 
 ---
+## Demo Video
+
+<div class="video-container">
+    <video width="640" height="480" controls>
+        <source src="https://raw.githubusercontent.com/isabeldudlyke/isabeldudlyke.github.io/main/assets/videos/SportBot.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+In this video, all the sportbots were combines to create a much larger Rube-Goldberg Machine. Our sportbot was the first in the chain and you can see the ball triggering the button causing yeh drawbridge to lift and send the ball rolling through the candyland castle into the next sportbot. 
+
+---
 
 <style>
   
@@ -130,6 +142,19 @@ technologies:
   border-radius: 8px;
   object-fit: contain;
 }
+
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+embed {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+  
 </style>
 
 <script>
