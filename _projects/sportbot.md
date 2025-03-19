@@ -52,7 +52,7 @@ technologies:
     </video>
 </div>
 
-In this video, all the sportbots from each group were combined to create a much larger Rube-Goldberg Machine. Our sportbot was the first in the chain and you can see the ball triggering the button causing the drawbridge to lift and send the ball rolling through the candyland castle into the next sportbot. 
+In this video, all the sportbots from each group were combined to create a much larger Rube-Goldberg Machine. Our sportbot was the first in the chain and you can see the ball triggering the button causing the drawbridge to lift and sending the ball rolling through the candyland castle into the next sportbot. 
 
 ---
 
