@@ -10,7 +10,7 @@ images:
   - "/assets/images/GoatEye_1.4.1.jpg"
   - "/assets/images/Ondine_1.16.1.jpg"
   - "/assets/images/GoatMouth_1.3.2.jpg"
-roles: "DP, DIRECTOR, EDITOR"
+roles: "DIRECTOR, WRITER, PRODUCER, EDITOR"
 ---
 
 <div class="banner">
