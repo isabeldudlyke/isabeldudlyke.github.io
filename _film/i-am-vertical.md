@@ -3,7 +3,7 @@ title: "I AM VERTICAL"
 layout: default
 description: "A visual interpretation of Sylvia Plath’s poem \"I Am Vertical\""
 category: "professional" # Options: "professional" or "personal"
-priority: 2
+priority: 3
 status: "new" # Options: "new", "under_construction"
 header_image: "/assets/images/Still_1.19.1.jpg"
 images:
