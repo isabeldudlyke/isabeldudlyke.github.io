@@ -1,5 +1,5 @@
 ---
-title: "Éliphas"
+title: "ÉLIPHAS"
 layout: default
 description: "Alone in a barn at night, a girl prepares a satanic ritual with a goat’s blood—unaware something ancient is watching."
 category: "professional" # Options: "professional" or "personal"
