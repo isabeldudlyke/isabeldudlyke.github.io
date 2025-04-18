@@ -37,7 +37,7 @@ css_class: "about-page"
         <span class="item-date">Aug 2021 - Present</span>
       </div>
       <div class="item-subtitle">B.S.E in Mechanical Engineering, Minor in Cinematic Arts</div>
-      <div class="item-subtitle">4.0 GPA, Deans List with Distinction (6x), Tau Beta Pi, Pi Tau Sigma, Robert E. Priso Filmmaking Award</div>
+      <div class="item-subtitle">4.0 GPA, Deans List with Distinction (6x), Tau Beta Pi, Pi Tau Sigma, Robert E. Priso Filmmaking Award, Cinematic Arts Outstanding Filmmaker Award</div>
     </div>
     
 <hr>
