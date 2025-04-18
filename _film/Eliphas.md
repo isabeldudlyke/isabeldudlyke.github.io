@@ -15,7 +15,7 @@ roles: "DIRECTOR, WRITER, PRODUCER, EDITOR"
 
 <div class="banner">
   <div class="banner-content">
-    <h1>TULIPS</h1>
+    <h1>ELIPHAS</h1>
     <a href="/film/" class="back-button">← Back to Films</a>
   </div>
 </div>
