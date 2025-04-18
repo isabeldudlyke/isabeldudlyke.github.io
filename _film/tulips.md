@@ -3,7 +3,7 @@ title: "TULIPS"
 layout: default
 description: "A visual interpretation of Sylvia Plath’s poem \"Tulips\""
 category: "professional" # Options: "professional" or "personal"
-priority: 1
+priority: 2
 status: "new" # Options: "new", "under_construction"
 header_image: "/assets/images/Still 2024-12-01 155205_1.17.1.jpg"
 images:
