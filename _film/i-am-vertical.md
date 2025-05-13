@@ -32,6 +32,7 @@ roles: "DP, DIRECTOR, EDITOR"
     <div class="film-summary">
       <p><strong>Summary:</strong></p>
       <p>Shot entirely on 16mm Tri-X film with a Bolex camera, the film juxtaposes serene natural landscapes with intimate human moments, tracing the quiet yearning for unity with the earth.</p>
+      <p>Nominated by faculty recommendation for the 2025 Cinematic Arts Awards.</p>
     </div>
   </div>
 
