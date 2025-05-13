@@ -9,15 +9,27 @@ css_class: "about-page"
   <!-- About Section -->
   <div class="about-content">
     <h1>Hi, I'm Isabel.</h1>
-    <p>
-      I am a Duke University alum, graduating Summa Cum Laude with a B.S.E. in Mechanical Engineering and a minor in Cinematic Arts, earning a 4.0 GPA. I’m deeply honored to have received the Walter J. Seeley Scholastic Award, presented to the top engineering student for academic excellence and professional diligence, and the Mechanical Engineering & Materials Science Faculty Award for highest scholastic achievement in my department. I am a proud member of Phi Beta Kappa, Tau Beta Pi, and Pi Tau Sigma, recognizing my dedication to both intellectual breadth and technical mastery.
-    </p>
-    <p>
-     My creative work has been equally recognized. My short film Tulips won Best Film and Best Cinematography at the 2025 Cinematic Arts Awards, and my capstone horror-comedy, Éliphas, was awarded the Robert E. Pristo Filmmaking Award and a Creative Arts Grant, premiering to wide acclaim at Duke’s senior showcase. I’m also an active member of Freewater Productions, as well as theater groups Duke Players and Hoof ‘n’ Horn, where I frequently take on technical production roles.
-     </p>
-    <p>
-    I thrive in fast-paced, collaborative environments that demand both creative direction and engineering precision. From leading the design and fabrication of a Mario Kart-themed amphibious sculpture for the Baltimore Kinetic Sculpture Race—where we won the top honor, the ACE Award—to crafting narrative-driven short films with complex practical effects, I excel at bridging design and execution. With a passion for blending technical expertise and artistic vision, I bring a hybrid perspective to every challenge, delivering solutions that are both impactful and imaginative.
-     </p>
+<p>
+  I am a Duke University alum, graduating <strong>Summa Cum Laude</strong> with a <strong>B.S.E. in Mechanical Engineering</strong> and a minor in <strong>Cinematic Arts</strong>, earning a <strong>4.0 GPA</strong>. I’m deeply honored to have received the 
+  <a href="https://pratt.duke.edu/news/commencement-2025/?cn-reloaded=1" target="_blank">Walter J. Seeley Scholastic Award</a>, presented to the top engineering student for academic excellence and professional diligence, and the 
+  <a href="https://pratt.duke.edu/news/commencement-2025/?cn-reloaded=1" target="_blank">Mechanical Engineering & Materials Science Faculty Award</a> for highest scholastic achievement in my department. 
+  I am a proud member of <strong>Phi Beta Kappa</strong>, <strong>Tau Beta Pi</strong>, and <strong>Pi Tau Sigma</strong>, recognizing my dedication to both intellectual breadth and technical mastery. 
+  I was also featured as the 
+  <a href="https://pratt.duke.edu/news/senior-spotlight-izzy-dudlyke/" target="_blank">Student Spotlight for the MEMS Department</a>, highlighting my interdisciplinary work.
+</p>
+
+<p>
+  My creative work has been equally recognized. I was awarded the 
+  <a href="https://arts.duke.edu/2025-arts-awards-winners/" target="_blank">Cinematic Arts Outstanding Filmmaker Award</a> for my body of work over my time at Duke. 
+  My short film <em>Tulips</em> won <strong>Best Film</strong> and <strong>Best Cinematography</strong> at the 2025 Cinematic Arts Awards, and my capstone horror-comedy, <em>Éliphas</em>, received the Robert E. Pristo Filmmaking Award and a Creative Arts Grant to fund the project, premiering to wide acclaim at Duke’s senior showcase. 
+  I’m also an active member of <strong>Freewater Productions</strong>, as well as theater groups <strong>Duke Players</strong> and <strong>Hoof ‘n’ Horn</strong>, where I frequently take on technical production roles.
+</p>
+
+<p>
+  I thrive in fast-paced, collaborative environments that demand both creative direction and engineering precision. 
+  From leading the design and fabrication of a <strong>Mario Kart–themed amphibious sculpture</strong> for the <strong>Baltimore Kinetic Sculpture Race</strong> — where we won the top honor, the <strong>ACE Award</strong> — to crafting narrative-driven short films with custom practical effects, 
+  I excel at bridging design and execution. With a passion for blending technical expertise and artistic vision, I bring a hybrid perspective to every challenge, delivering work that is both <strong>impactful and imaginative</strong>.
+</p>
   
   </div>
   
