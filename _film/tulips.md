@@ -32,6 +32,7 @@ roles: "DP, DIRECTOR, EDITOR"
     <div class="film-summary">
       <p><strong>Summary:</strong></p>
       <p>A visual interpretation of Sylvia Plath’s poem "Tulips", blending experimental and narrative elements. A woman confronts the suffocating presence of vibrant tulips that disturb her yearning for peace.</p>
+      <p>Awarded Best Film and Best Cinematography at the 2025 Cinematic Arts Awards.</p>
     </div>
   </div>
 
