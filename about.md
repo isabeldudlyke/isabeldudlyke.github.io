@@ -10,20 +10,15 @@ css_class: "about-page"
   <div class="about-content">
     <h1>Hi, I'm Isabel.</h1>
     <p>
-      I am currently a student at Duke University majoring in Mechanical Engineering and Cinematic Arts. 
-      I am a proud member of esteemed honor societies, including Phi Beta Kappa, Tau Beta Pi and Pi Tau Sigma, which 
-      have further fueled my passion for innovation and design. Additionally, I am an active member of 
-      Freewater Productions, Duke’s student-run independent film production company, and two theater 
-      groups, Duke Players and Hoof ‘n’ Horn, where I frequently take on technical roles in productions. 
-      My short film <i>Inner Demons</i> was selected for Duke’s Fall Film Festival following faculty nomination, 
-      and I was honored to receive the Robert E. Pristo Filmmaking Award for my current capstone project.
+      I am a Duke University alum, graduating Summa Cum Laude with a B.S.E. in Mechanical Engineering and a minor in Cinematic Arts, earning a 4.0 GPA. I’m deeply honored to have received the Walter J. Seeley Scholastic Award, presented to the top engineering student for academic excellence and professional diligence, and the Mechanical Engineering & Materials Science Faculty Award for highest scholastic achievement in my department. I am a proud member of Phi Beta Kappa, Tau Beta Pi, and Pi Tau Sigma, recognizing my dedication to both intellectual breadth and technical mastery.
     </p>
     <p>
-      I thrive in dynamic, fast-paced environments that demand both creative problem-solving and technical precision. 
-      Whether crafting an engineering prototype or leading a film project, I bridge design and execution effectively. 
-      With a passion for blending technical expertise and artistic vision, I bring a unique perspective to every challenge, 
-      delivering impactful and practical solutions.
-    </p>
+     My creative work has been equally recognized. My short film Tulips won Best Film and Best Cinematography at the 2025 Cinematic Arts Awards, and my capstone horror-comedy, Éliphas, was awarded the Robert E. Pristo Filmmaking Award and a Creative Arts Grant, premiering to wide acclaim at Duke’s senior showcase. I’m also an active member of Freewater Productions, as well as theater groups Duke Players and Hoof ‘n’ Horn, where I frequently take on technical production roles.
+     </p>
+    <p>
+    I thrive in fast-paced, collaborative environments that demand both creative direction and engineering precision. From leading the design and fabrication of a Mario Kart-themed amphibious sculpture for the Baltimore Kinetic Sculpture Race—where we won the top honor, the ACE Award—to crafting narrative-driven short films with complex practical effects, I excel at bridging design and execution. With a passion for blending technical expertise and artistic vision, I bring a hybrid perspective to every challenge, delivering solutions that are both impactful and imaginative.
+     </p>
+  
   </div>
   
 <hr>
@@ -37,9 +32,20 @@ css_class: "about-page"
         <span class="item-date">Aug 2021 - Present</span>
       </div>
       <div class="item-subtitle">B.S.E in Mechanical Engineering, Minor in Cinematic Arts</div>
-      <div class="item-subtitle">4.0 GPA, Deans List with Distinction (6x), Tau Beta Pi, Pi Tau Sigma, Robert E. Priso Filmmaking Award, Cinematic Arts Outstanding Filmmaker Award</div>
+      <div class="item-subtitle">GPA: 4.0 GPA, Summa Cum Laude</div>
     </div>
-    
+    <div class="item-title">
+        Honors & Awards
+        <ul class="item-details">
+        <li>Walter J. Seeley Scholastic Award – Highest GPA & dedication to engineering studies
+</li>
+           <li>MEMS Faculty Award – Top graduating senior in Mechanical Engineering </li>
+           <li>Cinematic Arts Outstanding Filmmaker Award – Recognized for creative excellence </li>
+           <li>Dean’s List with Distinction (7x) – Awarded every eligible semester </li>
+           <li>Phi Beta Kappa – Academic honor society for the liberal arts and sciences </li>
+           <li>Tau Beta Pi – National engineering honor society </li>
+      </ul>
+      </div>
 <hr>
 
     <!-- Professional Experience Section -->
@@ -47,7 +53,7 @@ css_class: "about-page"
     <div class="resume-item">
       <div class="item-title">
         Cinematic Arts Cage Equipment Assistant
-        <span class="item-date">Dec 2024 - Present</span>
+        <span class="item-date">Dec 2024 - May 2025 </span>
       </div>
        <div class="company-name">Duke University</div>
       <ul class="item-details">
@@ -59,7 +65,7 @@ css_class: "about-page"
     <div class="resume-item">
       <div class="item-title">
        Research Assistant and Graphics Developer
-        <span class="item-date">Jan 2024 - Present</span>
+        <span class="item-date">Jan 2024 - May 2025 </span>
       </div>
       <div class="company-name">Duke University</div>
       <ul class="item-details">
