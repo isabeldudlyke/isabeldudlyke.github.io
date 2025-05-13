@@ -43,8 +43,11 @@ css_class: "about-page"
     <li>Dean’s List with Distinction (7x) – Awarded every eligible semester</li>
     <li>Phi Beta Kappa – Academic honor society for the liberal arts and sciences</li>
     <li>Tau Beta Pi – National engineering honor society</li>
+    
   </ul>
+  
 </div>
+
 
 <hr>
 
