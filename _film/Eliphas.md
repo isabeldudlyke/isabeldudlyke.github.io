@@ -32,6 +32,7 @@ roles: "DIRECTOR, WRITER, PRODUCER, EDITOR"
     <div class="film-summary">
       <p><strong>Summary:</strong></p>
       <p>Alone in a barn at night, a girl prepares a satanic ritual with a goat’s blood—unaware something ancient is watching. Created for my Senior capstone in Cinematic Arts. </p>
+      <p>Funded by the Robert E. Pristo Filmmaking Award and the Creative Arts Award.</p>
     </div>
   </div>
 
