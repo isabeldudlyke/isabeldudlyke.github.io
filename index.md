@@ -7,7 +7,7 @@ css_class: Home
 <div class="center-wrapper">
   <div class="center-box">
     <h1>Isabel Dudlyke</h1>
-    <h2>Filmmaker <span class="dot">•</span> Engineer</h2>
+    <h2>Engineer <span class="dot">•</span> Filmmaker</h2>
   </div>
 </div>
 
