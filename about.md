@@ -313,6 +313,7 @@ css_class: "about-page"
   gap: 1.5rem; /* Add spacing between grid items */
   justify-items: center; /* Center-align each grid item */
   margin-top: 1.5rem;
+  margin-bottom: 2rem; /* 🔧 Add this line */
 }
 
 .skill-item {
