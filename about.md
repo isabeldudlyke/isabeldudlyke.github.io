@@ -58,7 +58,6 @@ css_class: "about-page"
     
   </ul>
   
-</div>
 
 
 <hr>
