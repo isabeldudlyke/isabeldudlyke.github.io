@@ -23,29 +23,29 @@ css_class: "about-page"
   
 <hr>
 
-  <!-- Education Section -->
-  <div class="resume-section">
-    <h2>Education</h2>
-    <div class="resume-item">
-      <div class="item-title">
-        Duke University
-        <span class="item-date">Aug 2021 - Present</span>
-      </div>
-      <div class="item-subtitle">B.S.E in Mechanical Engineering, Minor in Cinematic Arts</div>
-      <div class="item-subtitle">GPA: 4.0 GPA, Summa Cum Laude</div>
-    </div>
+<!-- Education Section -->
+<div class="resume-section">
+  <h2>Education</h2>
+  <div class="resume-item">
     <div class="item-title">
-        Honors & Awards
-        <ul class="item-details">
-        <li>Walter J. Seeley Scholastic Award – Highest GPA & dedication to engineering studies
-</li>
-           <li>MEMS Faculty Award – Top graduating senior in Mechanical Engineering </li>
-           <li>Cinematic Arts Outstanding Filmmaker Award – Recognized for creative excellence </li>
-           <li>Dean’s List with Distinction (7x) – Awarded every eligible semester </li>
-           <li>Phi Beta Kappa – Academic honor society for the liberal arts and sciences </li>
-           <li>Tau Beta Pi – National engineering honor society </li>
-      </ul>
-      </div>
+      Duke University
+      <span class="item-date">Aug 2021 - May 2025</span>
+    </div>
+    <div class="item-subtitle">B.S.E in Mechanical Engineering, Minor in Cinematic Arts</div>
+    <div class="item-subtitle">GPA: 4.0, Summa Cum Laude</div>
+  </div>
+
+  <div class="item-title">Honors & Awards</div>
+  <ul class="item-details" style="font-weight: normal; margin-top: 4px;">
+    <li>Walter J. Seeley Scholastic Award – Highest GPA & dedication to engineering studies</li>
+    <li>MEMS Faculty Award – Top graduating senior in Mechanical Engineering</li>
+    <li>Cinematic Arts Outstanding Filmmaker Award – Recognized for creative excellence</li>
+    <li>Dean’s List with Distinction (7x) – Awarded every eligible semester</li>
+    <li>Phi Beta Kappa – Academic honor society for the liberal arts and sciences</li>
+    <li>Tau Beta Pi – National engineering honor society</li>
+  </ul>
+</div>
+
 <hr>
 
     <!-- Professional Experience Section -->
