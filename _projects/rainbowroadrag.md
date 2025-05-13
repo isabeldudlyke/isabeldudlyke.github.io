@@ -34,15 +34,15 @@ and check out the [New York Times article](https://www.nytimes.com/card/2025/05/
   <div class="carousel">
     <img src="/assets/images/KineticSculpture.jpeg" alt="Final Sculpture in Race" class="carousel-image active" onclick="toggleImageSize(this)">
     <img src="/assets/images/InRace.HEIC" alt="During Race" class="carousel-image" onclick="toggleImageSize(this)">
-    <img src="/assets/images/CAD.jpeg" alt="CAD" class="carousel-image" onclick="toggleImageSize(this)">
+    <img src="/assets/images/CAD.png" alt="CAD" class="carousel-image" onclick="toggleImageSize(this)">
     <img src="/assets/images/One Page Info Sheet.png" alt="Info Sheet" class="carousel-image" onclick="toggleImageSize(this)">
-    <img src="/assets/images/Pon_Assembly.jpeg" alt="Pontoon Construction" class="carousel-image" onclick="toggleImageSize(this)">
+    <img src="/assets/images/Pon_Assembly.png" alt="Pontoon Construction" class="carousel-image" onclick="toggleImageSize(this)">
     <img src="/assets/images/Pon_2.jpeg" alt="Pontoon Design" class="carousel-image" onclick="toggleImageSize(this)">
     <img src="/assets/images/PP_1.jpeg" alt="Pirahna Plant 1" class="carousel-image" onclick="toggleImageSize(this)">
     <img src="/assets/images/PP_2.jpeg" alt="Pirahna Plant 2" class="carousel-image" onclick="toggleImageSize(this)">
     <img src="/assets/images/PP_3.jpeg" alt="Pirahna Plant 3" class="carousel-image" onclick="toggleImageSize(this)">
     <img src="/assets/images/PP_4.jpeg" alt="Pirahna Plant 4" class="carousel-image" onclick="toggleImageSize(this)">
-    <img src="/assets/images/PP_Stand.jpeg" alt="Pirahna Plant Stand" class="carousel-image" onclick="toggleImageSize(this)">
+    <img src="/assets/images/PP_Stand.png" alt="Pirahna Plant Stand" class="carousel-image" onclick="toggleImageSize(this)">
 
   </div>
   <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
