@@ -37,7 +37,7 @@ css_class: "about-page"
 
   <div class="item-title">Honors & Awards</div>
   <ul class="item-details" style="font-weight: normal; margin-top: 4px;">
-    <li>Walter J. Seeley Scholastic Award – Highest GPA & dedication to engineering studies</li>
+    <li>Walter J. Seeley Scholastic Award – Highest Scholastic Achievement & dedication to engineering studies</li>
     <li>MEMS Faculty Award – Top graduating senior in Mechanical Engineering</li>
     <li>Cinematic Arts Outstanding Filmmaker Award – Recognized for creative excellence</li>
     <li>Dean’s List with Distinction (7x) – Awarded every eligible semester</li>
