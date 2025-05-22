@@ -23,7 +23,7 @@ technologies:
 - Completed the full 15-mile race across land, water, and sand—earning the **ACE Award**, the top honor for acing every challenge.
 - Managed a large-scale team effort spanning mechanical testing, design iteration, and visual storytelling.
 
-See the [official race site](https://kineticbaltimore.com) for results and photos,  
+See the [official race site](https://kineticbaltimore.com/KSR/2025/?Page=8) for results and photos,  
 and check out the [New York Times article](https://www.nytimes.com/card/2025/05/05/arts/baltimore-kinetic-sculpture-race?unlocked_article_code=1.E08.HlXT.7oiIRsKUmh-a&smid=url-share) featuring highlights from the 2025 competition.
 
 ---
