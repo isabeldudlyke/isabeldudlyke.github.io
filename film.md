@@ -29,11 +29,14 @@ css_class: "film-page"
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
+    height: 300px; /* Set a consistent banner height */
+
   }
 
   .film-images img {
     width: 33.333%;
-    height: auto;
+    height: 100%; /* Force uniform height */
+    object-fit: cover; /* Ensures image fills area without distortion */
     display: block;
     transition: filter 0.3s ease;
   }
@@ -91,17 +94,20 @@ css_class: "film-page"
   @media (max-width: 768px) {
     .film-images {
       flex-wrap: nowrap;
+      height: 300px; /* Keep the same fixed height on mobile */
     }
 
-    .film-images img {
-      width: 100%;
-      display: none; /* Hide all images by default */
-    }
-
-    .film-images img:nth-child(2) {
-      display: block; /* Show only the second (center) image */
-    }
+  .film-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
   }
+
+  .film-images img:nth-child(2) {
+    display: block;
+  }
+}
     /* Smaller Title for Film Projects */
   .film-page h1 {
     font-size: 2rem; /* Adjust this value for the desired size */
