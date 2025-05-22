@@ -54,7 +54,7 @@ roles: "DIRECTOR, ANIMATOR, EDITOR"
 <style>
 /* Banner Section */
 .banner {
-  background-image: url('/assets/images/parklife-header.jpg');
+  background-image: url('/assets/images/ParkLife2.png');
   background-size: cover;
   background-position: center;
   height: 300px;
