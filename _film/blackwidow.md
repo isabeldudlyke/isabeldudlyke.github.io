@@ -3,7 +3,7 @@ title: "BLACK WIDOW"
 layout: default
 description: "An experimental feminist short using recycled cinema to explore patriarchy and the lives of women"
 category: "professional" # Options: "professional" or "personal"
-priority: 2
+priority: 6
 status: "new" # Options: "new", "under_construction"
 header_image: "/assets/images/BlackWidow1.png"
 images:
