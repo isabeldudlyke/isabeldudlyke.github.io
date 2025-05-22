@@ -10,7 +10,7 @@ css_class: "about-page"
   <div class="about-content">
     <h1>Hi, I'm Isabel.</h1>
 <p>
-  I am a Duke University alum, graduating <strong>Summa Cum Laude</strong> with a <strong>B.S.E. in Mechanical Engineering</strong> and a minor in <strong>Cinematic Arts</strong>, earning a <strong>4.0 GPA</strong>. I’m deeply honored to have received the 
+ I am a Duke University alum, having graduated <strong>Summa Cum Laude</strong> with a <strong>B.S.E. in Mechanical Engineering</strong> and a minor in <strong>Cinematic Arts</strong>. I’m deeply honored to have received the 
   <a href="https://pratt.duke.edu/news/commencement-2025/?cn-reloaded=1" target="_blank">Walter J. Seeley Scholastic Award</a>, presented to the top engineering student for academic excellence and professional diligence, and the 
   <a href="https://pratt.duke.edu/news/commencement-2025/?cn-reloaded=1" target="_blank">Mechanical Engineering & Materials Science Faculty Award</a> for highest scholastic achievement in my department. 
   I am a proud member of <strong>Phi Beta Kappa</strong>, <strong>Tau Beta Pi</strong>, and <strong>Pi Tau Sigma</strong>, recognizing my dedication to both intellectual breadth and technical mastery. 
