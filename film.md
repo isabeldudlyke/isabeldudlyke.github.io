@@ -29,7 +29,7 @@ css_class: "film-page"
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    height: 300px; /* Set a consistent banner height */
+    height: 250px; /* Set a consistent banner height */
 
   }
 
@@ -94,7 +94,7 @@ css_class: "film-page"
   @media (max-width: 768px) {
     .film-images {
       flex-wrap: nowrap;
-      height: 300px; /* Keep the same fixed height on mobile */
+      height: 250px; /* Keep the same fixed height on mobile */
     }
 
   .film-images img {
