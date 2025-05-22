@@ -3,7 +3,7 @@ title: "PARKLIFE"
 layout: default
 description: "A multi-media 2D animation music video to the song 'Parklife' by Blue"
 category: "professional" # Options: "professional" or "personal"
-priority: 2
+priority: 4
 status: "new" # Options: "new", "under_construction"
 header_image: "/assets/images/ParkLife2.png"
 images:
